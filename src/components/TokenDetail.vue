@@ -1,7 +1,7 @@
 <template>
   <v-container>
     <h1>Token Details</h1>
-    <v-layout>
+    <v-layout row wrap>
         <v-flex xs12 sm6>
             <h2>Genernal Info</h2>
             <ul>
@@ -11,7 +11,7 @@
                 <li>Token standard：ERC 20</li>
                 <li>Price Per Token：1LCT:10USD</li>
                 <li>Token issuing(first time)：9,000,000 LCT</li>
-                <li>Total ​token ​supply ​(max)：Depends on the next developing project</li>
+                <li>Total token supply (max)：Depends on the next developing project</li>
                 <li>Unsale token：We will reserve it until we sell it</li>
                 <li>Decimails of Precision：3</li>
             </ul>
