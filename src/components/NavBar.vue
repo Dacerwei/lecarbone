@@ -1,7 +1,7 @@
 <template>
   <v-toolbar app>
     <img :src="logo" />
-    <v-btn>About</v-btn>
+    <v-btn >About</v-btn>
     <v-btn>Roadmap</v-btn>
     <v-btn>Token Details</v-btn>
     <v-btn>Team</v-btn>
