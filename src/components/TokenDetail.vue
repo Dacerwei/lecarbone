@@ -4,16 +4,34 @@
     <v-layout row wrap>
         <v-flex xs12 sm6>
             <h2>Genernal Info</h2>
-            <ul>
-                <li>Token name：LeCarbone Token</li>
-                <li>Token symbol: LCT</li>
-                <li>Platform：Ethereum</li>
-                <li>Token standard：ERC 20</li>
-                <li>Price Per Token：1LCT:10USD</li>
-                <li>Token issuing(first time)：9,000,000 LCT</li>
-                <li>Total token supply (max)：Depends on the next developing project</li>
-                <li>Unsale token：We will reserve it until we sell it</li>
-                <li>Decimails of Precision：3</li>
+            <ul class="info-list">
+                <li class="info-item">
+                  Token name：LeCarbone Token
+                </li>
+                <li class="info-item">
+                  Token symbol: LCT
+                </li>
+                <li class="info-item">
+                  Platform：Ethereum
+                </li>
+                <li class="info-item">
+                  Token standard：ERC 20
+                </li>
+                <li class="info-item">
+                  Price Per Token：1LCT:10USD
+                </li>
+                <li class="info-item">
+                  Token issuing(first time)：9,000,000 LCT
+                </li>
+                <li class="info-item">
+                  Total token supply (max)：Depends on the next developing project
+                </li>
+                <li class="info-item">
+                  Unsale token：We will reserve it until we sell it
+                </li>
+                <li class="info-item">
+                  Decimails of Precision：3
+                </li>
             </ul>
         </v-flex>
         <v-flex xs12 sm6>
@@ -66,4 +84,11 @@ export default {
   },
 };
 </script>
+
+<style>
+.info-item {
+  text-align: left;
+  list-style: none;
+};
+</style>
 

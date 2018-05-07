@@ -4,31 +4,64 @@
         <h1>Our Team</h1>
       </div>
       <div>
-        <p>Back in March of 2017, Mr. Yung-Wen Chi, the CEO of AAD was invited
+        <p>
+          Back in March of 2017, Mr. Yung-Wen Chi, the CEO of AAD was invited
           by Pelestarian Alam Nusantara Foundation to be its First Vice Chairman.
           In May of 2017, Pelestarian Alam Nusantara Foundation signed a contract
           with the Indonesian Chamber of Commerce and Industry (ICCI) (Kadin Indonesia),
           to aid the Indonesian government in a 10 years program for forest protection
           and poverty alleviation, preserving natural forests and assisting villagers
-          in rural areas by creating job opportunities and enhancing their living conditions.</p>
-        <p>In August, 2017, Mr. Chi signed a contract for the ownership right of 50 years for 25,000
+          in rural areas by creating job opportunities and enhancing their living conditions.
+        </p>
+        <p>
+          In August, 2017, Mr. Chi signed a contract for the ownership right of 50 years for 25,000
           hectare of forest land owned by 5 villages (located in Inamosol Town,
-          Seram Bagian Barat County, Maluku Province) with the chief of the 5 villages.</p>
-        <p>The forest was originally planned for deforestation but will now be preserved and
+          Seram Bagian Barat County, Maluku Province) with the chief of the 5 villages.
+        </p>
+        <p>
+          The forest was originally planned for deforestation but will now be preserved and
           AAD will use it to apply for carbon credit certification. Furthermore,
           AAD will introduce methods of biotechnology farming to the forest protection program,
           employing local villagers to plant agilawood, coffee beans and other economical crops,
           which will create both job opportunities for the villagers and a sustainable
           cycle of agricultural yield that could bring both economical and environmental
-          benefits to the locals.</p>
+          benefits to the locals.
+        </p>
       </div>
+      <v-layout row>
+        <v-flex xs12 sm6>
+          <v-card height="400" flat>
+            <v-container>
+              <v-layout row>
+                <v-flex xs3>
+                  <img class="avatar"
+                    :src="CEOData.avatarPhoto"/>
+                </v-flex>
+                <v-flex xs9>
+                  <div>
+                    <h2>{{ CEOData.firstName }} {{ CEOData.LastName }} {{ CEOData.degree }}</h2>
+                    <h3>{{ CEOData.title }}</h3>
+                    <p class="member-description">{{ CEOData.description }}</p>
+                    <ul v-if="CEOData.experienceList">
+                      <li v-for="exp in CEOData.experienceList" :key="exp.id">
+                        {{ exp.description }}
+                      </li>
+                    </ul>
+                  </div>
+                </v-flex>
+              </v-layout>
+            </v-container>
+          </v-card>
+        </v-flex>
+      </v-layout>
       <v-layout row wrap>
-        <v-flex xs12 sm6 v-for="member in memberList" :key="member.id">
+        <v-flex xs12 sm6 v-for="member in teamList" :key="member.id">
           <v-card height="400">
             <v-container>
               <v-layout row>
                 <v-flex xs3>
-                  <img :src="member.avatarPhoto" />
+                  <img class="avatar"
+                    :src="member.avatarPhoto"/>
                 </v-flex>
                 <v-flex xs9>
                   <div>
@@ -47,32 +80,6 @@
           </v-card>
         </v-flex>
       </v-layout>
-      <v-layout row wrap>
-        <v-flex xs12 sm4>
-          <div>Advisor</div>
-        </v-flex>
-        <v-flex xs12 sm8 v-for="advisor in advisorList" :key="advisor.id">
-          <v-card height="400">
-            <v-container>
-              <v-layout row>
-                <v-flex xs3>
-                    <img :src="advisor.avatarPhoto" style="width: 80%"/>
-                </v-flex>
-                <v-flex xs9>
-                  <div>
-                    <p>{{ advisor.affiliation }}</p>
-                    <h2>{{ advisor.firstName }} {{advisor.LastName}}</h2>
-                    <h3>{{ advisor.title }}</h3>
-                  </div>
-                </v-flex>
-              </v-layout>
-              <v-container>
-                <p>{{ advisor.description }}</p>
-              </v-container>
-            </v-container>
-          </v-card>
-        </v-flex>
-      </v-layout>
   </v-container>
 </template>
 <script>
@@ -81,7 +88,7 @@ import COO from '@/assets/team/COO.jpg';
 import CTO from '@/assets/team/CTO.jpg';
 import GM from '@/assets/team/GM.png';
 import VGM from '@/assets/team/VGM.png';
-import ADV from '@/assets/team/ADV.jpg';
+import _ from 'lodash';
 
 const memberList = [
   {
@@ -159,25 +166,27 @@ const memberList = [
   },
 ];
 
-const advisorList = [
-  {
-    id: 0,
-    avatarPhoto: ADV,
-    firstName: 'Zhihui',
-    LastName: 'Huang',
-    title: 'Vice-President & Executive Director of Taiwan Development Institute, Executive Director of High-tech Industrial Development Foundation.',
-    affiliation: 'Taiwan Development Institute',
-    description: 'Huang graduated as BSc from the Department of Foreign Language, National Chung Hsing University and Master of Social Policy from Edinburgh, Scotland; now serving as Chairman of the Creative Culture Foundation, Vice-President of Taiwan Development Institute and PMP. Huang specializes in Social Marketing, NPO Marketing/Advertising, political advertising & broadcasting, creative aesthetics, integrated marketing on public art and analysis on international finance and stock markets.',
-  },
-];
-
 export default {
   name: 'OurTeam',
   data() {
     return {
       memberList,
-      advisorList,
     };
+  },
+  computed: {
+    CEOData() {
+      return _.take(this.memberList)[0];
+    },
+    teamList() {
+      return _.drop(this.memberList);
+    },
   },
 };
 </script>
+
+<style>
+.member-description {
+  text-align: left;
+};
+</style>
+

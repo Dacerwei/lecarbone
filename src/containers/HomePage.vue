@@ -5,6 +5,8 @@
   <token-detail></token-detail>
   <use-of-found></use-of-found>
   <our-team></our-team>
+  <advisor></advisor>
+  <partners></partners>
   <Footer></Footer>
 </v-app>
 </template>
@@ -15,6 +17,8 @@ import OurTeam from '@/components/OurTeam';
 import UseOfFound from '@/components/UseOfFound';
 import TokenDetail from '@/components/TokenDetail';
 import WhyLeCarbone from '@/components/WhyLeCarbone';
+import Partners from '@/components/Partners';
+import Advisor from '@/components/Advisor';
 
 export default {
   components: {
@@ -23,6 +27,8 @@ export default {
     WhyLeCarbone,
     TokenDetail,
     UseOfFound,
+    Partners,
+    Advisor,
     Footer,
   },
 };

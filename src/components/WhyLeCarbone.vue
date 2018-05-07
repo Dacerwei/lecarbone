@@ -3,7 +3,7 @@
     <h1>Why LeCarbone?</h1>
     <v-layout row wrap>
       <v-flex xs12 sm4 v-for="content in contentList" :key="content.title">
-        <v-card height="400">
+        <v-card height="400px">
           <v-card-media :src="content.icon"></v-card-media>
           <v-card-title><h3>{{ content.title }}</h3></v-card-title>
           <v-card-text><p>{{ content.description }}</p></v-card-text>
