@@ -85,7 +85,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .info-item {
   text-align: left;
   list-style: none;

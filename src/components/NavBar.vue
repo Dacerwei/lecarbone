@@ -51,7 +51,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .flag {
   width: 30px;
   height: 30px;

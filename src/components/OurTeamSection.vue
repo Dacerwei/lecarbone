@@ -184,7 +184,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .member-description {
   text-align: left;
 };

@@ -4,6 +4,7 @@
   <media-section></media-section>
   <Video-section></Video-section>
   <why-lecarbone-section></why-lecarbone-section>
+  <how-it-works-section></how-it-works-section>
   <token-detail-section></token-detail-section>
   <use-of-found-section></use-of-found-section>
   <our-team-section></our-team-section>
@@ -15,6 +16,7 @@
 <script>
 import NavBar from '@/components/NavBar';
 import Footer from '@/components/Footer';
+import HowItWorksSection from '@/components/HowItWorksSection';
 import MediaSection from '@/components/MediaSection';
 import OurTeamSection from '@/components/OurTeamSection';
 import UseOfFoundSection from '@/components/UseOfFoundSection';
@@ -30,6 +32,7 @@ export default {
     VideoSection,
     OurTeamSection,
     MediaSection,
+    HowItWorksSection,
     WhyLecarboneSection,
     TokenDetailSection,
     UseOfFoundSection,
