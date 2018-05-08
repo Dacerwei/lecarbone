@@ -5,32 +5,8 @@
         <v-flex xs12 sm6>
             <h2>Genernal Info</h2>
             <ul class="info-list">
-                <li class="info-item">
-                  Token name：LeCarbone Token
-                </li>
-                <li class="info-item">
-                  Token symbol: LCT
-                </li>
-                <li class="info-item">
-                  Platform：Ethereum
-                </li>
-                <li class="info-item">
-                  Token standard：ERC 20
-                </li>
-                <li class="info-item">
-                  Price Per Token：1LCT:10USD
-                </li>
-                <li class="info-item">
-                  Token issuing(first time)：9,000,000 LCT
-                </li>
-                <li class="info-item">
-                  Total token supply (max)：Depends on the next developing project
-                </li>
-                <li class="info-item">
-                  Unsale token：We will reserve it until we sell it
-                </li>
-                <li class="info-item">
-                  Decimails of Precision：3
+                <li class="info-item" v-for="item in genernalInfoData" :key="item.fieldName">
+                  <span>{{ item.fieldName }}</span>：<span>{{ item.value }}</span>
                 </li>
             </ul>
         </v-flex>
@@ -64,6 +40,45 @@ const useOfFoundData = [
   },
 ];
 
+const genernalInfoData = [
+  {
+    fieldName: 'Token name',
+    value: 'LeCarbone Token',
+  },
+  {
+    fieldName: 'Token symbol',
+    value: 'LCT',
+  },
+  {
+    fieldName: 'Platform',
+    value: 'Ethereum',
+  },
+  {
+    fieldName: 'Token standard',
+    value: 'ERC 20',
+  },
+  {
+    fieldName: 'Price Per Token',
+    value: '1LCT:10USD',
+  },
+  {
+    fieldName: 'Token issuing(first time)',
+    value: '9,000,000 LCT',
+  },
+  {
+    fieldName: 'Total token supply (max)',
+    value: 'Depends on the next developing project',
+  },
+  {
+    fieldName: 'Unsale token',
+    value: 'We will reserve it until we sell it',
+  },
+  {
+    fieldName: 'Decimails of Precision',
+    value: '3',
+  },
+];
+
 const chartData = {
   labels: _.map(useOfFoundData, data => data.title),
   datasets: [{
@@ -80,6 +95,7 @@ export default {
   data() {
     return {
       chartData,
+      genernalInfoData,
     };
   },
 };
