@@ -47,7 +47,7 @@ const advisorList = [
 ];
 
 export default {
-  name: 'Advisor',
+  name: 'AdvisorSection',
   data() {
     return {
       advisorList,

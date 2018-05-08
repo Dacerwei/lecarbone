@@ -32,7 +32,7 @@ const whyLeCarboneContent = [
   },
 ];
 export default {
-  name: 'WhyLeCarbone',
+  name: 'WhyLecarboneSection',
   data() {
     return {
       contentList: whyLeCarboneContent,

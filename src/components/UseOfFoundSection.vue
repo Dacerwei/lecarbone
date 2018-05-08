@@ -72,7 +72,7 @@ const chartData = {
 };
 
 export default {
-  name: 'UseOfFound',
+  name: 'UseOfFoundSection',
   components: {
     PieChart,
   },

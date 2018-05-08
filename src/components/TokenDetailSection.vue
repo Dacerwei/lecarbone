@@ -73,7 +73,7 @@ const chartData = {
 };
 
 export default {
-  name: 'TokenDetail',
+  name: 'TokenDetailSection',
   components: {
     PieChart,
   },

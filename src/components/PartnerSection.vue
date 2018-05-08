@@ -23,7 +23,7 @@ import CI from '@/assets/partner_ci.png';
 import Kadin from '@/assets/partner_kadin_indonesia.png';
 
 export default {
-  name: 'Partners',
+  name: 'PartnerSection',
   data() {
     return {
       CI,

@@ -167,7 +167,7 @@ const memberList = [
 ];
 
 export default {
-  name: 'OurTeam',
+  name: 'OurTeamSection',
   data() {
     return {
       memberList,

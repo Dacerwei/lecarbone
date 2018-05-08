@@ -109,7 +109,7 @@ const mediaList = [
 ];
 
 export default {
-  name: 'Media',
+  name: 'MediaSection',
   data() {
     return {
       mediaList,

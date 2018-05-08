@@ -1,40 +1,40 @@
 <template>
 <v-app>
   <NavBar></NavBar>
-  <media></media>
+  <media-section></media-section>
   <Video-section></Video-section>
-  <why-le-carbone></why-le-carbone>
-  <token-detail></token-detail>
-  <use-of-found></use-of-found>
-  <our-team></our-team>
-  <advisor></advisor>
-  <partners></partners>
+  <why-lecarbone-section></why-lecarbone-section>
+  <token-detail-section></token-detail-section>
+  <use-of-found-section></use-of-found-section>
+  <our-team-section></our-team-section>
+  <advisor-section></advisor-section>
+  <partner-section></partner-section>
   <Footer></Footer>
 </v-app>
 </template>
 <script>
 import NavBar from '@/components/NavBar';
 import Footer from '@/components/Footer';
-import Media from '@/components/Media';
-import OurTeam from '@/components/OurTeam';
-import UseOfFound from '@/components/UseOfFound';
-import TokenDetail from '@/components/TokenDetail';
-import WhyLeCarbone from '@/components/WhyLeCarbone';
-import Partners from '@/components/Partners';
-import Advisor from '@/components/Advisor';
+import MediaSection from '@/components/MediaSection';
+import OurTeamSection from '@/components/OurTeamSection';
+import UseOfFoundSection from '@/components/UseOfFoundSection';
+import TokenDetailSection from '@/components/TokenDetailSection';
+import WhyLecarboneSection from '@/components/WhyLecarboneSection';
+import PartnerSection from '@/components/PartnerSection';
+import AdvisorSection from '@/components/AdvisorSection';
 import VideoSection from '@/components/VideoSection';
 
 export default {
   components: {
     NavBar,
     VideoSection,
-    OurTeam,
-    Media,
-    WhyLeCarbone,
-    TokenDetail,
-    UseOfFound,
-    Partners,
-    Advisor,
+    OurTeamSection,
+    MediaSection,
+    WhyLecarboneSection,
+    TokenDetailSection,
+    UseOfFoundSection,
+    PartnerSection,
+    AdvisorSection,
     Footer,
   },
 };
