@@ -1,15 +1,15 @@
 <template>
   <v-toolbar app>
     <img :src="logo" />
-    <v-btn flat>About</v-btn>
-    <v-btn flat>Roadmap</v-btn>
-    <v-btn flat>Token Details</v-btn>
-    <v-btn flat>Team</v-btn>
-    <v-btn flat>Contact</v-btn>
+    <v-btn flat>{{ $t('message.NavBar.about') }}</v-btn>
+    <v-btn flat>{{ $t('message.NavBar.roadMap') }}</v-btn>
+    <v-btn flat>{{ $t('message.NavBar.tokenDetail') }}</v-btn>
+    <v-btn flat>{{ $t('message.NavBar.team') }}</v-btn>
+    <v-btn flat>{{ $t('message.NavBar.contact') }}</v-btn>
     <v-menu offset-y>
-      <v-btn flat color="primary" dark slot="activator">language</v-btn>
+      <v-btn flat color="primary" dark slot="activator">{{ $t('message.NavBar.language') }}</v-btn>
       <v-list>
-        <v-list-tile>
+        <v-list-tile @click="changeLanguage('en')">
           <v-list-tile-action>
             <img class="flag" :src="UK"/>
           </v-list-tile-action>
@@ -17,7 +17,7 @@
                 <v-list-tile-title>English</v-list-tile-title>
               </v-list-tile-content>
         </v-list-tile>
-        <v-list-tile>
+        <v-list-tile @click="changeLanguage('zh')">
           <v-list-tile-action>
             <img class="flag" :src="TW"/>
           </v-list-tile-action>
@@ -31,7 +31,7 @@
     <v-btn icon large><i class="fab fa-telegram-plane"></i></v-btn>
     <v-btn icon large><i class="fab fa-twitter"></i></v-btn>
     <v-btn icon large><i class="fab fa-medium-m"></i></v-btn>
-    <v-btn flat>Contribute</v-btn>
+    <v-btn flat>{{ $t('message.NavBar.contribute') }}</v-btn>
   </v-toolbar>
 </template>
 <script>
@@ -47,6 +47,11 @@ export default {
       UK,
       TW,
     };
+  },
+  methods: {
+    changeLanguage(lang) {
+      this.$i18n.locale = lang;
+    },
   },
 };
 </script>
