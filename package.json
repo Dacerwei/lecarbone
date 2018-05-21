@@ -21,6 +21,7 @@
     "chart.js": "^2.7.2",
     "fontawesome": "^4.7.2",
     "lodash": "^4.17.10",
+    "moment": "^2.22.1",
     "vue": "^2.5.2",
     "vue-chartjs": "^3.3.1",
     "vue-i18n": "^7.6.0",

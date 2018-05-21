@@ -1,6 +1,7 @@
 <template>
 <v-app>
   <NavBar></NavBar>
+  <main-section></main-section>
   <media-section></media-section>
   <Video-section></Video-section>
   <why-lecarbone-section></why-lecarbone-section>
@@ -16,6 +17,7 @@
 <script>
 import NavBar from '@/components/NavBar';
 import Footer from '@/components/Footer';
+import MainSection from '@/components/MainSection';
 import HowItWorksSection from '@/components/HowItWorksSection';
 import MediaSection from '@/components/MediaSection';
 import OurTeamSection from '@/components/OurTeamSection';
@@ -30,6 +32,7 @@ export default {
   components: {
     NavBar,
     VideoSection,
+    MainSection,
     OurTeamSection,
     MediaSection,
     HowItWorksSection,
