@@ -5,6 +5,7 @@
   <media-section></media-section>
   <Video-section></Video-section>
   <why-lecarbone-section></why-lecarbone-section>
+  <road-map-section></road-map-section>
   <how-it-works-section></how-it-works-section>
   <token-detail-section></token-detail-section>
   <use-of-found-section></use-of-found-section>
@@ -27,6 +28,7 @@ import WhyLecarboneSection from '@/components/WhyLecarboneSection';
 import PartnerSection from '@/components/PartnerSection';
 import AdvisorSection from '@/components/AdvisorSection';
 import VideoSection from '@/components/VideoSection';
+import RoadMapSection from '@/components/RoadMapSection';
 
 export default {
   components: {
@@ -42,6 +44,7 @@ export default {
     PartnerSection,
     AdvisorSection,
     Footer,
+    RoadMapSection,
   },
 };
 </script>
