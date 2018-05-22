@@ -1,6 +1,8 @@
 <template>
   <v-toolbar app>
-    <img :src="logo" />
+    <div class="logo-container">
+      <img :src="logo" />
+    </div>
     <v-btn flat>{{ $t('message.NavBar.about') }}</v-btn>
     <v-btn flat>{{ $t('message.NavBar.roadMap') }}</v-btn>
     <v-btn flat>{{ $t('message.NavBar.tokenDetail') }}</v-btn>
@@ -60,6 +62,9 @@ export default {
 .flag {
   width: 30px;
   height: 30px;
+}
+.logo-container {
+  width: 200px;
 }
 </style>
 

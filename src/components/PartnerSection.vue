@@ -7,10 +7,10 @@
       <v-flex xs12 sm8>
         <v-layout row wrap>
           <v-flex xs12 sm6>
-            <img class="partner" :src="CI"/>
+            <img :src="CI"/>
           </v-flex>
           <v-flex xs12 sm6>
-            <img class="partner" :src="Kadin"/>
+            <img :src="Kadin"/>
           </v-flex>
         </v-layout>
       </v-flex>
@@ -32,9 +32,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-.partner {
-  width: 100%;
-}
-</style>

@@ -14,4 +14,7 @@ export default {
 #app {
   margin-top: 60px;
 }
+img {
+  width: 100%;
+}
 </style>
