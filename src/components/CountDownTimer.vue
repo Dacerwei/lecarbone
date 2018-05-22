@@ -1,15 +1,15 @@
 <template>
   <v-container>
-    <h1>Main Sale Started!</h1>
-    <h2>from now to {{ dueDate.format('MMMM Do YYYY, h:mm:ss') }}</h2>
-    <div>
+    <div class="timer-title">Main Sale Started!</div>
+    <div class="timer-text">till {{ dueDate.format('MMMM Do, h:mm a') }} PDT</div>
+    <v-layout row>
       <span>{{ year }} years</span>
       <span>{{ month }} months</span>
       <span>{{ day }} days</span>
       <span>{{ hour }} hours</span>
       <span>{{ minute }} minutes</span>
       <span>{{ second }} seconds</span>
-    </div>
+    </v-layout>
   </v-container>
 </template>
 
@@ -69,3 +69,14 @@ export default {
   },
 };
 </script>
+<style scoped>
+.timer-title {
+  font-size: 24pt;
+  text-align: left;
+  color: yellow;
+}
+.timer-text {
+  color: yellow;
+}
+</style>
+
