@@ -1,36 +1,39 @@
 <template>
   <v-flex tag="div" class="timer-wrapper" xs12 sm6 md4>
-    <div class="timer-title">Main Sale Started!</div>
-    <div class="timer-text">till {{ dueDate.format('MMMM Do, h:mm a') }} PDT</div>
+    <div class="timer-title">{{ $t('message.MainSection.timer_title') }}</div>
+    <div class="timer-text">
+      {{ $t('message.MainSection.timer_till') }}
+      {{ dueDate.format('MMMM Do, h:mm a') }} PDT
+    </div>
     <v-layout row wrap justify-space-between >
       <v-flex tag='li' sm1>
         <div class="timer-item">
           <div class="timer-time">{{ month }}</div>
-          <div class="timer-label">MONTHS</div>
+          <div class="timer-label">{{ $t('message.MainSection.timer_months') }}</div>
         </div>
       </v-flex>
       <v-flex tag='li' sm1>
         <div class="timer-item">
           <div class="timer-time">{{ day }}</div>
-          <div class="timer-label">DAYS</div>
+          <div class="timer-label">{{ $t('message.MainSection.timer_days') }}</div>
         </div>
       </v-flex>
       <v-flex tag='li' sm1>
         <div class="timer-item">
           <div class="timer-time">{{ hour }}</div>
-          <div class="timer-label">HOURS</div>
+          <div class="timer-label">{{ $t('message.MainSection.timer_hours') }}</div>
         </div>
       </v-flex>
       <v-flex tag='li' sm1>
         <div class="timer-item">
           <div class="timer-time">{{ minute }}</div>
-          <div class="timer-label">MINUTES</div>
+          <div class="timer-label">{{ $t('message.MainSection.timer_minutes') }}</div>
         </div>
       </v-flex>
       <v-flex tag='li' sm1>
         <div class="timer-item">
           <div class="timer-time">{{ second }}</div>
-          <div class="timer-label">SECONDS</div>
+          <div class="timer-label">{{ $t('message.MainSection.timer_seconds') }}</div>
         </div>
       </v-flex>
     </v-layout>

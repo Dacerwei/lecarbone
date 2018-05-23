@@ -1,7 +1,7 @@
 <template>
 <div class="ourvision-wrapper" :style="{'background-image': 'url(' + background + ')' }">
   <v-container tag="div" class="ourvision-container">
-    <h1 class="ourvision-title">Our Vision</h1>
+    <h1 class="ourvision-title">{{ $t('message.VideoSection.title') }}</h1>
     <v-layout row wrap>
       <v-flex sm12 md6 class="ourvision-content">
         <div class="video-container">
@@ -16,30 +16,11 @@
         </div>
       </v-flex>
       <v-flex sm12 md6 class="ourvision-content">
-        <p>
-          This project plan on cooperating with the Food and Agriculture
-          Organization of the United Nation in the near future, planting
-          potatoes for charity use.
-        </p>
+        <p>{{ $t('message.VideoSection.content_1') }}</p>
         <br/>
-        <p>
-          Furthermore, we have been actively speaking
-          with KPMG’s Sustainability Consulting Co.
-          on having KPMG manage the revenues generated
-          from economical crops to provide maximum
-          assurance for LeCarbone investors. We have also
-          been speaking with the Sierra Leone Government
-          Ministry of Mineral Resources on the possibility
-          of providing KPC (Kimberley Process Certified)
-          diamonds available as a way of spending your LeCarbone token.
-        </p>
+        <p>{{ $t('message.VideoSection.content_2') }}</p>
         <br/>
-        <p>
-          The goal of AAD is to preserve and develop up to 3 million hectares of
-          forests within 5 years in developing countries (including Indonesia).
-          Estimated to bring a positive impact to 100,000 villagers living in
-          rural parts their country, offsetting 1 billion tons of carbon emission within 50 years.
-        </p>
+        <p>{{ $t('message.VideoSection.content_3') }}</p>
       </v-flex>
     </v-layout>
   </v-container>

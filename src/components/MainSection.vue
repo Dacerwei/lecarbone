@@ -1,10 +1,7 @@
 <template>
   <div class="main-section" :style="containerStyle">
     <v-container>
-      <h1 class="main-text">
-        A cryptocurrency issued base on the vision of creating awareness
-        for the need of carbon offsets and corporate social responsibilities(CSR)
-      </h1>
+      <h1 class="main-text">{{ $t('message.MainSection.main_text') }}</h1>
       <count-down-timer :end-date="endDate"></count-down-timer>
       <prgress-bar :total="total" :current-value="progress"></prgress-bar>
       <v-layout row wrap>
@@ -12,7 +9,7 @@
           <v-btn outline color="green">Contribute Now</v-btn>
         </v-flex>
         <v-flex xs12 md4 tag="div">
-          <p class="download-text">White Paper Download</p>
+          <p class="download-text">{{ $t('message.MainSection.download_white_paper') }}</p>
           <div class="btn-area">
               <span><v-btn outline color="white">ENGLISH</v-btn></span>
               <span><v-btn outline color="white">中文</v-btn></span>

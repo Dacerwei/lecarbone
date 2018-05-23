@@ -1,32 +1,12 @@
 <template>
   <v-container>
       <div>
-        <h1>Our Team</h1>
+        <h1 class="section-title">{{ $t('message.OurTeamSection.title') }}</h1>
       </div>
       <div>
-        <p>
-          Back in March of 2017, Mr. Yung-Wen Chi, the CEO of AAD was invited
-          by Pelestarian Alam Nusantara Foundation to be its First Vice Chairman.
-          In May of 2017, Pelestarian Alam Nusantara Foundation signed a contract
-          with the Indonesian Chamber of Commerce and Industry (ICCI) (Kadin Indonesia),
-          to aid the Indonesian government in a 10 years program for forest protection
-          and poverty alleviation, preserving natural forests and assisting villagers
-          in rural areas by creating job opportunities and enhancing their living conditions.
-        </p>
-        <p>
-          In August, 2017, Mr. Chi signed a contract for the ownership right of 50 years for 25,000
-          hectare of forest land owned by 5 villages (located in Inamosol Town,
-          Seram Bagian Barat County, Maluku Province) with the chief of the 5 villages.
-        </p>
-        <p>
-          The forest was originally planned for deforestation but will now be preserved and
-          AAD will use it to apply for carbon credit certification. Furthermore,
-          AAD will introduce methods of biotechnology farming to the forest protection program,
-          employing local villagers to plant agilawood, coffee beans and other economical crops,
-          which will create both job opportunities for the villagers and a sustainable
-          cycle of agricultural yield that could bring both economical and environmental
-          benefits to the locals.
-        </p>
+        <p class="header-content">{{ $t('message.OurTeamSection.header_content_1') }}</p>
+        <p class="header-content">{{ $t('message.OurTeamSection.header_content_2') }}</p>
+        <p class="header-content">{{ $t('message.OurTeamSection.header_content_3') }}</p>
       </div>
       <v-layout row>
         <v-flex xs12 sm6>
@@ -185,6 +165,16 @@ export default {
 </script>
 
 <style scoped>
+.section-title {
+  text-align: center;
+  font-size: 24pt;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.header-content {
+  text-align: center;
+  font-size: 10pt;
+}
 .member-description {
   text-align: left;
 };

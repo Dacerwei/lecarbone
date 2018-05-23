@@ -6,14 +6,10 @@
         <v-card height="400px">
           <v-card-media :src="content.icon"></v-card-media>
           <v-card-title>
-            <h3>
-              {{ $t(`message.WhyLecarboneSection.${content.title}`) }}
-            </h3>
+            <h3>{{ $t(`message.WhyLecarboneSection.${content.title}`) }}</h3>
             </v-card-title>
           <v-card-text>
-            <p>
-              {{ $t(`message.WhyLecarboneSection.${content.description}`)}}
-            </p>
+            <p>{{ $t(`message.WhyLecarboneSection.${content.description}`)}}</p>
           </v-card-text>
         </v-card>
       </v-flex>
