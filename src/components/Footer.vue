@@ -10,7 +10,7 @@
               Asia Assets Developments Co., Ltd.(AAD) is a corporate that dedicates
                itself to establishing green economies and developing assets.
                From our belief in making Earth a better place for our future generations,
-               LeCarbone was born.
+               LeCarbone was born. I'm tc
             </p>
         </v-flex>
         <v-flex xs4>
