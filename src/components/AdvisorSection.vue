@@ -5,7 +5,7 @@
         <h1>Advisor</h1>
       </v-flex>
       <v-flex xs12 sm8 v-for="advisor in advisorList" :key="advisor.id">
-        <v-card height="400">
+        <v-card height="400" flat tile>
           <v-container>
             <v-layout row>
               <v-flex xs3>

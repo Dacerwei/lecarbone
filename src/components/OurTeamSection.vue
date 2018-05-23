@@ -30,7 +30,7 @@
       </div>
       <v-layout row>
         <v-flex xs12 sm6>
-          <v-card height="400" flat>
+          <v-card height="400" flat tile>
             <v-container>
               <v-layout row>
                 <v-flex xs3>
@@ -56,7 +56,7 @@
       </v-layout>
       <v-layout row wrap>
         <v-flex xs12 sm6 v-for="member in teamList" :key="member.id">
-          <v-card height="400">
+          <v-card height="400" flat tile>
             <v-container>
               <v-layout row>
                 <v-flex xs3>
