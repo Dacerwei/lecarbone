@@ -64,7 +64,7 @@ export default {
   height: 30px;
 }
 .logo-container {
-  width: 200px;
+  width: 120px;
 }
 </style>
 
