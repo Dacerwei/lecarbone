@@ -29,11 +29,13 @@
         </v-list-tile>
       </v-list>
     </v-menu>
-    <v-btn icon large><i class="fab fa-facebook-square"></i></v-btn>
-    <v-btn icon large><i class="fab fa-telegram-plane"></i></v-btn>
-    <v-btn icon large><i class="fab fa-twitter"></i></v-btn>
-    <v-btn icon large><i class="fab fa-medium-m"></i></v-btn>
-    <v-btn flat>{{ $t('message.NavBar.contribute') }}</v-btn>
+    <div class="navBtnR">
+      <v-btn icon large><i class="fab fa-telegram-plane"></i></v-btn>
+      <v-btn icon large><i class="fab fa-facebook-square"></i></v-btn>
+      <v-btn icon large><i class="fab fa-twitter"></i></v-btn>
+      <v-btn icon large><i class="fab fa-medium-m"></i></v-btn>
+      <v-btn >{{ $t('message.NavBar.contribute') }}</v-btn>
+    </div>
   </v-toolbar>
 </template>
 <script>
@@ -65,6 +67,14 @@ export default {
 }
 .logo-container {
   width: 120px;
+  height: 30px;
+}
+.navBtnR{
+  position: absolute;
+  right:0;
+}
+.navBtnR icon{
+  margin:0;
 }
 </style>
 
