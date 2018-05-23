@@ -1,5 +1,5 @@
 <template>
-  <v-flex tag="div" xs12 sm6 md4>
+  <v-flex tag="div" class="timer-wrapper" xs12 sm6 md4>
     <div class="timer-title">Main Sale Started!</div>
     <div class="timer-text">till {{ dueDate.format('MMMM Do, h:mm a') }} PDT</div>
     <v-layout row wrap justify-space-between >
@@ -95,12 +95,11 @@ export default {
 </script>
 <style scoped>
 .timer-wrapper {
-  width: 50%;
-  margin-left: 0;
-  min-width: 300px;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 .timer-title {
-  font-size: 200%;
+  font-size: 250%;
   text-align: left;
   color: yellow;
 }
@@ -111,15 +110,16 @@ export default {
   text-align: center;
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
-  width: 60px;
+  width: 80px;
   border-radius: 10px;
+  padding: 5px
 }
 .timer-time {
-  font-size: 150%;
+  font-size: 200%;
   padding: 2px;
 }
 .timer-label {
-  font-size: 50%;
+  font-size: 70%;
   color: grey;
   font-weight: bold;
 }

@@ -7,15 +7,17 @@
       </h1>
       <count-down-timer :end-date="endDate"></count-down-timer>
       <prgress-bar :total="total" :current-value="progress"></prgress-bar>
-      <v-layout row>
-        <v-btn outline color="green">Contribute Now</v-btn>
-        <div>
-          <p>White Paper Download</p>
-          <v-layout row>
-            <v-btn outline color="white">ENGLISH</v-btn>
-            <v-btn outline color="white">中文</v-btn>
-          </v-layout>
-        </div>
+      <v-layout row wrap>
+        <v-flex xs12  md2>
+          <v-btn outline color="green">Contribute Now</v-btn>
+        </v-flex>
+        <v-flex xs12 md4 tag="div">
+          <p class="download-text">White Paper Download</p>
+          <div class="btn-area">
+              <span><v-btn outline color="white">ENGLISH</v-btn></span>
+              <span><v-btn outline color="white">中文</v-btn></span>
+          </div>
+        </v-flex>
       </v-layout>
     </v-container>
   </div>
@@ -54,6 +56,14 @@ export default {
   color: white;
   text-align: left;
   font-weight: bold;
+}
+.download-text {
+  text-align: center;
+  color: white;
+  margin: 0;
+}
+.btn-area {
+  text-align: center;
 }
 </style>
 
