@@ -3,14 +3,16 @@
     <h1>Our Vision</h1>
     <v-layout row wrap>
       <v-flex xs12 sm6>
-        <iframe
-          width="560"
-          height="315"
-          :src="videoSrc"
-          frameborder="0"
-          allow="autoplay; encrypted-media"
-          allowfullscreen>
-        </iframe>
+        <div class="video-container">
+          <iframe
+            width="560"
+            height="315"
+            :src="videoSrc"
+            frameborder="0"
+            allow="autoplay; encrypted-media"
+            allowfullscreen>
+          </iframe>
+        </div>
       </v-flex>
       <v-flex xs12 sm6>
         <p>{{ description }}</p>
@@ -30,4 +32,24 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+
+/* RWD for ifame  */
+.video-container {
+  position:relative;
+  padding-bottom:56.25%;
+  padding-top:30px;height:0;overflow:hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+}
+</style>
 
