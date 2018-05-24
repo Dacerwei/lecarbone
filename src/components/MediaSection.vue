@@ -2,12 +2,12 @@
 <div>
   <v-layout row wrap align-content-center justify-space-between class="social-media-wrapper">
     <v-flex xs6 sm2 v-for="media in socialMediaList" :key="media.id">
-      <img class="media-item"
+      <img class="social-item"
         :src="media.src"
         alt=""/>
     </v-flex>
   </v-layout>
-  <v-container>
+  <v-container class="media">
     <v-layout row wrap justify-space-between>
       <v-flex xs4 sm3 v-for=" media in mediaList" :key="media.id">
         <div :style="formatStyle(media)"></div>
@@ -132,7 +132,7 @@ export default {
   methods: {
     formatStyle(obj) {
       return {
-        height: '50px',
+        height: '30px',
         margin: '10%',
         backgroundImage: `url(${obj.src})`,
         backgroundPosition: 'center',
@@ -147,13 +147,16 @@ export default {
 .social-media-wrapper {
   background-color: white;
   width: 100%;
-  padding-top: 20px;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 23%;
+  padding-right: 23%;
 }
-.media-item {
+.social-item {
   width: 100%;
-  margin: 5%;
+}
+.media{
+  padding: 50px 0;
 }
 </style>
 

@@ -1,40 +1,38 @@
 <template>
-  <v-toolbar app>
-    <div class="logo-container">
-      <img :src="logo" />
-    </div>
-    <v-btn flat>{{ $t('message.NavBar.about') }}</v-btn>
-    <v-btn flat>{{ $t('message.NavBar.roadMap') }}</v-btn>
-    <v-btn flat>{{ $t('message.NavBar.tokenDetail') }}</v-btn>
-    <v-btn flat>{{ $t('message.NavBar.team') }}</v-btn>
-    <v-btn flat>{{ $t('message.NavBar.contact') }}</v-btn>
-    <v-menu offset-y>
-      <v-btn flat color="primary" dark slot="activator">{{ $t('message.NavBar.language') }}</v-btn>
-      <v-list>
-        <v-list-tile @click="changeLanguage('en')">
-          <v-list-tile-action>
-            <img class="flag" :src="UK"/>
-          </v-list-tile-action>
-              <v-list-tile-content>
-                <v-list-tile-title>English</v-list-tile-title>
-              </v-list-tile-content>
-        </v-list-tile>
-        <v-list-tile @click="changeLanguage('zh')">
-          <v-list-tile-action>
-            <img class="flag" :src="TW"/>
-          </v-list-tile-action>
-              <v-list-tile-content>
-                <v-list-tile-title>中文</v-list-tile-title>
-              </v-list-tile-content>
-        </v-list-tile>
-      </v-list>
-    </v-menu>
-    <div class="nav-btn-r">
-      <v-btn icon large><i class="fab fa-telegram-plane"></i></v-btn>
-      <v-btn icon large><i class="fab fa-facebook-square"></i></v-btn>
-      <v-btn icon large><i class="fab fa-twitter"></i></v-btn>
-      <v-btn icon large><i class="fab fa-medium-m"></i></v-btn>
-      <v-btn >{{ $t('message.NavBar.contribute') }}</v-btn>
+  <v-toolbar height="70px">
+    <img class="logo" :src="logo" />
+    <a class="nav-btn">{{ $t('message.NavBar.about') }}</a>
+    <a class="nav-btn">{{ $t('message.NavBar.roadMap') }}</a>
+    <a class="nav-btn">{{ $t('message.NavBar.tokenDetail') }}</a>
+    <a class="nav-btn">{{ $t('message.NavBar.team') }}</a>
+    <a class="nav-btn">{{ $t('message.NavBar.contact') }}</a>
+    <div class="nav-r">
+      <v-menu offset-y>
+        <v-btn flat color="primary" dark slot="activator">{{ $t('message.NavBar.language') }}</v-btn>
+        <v-list>
+          <v-list-tile @click="changeLanguage('en')">
+            <v-list-tile-action>
+              <img class="flag" :src="UK"/>
+            </v-list-tile-action>
+                <v-list-tile-content>
+                  <v-list-tile-title>English</v-list-tile-title>
+                </v-list-tile-content>
+          </v-list-tile>
+          <v-list-tile @click="changeLanguage('zh')">
+            <v-list-tile-action>
+              <img class="flag" :src="TW"/>
+            </v-list-tile-action>
+                <v-list-tile-content>
+                  <v-list-tile-title>中文</v-list-tile-title>
+                </v-list-tile-content>
+            </v-list-tile>
+        </v-list>
+      </v-menu>
+      <v-btn icon small><i class="fab fa-telegram-plane"></i></v-btn>
+      <v-btn icon small><i class="fab fa-facebook-square"></i></v-btn>
+      <v-btn icon small><i class="fab fa-twitter"></i></v-btn>
+      <v-btn icon small><i class="fab fa-medium-m"></i></v-btn>
+      <a class="contribute">{{ $t('message.NavBar.contribute') }}</a>
     </div>
   </v-toolbar>
 </template>
@@ -61,20 +59,30 @@ export default {
 </script>
 
 <style scoped>
+.logo {
+  width: 120px;
+  height: 30px;
+  margin-right: 1%;
+}
 .flag {
   width: 30px;
   height: 30px;
 }
-.logo-container {
-  width: 120px;
-  height: 30px;
+.nav-btn {
+  margin: 1.5%;
+  display: block;
+  color: black;
 }
-.nav-btn-r {
+.contribute {
+  background: #69F193;
+  color: #fff;
+  border-radius: 4px;
+  text-align: center;
+  padding: 5px 30px;
+}
+.nav-r {
   position: absolute;
   right: 0;
-}
-.nav-btn-r icon {
-  margin: 0;
 }
 </style>
 
