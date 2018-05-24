@@ -8,7 +8,7 @@
     <a class="nav-btn">{{ $t('message.NavBar.contact') }}</a>
     <div class="nav-r">
       <v-menu offset-y>
-        <v-btn flat color="primary" dark slot="activator">{{ $t('message.NavBar.language') }}</v-btn>
+        <v-btn flat color="black" dark slot="activator">{{ $t('message.NavBar.language') }}</v-btn>
         <v-list>
           <v-list-tile @click="changeLanguage('en')">
             <v-list-tile-action>
