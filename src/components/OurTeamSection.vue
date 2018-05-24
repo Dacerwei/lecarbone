@@ -63,9 +63,9 @@
   </v-container>
 </template>
 <script>
-import CEO from '@/assets/team/CEO.jpg';
-import COO from '@/assets/team/COO.jpg';
-import CTO from '@/assets/team/CTO.jpg';
+import CEO from '@/assets/team/CEO.png';
+import COO from '@/assets/team/COO.png';
+import CTO from '@/assets/team/CTO.png';
 import GM from '@/assets/team/GM.png';
 import VGM from '@/assets/team/VGM.png';
 import _ from 'lodash';
