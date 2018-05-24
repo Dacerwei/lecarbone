@@ -29,7 +29,7 @@
         </v-list-tile>
       </v-list>
     </v-menu>
-    <div class="navBtnR">
+    <div class="nav-btn-r">
       <v-btn icon large><i class="fab fa-telegram-plane"></i></v-btn>
       <v-btn icon large><i class="fab fa-facebook-square"></i></v-btn>
       <v-btn icon large><i class="fab fa-twitter"></i></v-btn>
@@ -69,12 +69,12 @@ export default {
   width: 120px;
   height: 30px;
 }
-.navBtnR{
+.nav-btn-r {
   position: absolute;
-  right:0;
+  right: 0;
 }
-.navBtnR icon{
-  margin:0;
+.nav-btn-r icon {
+  margin: 0;
 }
 </style>
 
