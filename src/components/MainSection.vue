@@ -49,15 +49,20 @@ export default {
 </script>
 
 <style scoped>
+.main-section {
+  padding: 50px 0;
+}
 .main-text {
   color: white;
   text-align: left;
   font-weight: bold;
+  line-height: 1.2em;
 }
 .download-text {
   text-align: center;
   color: white;
   margin: 0;
+  font-weight: bold;
 }
 .btn-area {
   text-align: center;

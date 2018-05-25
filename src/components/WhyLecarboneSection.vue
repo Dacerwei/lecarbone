@@ -51,26 +51,29 @@ export default {
 .why-container {
   width: 100%;
   background-color: white;
+  padding-bottom: 10px 0;
 }
 .why-wrapper {
   background-color: white;
 }
 .why-title {
+  font-size: 36px;
   text-align: center;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 40px;
+  color: #F1CF69;
 }
 .why-item {
-  padding: 20px;
+  padding: 15px;
 }
 .item-title {
   text-align: center;
-  color: green;
-  margin-top: 50px;
+  color: #4A8B71;
+  height: 45px;
+  margin-top: 30px;
   margin-bottom: 10px;
 }
 .item-icon {
-  height: 80px;
+  height: 100px;
   background-position: center;
   background-size: contain;
   margin-top: 25px;

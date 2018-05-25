@@ -44,33 +44,34 @@ export default {
 <style scoped>
 .ourvision-wrapper {
   background-color: black;
-  padding: 2%;
+  padding: 4%;
   background-position: center;
   background-size: cover;
 }
 
 .ourvision-container {
   background-color: white;
-  padding: 5%;
-  border-radius: 80px;
+  padding: 3%;
+  border-radius: 40px;
 }
 
 .ourvision-title {
   text-align: center;
-  margin-bottom: 50px;
-  color: green;
+  margin-bottom: 10px;
+  color: #4A8B71;
+  font-size: 36px;
   font-weight: bolder;
 }
 
 .ourvision-content {
-  padding: 10px;
+  padding: 20px;
 }
 
 /* RWD for ifame  */
 .video-container {
   position:relative;
-  padding-bottom:56.25%;
-  padding-top:30px;height:0;overflow:hidden;
+  padding-bottom:54%;
+  height:0;overflow:hidden;
 }
 
 .video-container iframe,
