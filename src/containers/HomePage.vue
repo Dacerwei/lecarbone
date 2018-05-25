@@ -5,8 +5,8 @@
   <media-section></media-section>
   <Video-section></Video-section>
   <why-lecarbone-section></why-lecarbone-section>
-  <road-map-section></road-map-section>
   <how-it-works-section></how-it-works-section>
+  <road-map-section></road-map-section>
   <token-detail-section></token-detail-section>
   <use-of-found-section></use-of-found-section>
   <our-team-section></our-team-section>

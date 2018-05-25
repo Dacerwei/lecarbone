@@ -104,10 +104,10 @@ export default {
 .timer-title {
   font-size: 250%;
   text-align: left;
-  color: yellow;
+  color: #F1CF69;
 }
 .timer-text {
-  color: yellow;
+  color: #F1CF69;
 }
 .timer-item {
   text-align: center;
