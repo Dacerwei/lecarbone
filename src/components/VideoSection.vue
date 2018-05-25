@@ -24,17 +24,48 @@
       </v-flex>
     </v-layout>
   </v-container>
+  <v-layout row wrap justify-space-around class="rank-wrapper">
+    <v-flex xs5 sm5 md3 v-for="rank in ranks" :key="rank.id">
+      <div class="rank-container">
+        <img :src="rank.src" />
+      </div>
+    </v-flex>
+  </v-layout>
 </div>
 </template>
 
 <script>
 import background from '@/assets/footer_background.jpg';
+import bazar from '@/assets/rank/icobazar.png';
+import bench from '@/assets/rank/icobench.png';
+import ranker from '@/assets/rank/icoranker.png';
+import rating from '@/assets/rank/icorating.png';
+
+const ranks = [
+  {
+    id: 0,
+    src: bazar,
+  },
+  {
+    id: 1,
+    src: bench,
+  },
+  {
+    id: 2,
+    src: ranker,
+  },
+  {
+    id: 3,
+    src: rating,
+  },
+];
 
 export default {
   name: 'VideoSection',
   data() {
     return {
       background,
+      ranks,
       videoSrc: 'https://www.youtube.com/embed/ZIY5tuU7RWg',
     };
   },
@@ -65,6 +96,15 @@ export default {
 
 .ourvision-content {
   padding: 20px;
+}
+
+.rank-wrapper {
+  margin-top: 2%;
+}
+
+.rank-container {
+  padding: 2%;
+  margin: 10px;
 }
 
 /* RWD for ifame  */
