@@ -122,6 +122,7 @@ $color_yellow: #F1CF69
     border: 1px solid $color_yellow
     background-color: $color_yellow
     margin-bottom: 40px
+    margin: 0 auto
   .uppermap
     font-size: 0px
     padding-left: 4%

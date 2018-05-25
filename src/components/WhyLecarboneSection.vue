@@ -2,6 +2,7 @@
 <div class="why-container">
   <v-container tag="div" class="why-wrapper">
     <h1 class="why-title">{{ $t('message.WhyLecarboneSection.title') }}</h1>
+    <hr class="title-divider" />
     <v-layout row wrap>
       <v-flex xs12 sm4 v-for="content in contentList" :key="content.title">
         <div class="why-item">
@@ -61,6 +62,14 @@ export default {
   text-align: center;
   margin-top: 40px;
   color: #F1CF69;
+  margin-bottom: 10px;
+}
+.title-divider {
+  margin: 0 auto;
+  width: 40px;
+  border: 1px solid #F1CF69;
+  color: #F1CF69;
+  margin-bottom: 20px
 }
 .why-item {
   padding: 15px;
