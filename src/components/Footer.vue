@@ -1,5 +1,5 @@
 <template>
-  <div :style="{'background-image': 'url(' + footer + ')' }">
+  <div :style="{'background-image': 'url(' + footer + ')' }" id="footer">
     <v-content>
       <v-layout row>
         <v-flex xs4>

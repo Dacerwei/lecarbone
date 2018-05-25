@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container id="team">
       <div>
         <h1 class="section-title">{{ $t('message.OurTeamSection.title') }}</h1>
         <hr class="title-divider" />

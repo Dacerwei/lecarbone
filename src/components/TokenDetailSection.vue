@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container id="token-detail">
     <h1>Token Details</h1>
     <v-layout row wrap>
         <v-flex xs12 sm6>

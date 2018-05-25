@@ -1,5 +1,5 @@
 <template>
-    <section id="show_roadmap">
+    <section id="roadmap">
       <h1>Roadmap</h1>
       <hr class="title" />
       <div class="roadmap">
@@ -110,7 +110,7 @@ $color_yellow: #F1CF69
   position: relative
   // font-family:
 
-#show_roadmap
+#roadmap
   padding: 40px 0;
   h1
     text-align: center

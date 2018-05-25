@@ -1,5 +1,7 @@
 <template>
-<div class="ourvision-wrapper" :style="{'background-image': 'url(' + background + ')' }">
+<div id="our-vision"
+  class="ourvision-wrapper"
+  :style="{'background-image': 'url(' + background + ')' }">
   <v-container tag="div" class="ourvision-container">
     <h1 class="ourvision-title">{{ $t('message.VideoSection.title') }}</h1>
     <v-layout row wrap>

@@ -1,11 +1,11 @@
 <template>
   <v-toolbar height="70px">
     <img class="logo" :src="logo" />
-    <a class="nav-btn">{{ $t('message.NavBar.about') }}</a>
-    <a class="nav-btn">{{ $t('message.NavBar.roadMap') }}</a>
-    <a class="nav-btn">{{ $t('message.NavBar.tokenDetail') }}</a>
-    <a class="nav-btn">{{ $t('message.NavBar.team') }}</a>
-    <a class="nav-btn">{{ $t('message.NavBar.contact') }}</a>
+    <a class="nav-btn" v-scroll-to="'#our-vision'">{{ $t('message.NavBar.about') }}</a>
+    <a class="nav-btn" v-scroll-to="'#roadmap'">{{ $t('message.NavBar.roadMap') }}</a>
+    <a class="nav-btn" v-scroll-to="'#token-detail'">{{ $t('message.NavBar.tokenDetail') }}</a>
+    <a class="nav-btn" v-scroll-to="'#team'">{{ $t('message.NavBar.team') }}</a>
+    <a class="nav-btn" v-scroll-to="'#footer'">{{ $t('message.NavBar.contact') }}</a>
     <div class="nav-r">
       <v-menu offset-y>
         <v-btn flat color="black" dark slot="activator">{{ $t('message.NavBar.language') }}</v-btn>
