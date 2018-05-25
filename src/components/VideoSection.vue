@@ -35,7 +35,7 @@
 </template>
 
 <script>
-import background from '@/assets/footer_background.jpg';
+import background from '@/assets/background/footer.jpg';
 import bazar from '@/assets/rank/icobazar.png';
 import bench from '@/assets/rank/icobench.png';
 import ranker from '@/assets/rank/icoranker.png';

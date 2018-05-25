@@ -1,5 +1,5 @@
 <template>
-  <div :style="{'background-image': 'url(' + background + ')' }">
+  <div :style="{'background-image': 'url(' + footer + ')' }">
     <v-content>
       <v-layout row>
         <v-flex xs4>
@@ -34,14 +34,14 @@
 </template>
 <script>
 import footerLogo from '@/assets/footer_aad.png';
-import background from '@/assets/footer_background.jpg';
+import footer from '@/assets/background/footer.jpg';
 
 export default {
   name: 'Footer',
   data() {
     return {
       logo: footerLogo,
-      background,
+      footer,
     };
   },
 };

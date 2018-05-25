@@ -23,7 +23,7 @@
 <script>
 import CountDownTimer from '@/components/CountDownTimer';
 import PrgressBar from '@/components/ProgressBar';
-import MainSectionBackground from '@/assets/main_section_background.jpg';
+import MainSectionBackground from '@/assets/background/main_section.jpg';
 
 export default {
   name: 'MainSection',
