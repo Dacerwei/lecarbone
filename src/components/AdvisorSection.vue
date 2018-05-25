@@ -32,7 +32,7 @@
 </template>
 
 <script>
-import ADV from '@/assets/team/ADV.jpg';
+import ADV from '@/assets/team/ADV.png';
 
 const advisorList = [
   {

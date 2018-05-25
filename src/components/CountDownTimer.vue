@@ -5,7 +5,7 @@
       {{ $t('message.MainSection.timer_till') }}
       {{ dueDate.format('MMMM Do, h:mm a') }} PDT
     </div>
-    <v-layout row wrap justify-space-between >
+    <v-layout row wrap justify-space-between class="timer-display-area" >
       <v-flex tag='li' sm1>
         <div class="timer-item">
           <div class="timer-time">{{ month }}</div>
@@ -97,6 +97,14 @@ export default {
 };
 </script>
 <style scoped>
+.timer-display-area {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+li {
+  list-style: none;
+}
+
 .timer-wrapper {
   margin-top: 2%;
   margin-bottom: 2%;
@@ -104,10 +112,10 @@ export default {
 .timer-title {
   font-size: 250%;
   text-align: left;
-  color: yellow;
+  color: #F1CF69;
 }
 .timer-text {
-  color: yellow;
+  color: #F1CF69;
 }
 .timer-item {
   text-align: center;

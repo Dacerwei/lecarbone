@@ -1,6 +1,5 @@
 <template>
-  <v-container>
-    <section id="show_roadmap">
+    <section id="roadmap">
       <h1>Roadmap</h1>
       <hr class="title" />
       <div class="roadmap">
@@ -96,7 +95,6 @@
         </div>
       </div>
     </section>
-  </v-container>
 </template>
 
 <script>
@@ -106,23 +104,25 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-$color_yellow: #FFCE59
+$color_yellow: #F1CF69
 *
   // border: solid 1px
   position: relative
   // font-family:
 
-#show_roadmap
+#roadmap
+  padding: 40px 0;
   h1
     text-align: center
     margin-bottom: 15px
-    font-size: 35px
+    font-size: 36px
     color: $color_yellow
   hr.title
     width: 40px
     border: 1px solid $color_yellow
     background-color: $color_yellow
-    margin-bottom: 100px
+    margin-bottom: 40px
+    margin: 0 auto
   .uppermap
     font-size: 0px
     padding-left: 4%
@@ -134,7 +134,7 @@ $color_yellow: #FFCE59
       .utitle
         margin-bottom: 15px
         padding: 0px 6%
-        font-weight: 1000
+        font-weight: 900
       .upoint
         width: 15px
         height: 15px
@@ -149,6 +149,7 @@ $color_yellow: #FFCE59
         width: 70%
         border-left: solid 1px $color_yellow
         padding: 0px 15px
+        font-size: 12px
       .u1
         height: 250px
       .u2
@@ -181,6 +182,7 @@ $color_yellow: #FFCE59
         height: 150px
         border-left: solid 0.1px $color_yellow
         padding: 0px 15px
+        font-size: 12px
         p
           position: absolute
           bottom: 0px

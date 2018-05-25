@@ -1,6 +1,8 @@
 <template>
-  <v-container>
-    <h1>Use Of Found</h1>
+<div class="use-of-found-wrapper" :style="{'background-image': 'url(' + background + ')' }">
+  <v-container class="use-of-found-container">
+    <h1 class="use-title">{{ $t('message.UseOfFoundSection.title') }}</h1>
+    <hr class="title-divider" />
     <pie-chart
       :data="chartData"
       :options="{
@@ -9,11 +11,13 @@
       }">
     </pie-chart>
   </v-container>
+</div>
 </template>
 
 <script>
 import PieChart from '@/components/PieChart';
 import _ from 'lodash';
+import background from '@/assets/background/use_of_fund.png';
 
 const useOfFoundData = [
   {
@@ -79,8 +83,33 @@ export default {
   data() {
     return {
       chartData,
+      background,
     };
   },
 };
 </script>
+
+<style scoped>
+.use-title {
+  color: #F1CF69;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.title-divider {
+  margin: 0 auto;
+  width: 40px;
+  border: 1px solid #F1CF69;
+  color: #F1CF69;
+  margin-bottom: 40px
+}
+
+.use-of-found-wrapper {
+  padding: 5%;
+}
+.use-of-found-container {
+  background-color: white;
+  text-align: center;
+  border-radius: 40px;
+}
+</style>
 

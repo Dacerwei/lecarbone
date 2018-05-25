@@ -11,9 +11,7 @@ export default {
 </script>
 
 <style>
-#app {
-  margin-top: 60px;
-}
+
 img {
   width: 100%;
 }

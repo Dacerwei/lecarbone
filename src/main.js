@@ -7,6 +7,7 @@ import { faSpinner } from '@fortawesome/fontawesome-free-solid';
 import Vue from 'vue';
 import Vuetify from 'vuetify';
 import VueI18n from 'vue-i18n';
+import VueScrollTo from 'vue-scrollto';
 import App from './App';
 import router from './router';
 import zh from './i18n/zh';
@@ -14,6 +15,18 @@ import en from './i18n/en';
 
 Vue.use(VueI18n);
 Vue.use(Vuetify);
+Vue.use(VueScrollTo, {
+  container: 'body',
+  duration: 500,
+  easing: 'ease',
+  offset: 0,
+  cancelable: true,
+  onStart: false,
+  onDone: false,
+  onCancel: false,
+  x: false,
+  y: true,
+});
 Vue.config.productionTip = false;
 fontawesome.library.add(brands, faSpinner);
 

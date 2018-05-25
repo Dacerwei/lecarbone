@@ -41,5 +41,8 @@ module.exports = {
       header_content_2: 'In August, 2017, Mr. Chi signed a contract for the ownership right of 50 years for 25,000 hectare of forest land owned by 5 villages (located in Inamosol Town, Seram Bagian Barat County, Maluku Province) with the chief of the 5 villages.',
       header_content_3: 'The forest was originally planned for deforestation but will now be preserved and AAD will use it to apply for carbon credit certification. Furthermore, AAD will introduce methods of biotechnology farming to the forest protection program, employing local villagers to plant agilawood, coffee beans and other economical crops, which will create both job opportunities for the villagers and a sustainable cycle of agricultural yield that could bring both economical and environmental benefits to the locals.',
     },
+    UseOfFoundSection: {
+      title: 'Use Of Found',
+    },
   },
 };

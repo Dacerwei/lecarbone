@@ -1,16 +1,19 @@
 <template>
+<div class="why-container">
   <v-container tag="div" class="why-wrapper">
     <h1 class="why-title">{{ $t('message.WhyLecarboneSection.title') }}</h1>
+    <hr class="title-divider" />
     <v-layout row wrap>
       <v-flex xs12 sm4 v-for="content in contentList" :key="content.title">
-        <div height="600px" class="why-item">
+        <div class="why-item">
           <div class="item-icon" :style="{'background-image': 'url(' + content.icon + ')' }"></div>
           <h3 class="item-title">{{ $t(`message.WhyLecarboneSection.${content.title}`) }}</h3>
-          <p>{{ $t(`message.WhyLecarboneSection.${content.description}`)}}</p>
+          <p class="item-content">{{ $t(`message.WhyLecarboneSection.${content.description}`)}}</p>
         </div>
       </v-flex>
     </v-layout>
   </v-container>
+</div>
 </template>
 
 <script>
@@ -46,19 +49,37 @@ export default {
 </script>
 
 <style scoped>
+.why-container {
+  width: 100%;
+  background-color: white;
+  padding-bottom: 10px 0;
+}
 .why-wrapper {
   background-color: white;
 }
 .why-title {
+  font-size: 36px;
   text-align: center;
+  margin-top: 40px;
+  color: #F1CF69;
+  margin-bottom: 10px;
+}
+.title-divider {
+  margin: 0 auto;
+  width: 40px;
+  border: 1px solid #F1CF69;
+  color: #F1CF69;
+  margin-bottom: 20px
 }
 .why-item {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 15px;
 }
 .item-title {
   text-align: center;
-  color: green;
+  color: #4A8B71;
+  height: 45px;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 .item-icon {
   height: 100px;
@@ -66,5 +87,9 @@ export default {
   background-size: contain;
   margin-top: 25px;
   margin-bottom: 25px;
+}
+.item-content {
+  padding: 5px;
+  text-align: center;
 }
 </style>

@@ -1,7 +1,5 @@
 <template>
-  <v-container>
     <img :src="imgSrc"/>
-  </v-container>
 </template>
 
 <script>

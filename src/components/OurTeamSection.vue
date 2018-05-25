@@ -1,7 +1,8 @@
 <template>
-  <v-container>
+  <v-container id="team">
       <div>
         <h1 class="section-title">{{ $t('message.OurTeamSection.title') }}</h1>
+        <hr class="title-divider" />
       </div>
       <div>
         <p class="header-content">{{ $t('message.OurTeamSection.header_content_1') }}</p>
@@ -63,9 +64,9 @@
   </v-container>
 </template>
 <script>
-import CEO from '@/assets/team/CEO.jpg';
-import COO from '@/assets/team/COO.jpg';
-import CTO from '@/assets/team/CTO.jpg';
+import CEO from '@/assets/team/CEO.png';
+import COO from '@/assets/team/COO.png';
+import CTO from '@/assets/team/CTO.png';
 import GM from '@/assets/team/GM.png';
 import VGM from '@/assets/team/VGM.png';
 import _ from 'lodash';
@@ -167,9 +168,17 @@ export default {
 <style scoped>
 .section-title {
   text-align: center;
-  font-size: 24pt;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  color: #F1CF69;
+  font-size: 30pt;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.title-divider {
+  margin: 0 auto;
+  width: 40px;
+  border: 1px solid #F1CF69;
+  color: #F1CF69;
+  margin-bottom: 20px
 }
 .header-content {
   text-align: center;

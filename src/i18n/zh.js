@@ -41,5 +41,8 @@ module.exports = {
       header_content_2: '在2017年8月，Chi先生與5個村莊的負責人簽署了一份50年的土地所有權合同，其中包括5個村莊的5個村莊(位於Inamosol鎮，Seram Bagian Barat County, Maluku省)。',
       header_content_3: '森林原本計劃砍伐森林，但現在將被保存下來，AAD將利用它申請碳信用認證。”此外,廣告將介紹生物技術農業森林保護計劃的方法,采用當地村民種植沈香,咖啡豆和其他經濟作物,這將創造就業機會的村民和可持續的循環農業產量可以給當地人帶來經濟和環境效益。',
     },
+    UseOfFoundSection: {
+      title: '資金使用',
+    },
   },
 };

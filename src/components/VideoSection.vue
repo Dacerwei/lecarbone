@@ -1,5 +1,7 @@
 <template>
-<div class="ourvision-wrapper" :style="{'background-image': 'url(' + background + ')' }">
+<div id="our-vision"
+  class="ourvision-wrapper"
+  :style="{'background-image': 'url(' + background + ')' }">
   <v-container tag="div" class="ourvision-container">
     <h1 class="ourvision-title">{{ $t('message.VideoSection.title') }}</h1>
     <v-layout row wrap>
@@ -24,17 +26,48 @@
       </v-flex>
     </v-layout>
   </v-container>
+  <v-layout row wrap justify-space-around class="rank-wrapper">
+    <v-flex xs5 sm5 md3 v-for="rank in ranks" :key="rank.id">
+      <div class="rank-container">
+        <img :src="rank.src" />
+      </div>
+    </v-flex>
+  </v-layout>
 </div>
 </template>
 
 <script>
-import background from '@/assets/footer_background.jpg';
+import background from '@/assets/background/footer.jpg';
+import bazar from '@/assets/rank/icobazar.png';
+import bench from '@/assets/rank/icobench.png';
+import ranker from '@/assets/rank/icoranker.png';
+import rating from '@/assets/rank/icorating.png';
+
+const ranks = [
+  {
+    id: 0,
+    src: bazar,
+  },
+  {
+    id: 1,
+    src: bench,
+  },
+  {
+    id: 2,
+    src: ranker,
+  },
+  {
+    id: 3,
+    src: rating,
+  },
+];
 
 export default {
   name: 'VideoSection',
   data() {
     return {
       background,
+      ranks,
       videoSrc: 'https://www.youtube.com/embed/ZIY5tuU7RWg',
     };
   },
@@ -44,33 +77,43 @@ export default {
 <style scoped>
 .ourvision-wrapper {
   background-color: black;
-  padding: 2%;
+  padding: 4%;
   background-position: center;
   background-size: cover;
 }
 
 .ourvision-container {
   background-color: white;
-  padding: 5%;
-  border-radius: 80px;
+  padding: 3%;
+  border-radius: 40px;
 }
 
 .ourvision-title {
   text-align: center;
-  margin-bottom: 50px;
-  color: green;
+  margin-bottom: 10px;
+  color: #4A8B71;
+  font-size: 36px;
   font-weight: bolder;
 }
 
 .ourvision-content {
-  padding: 10px;
+  padding: 20px;
+}
+
+.rank-wrapper {
+  margin-top: 2%;
+}
+
+.rank-container {
+  padding: 2%;
+  margin: 10px;
 }
 
 /* RWD for ifame  */
 .video-container {
   position:relative;
-  padding-bottom:56.25%;
-  padding-top:30px;height:0;overflow:hidden;
+  padding-bottom:54%;
+  height:0;overflow:hidden;
 }
 
 .video-container iframe,
