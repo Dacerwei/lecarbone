@@ -6,11 +6,15 @@
       </v-flex>
       <v-flex xs12 sm8>
         <v-layout row wrap justify-space-between>
-          <v-flex xs12 sm12 md6 class="partner-img-wrapper">
-            <img class="partner" :src="CI"/>
+          <v-flex xs12 sm12 md6>
+            <div class="img-container">
+              <img class="partner" :src="CI"/>
+            </div>
           </v-flex>
-          <v-flex xs12 sm12 md6 class="partner-img-wrapper">
-            <img class="partner" :src="Kadin"/>
+          <v-flex xs12 sm12 md6>
+            <div class="img-container">
+              <img class="partner" :src="Kadin"/>
+            </div>
           </v-flex>
         </v-layout>
       </v-flex>
@@ -35,11 +39,14 @@ export default {
 
 <style scoped>
 .partners-title {
+  text-align: center;
   color: #ECCF78;
 }
-.partner-img-wrapper {
+.img-container {
   height: 80px;
   text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .partner {
   height: 100%;

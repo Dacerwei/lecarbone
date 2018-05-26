@@ -2,18 +2,20 @@
   <v-container>
     <v-layout row wrap>
       <v-flex xs12 sm4>
-        <h1>Advisor</h1>
+        <h1 class="advisor-title">Advisor</h1>
       </v-flex>
       <v-flex xs12 sm8 v-for="advisor in advisorList" :key="advisor.id">
-        <v-card height="400" flat tile>
+        <div class="member-card">
           <v-container>
-            <v-layout row>
-              <v-flex xs3>
+            <v-layout wrap row>
+              <v-flex xs10 sm3>
+                <div class="img-container">
                   <img
                     :src="advisor.avatarPhoto"
                     class="avatar"/>
+                </div>
               </v-flex>
-              <v-flex xs9>
+              <v-flex xs12 sm9>
                 <div>
                   <p>{{ advisor.affiliation }}</p>
                   <h2>{{ advisor.firstName }} {{advisor.LastName}}</h2>
@@ -25,7 +27,7 @@
               <p>{{ advisor.description }}</p>
             </v-container>
           </v-container>
-        </v-card>
+        </div>
       </v-flex>
     </v-layout>
   </v-container>
@@ -57,8 +59,19 @@ export default {
 </script>
 
 <style scoped>
+.advisor-title {
+  color: #5A8973;
+  text-align: center;
+}
 .avatar {
   width: 80%;
+}
+.member-card {
+  min-height: 400px;
+}
+.img-container {
+  padding: 10%;
+  margin: 0 auto;
 }
 </style>
 

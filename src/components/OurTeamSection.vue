@@ -11,19 +11,21 @@
       </div>
       <v-layout row>
         <v-flex xs12 sm6>
-          <v-card height="400" flat tile>
+          <div class="member-card">
             <v-container>
-              <v-layout row>
-                <v-flex xs3>
-                  <img class="avatar"
-                    :src="CEOData.avatarPhoto"/>
+              <v-layout row wrap>
+                <v-flex xs10 sm3>
+                  <div class="img-container">
+                    <img class="avatar"
+                      :src="CEOData.avatarPhoto"/>
+                  </div>
                 </v-flex>
-                <v-flex xs9>
+                <v-flex xs12 sm9>
                   <div>
                     <h2 class="first-name">
                       {{ CEOData.firstName }} {{ CEOData.LastName }} {{ CEOData.degree }}
                     </h2>
-                    <h3 class="title">{{ CEOData.title }}</h3>
+                    <h3 class="member-title">{{ CEOData.title }}</h3>
                     <p class="member-description">{{ CEOData.description }}</p>
                     <ul class="member-experience-list" v-if="CEOData.experienceList">
                       <li v-for="exp in CEOData.experienceList" :key="exp.id">
@@ -34,24 +36,26 @@
                 </v-flex>
               </v-layout>
             </v-container>
-          </v-card>
+          </div>
         </v-flex>
       </v-layout>
       <v-layout row wrap>
         <v-flex xs12 sm6 v-for="member in teamList" :key="member.id">
-          <v-card height="400" flat tile>
+          <div class="member-card">
             <v-container>
-              <v-layout row>
-                <v-flex xs3>
-                  <img class="avatar"
-                    :src="member.avatarPhoto"/>
+              <v-layout row wrap>
+                <v-flex xs10 sm3>
+                  <div class="img-container">
+                    <img class="avatar"
+                      :src="member.avatarPhoto"/>
+                  </div>
                 </v-flex>
-                <v-flex xs9>
+                <v-flex xs12 sm9>
                   <div>
                     <h2 class="first-name">
                       {{ member.firstName }} {{member.LastName}} {{ member.degree }}
                     </h2>
-                    <h3 class="title">{{ member.title }}</h3>
+                    <h3 class="member-title">{{ member.title }}</h3>
                     <p class="member-description">{{ member.description }}</p>
                     <ul class="member-experience-list" v-if="member.experienceList">
                       <li v-for="exp in member.experienceList" :key="exp.id">
@@ -62,7 +66,7 @@
                 </v-flex>
               </v-layout>
             </v-container>
-          </v-card>
+          </div>
         </v-flex>
       </v-layout>
   </v-container>
@@ -192,14 +196,21 @@ export default {
   text-align: center;
   font-size: 10pt;
 }
+.member-card {
+  min-height: 400px;
+}
+.img-container {
+  padding: 10%;
+  margin: 0 auto;
+}
 .member-description {
   text-align: left;
-};
+}
 .first-name {
   font-size: 12px;
   color: #4A8B71;
 }
-.title {
+.member-title {
   font-size: 12px;
 }
 </style>
