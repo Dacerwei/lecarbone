@@ -3,10 +3,10 @@
     <v-content>
       <v-layout row>
         <v-flex xs4>
-            <img :src="logo" style="width: 40%"/>
+            <img class="logo" :src="logo"/>
         </v-flex>
         <v-flex xs4>
-            <p>
+            <p class="footer-info">
               Asia Assets Developments Co., Ltd.(AAD) is a corporate that dedicates
                itself to establishing green economies and developing assets.
                From our belief in making Earth a better place for our future generations,
@@ -20,10 +20,12 @@
           <i class="fab fa-medium-m"></i>
         </v-flex>
       </v-layout>
+    </v-content>
+    <v-content>
       <v-layout row dark>
         <v-flex xs12>
           <v-card dark>
-            <v-card-text>
+            <v-card-text class="copyright">
               &copy; 2018 Asia Asstes Developments Co., Ltd
             </v-card-text>
           </v-card>
@@ -46,3 +48,19 @@ export default {
   },
 };
 </script>
+<style scoped>
+
+#footer{
+  margin-top: 50px;
+  padding-top: 40px;
+}
+
+.logo {
+  width: 100px;
+  margin-left: 50%;
+}
+
+.footer-info {
+  color: white;
+}
+</style>
