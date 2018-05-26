@@ -11,7 +11,9 @@ export default {
 </script>
 
 <style>
-
+#app {
+  background-color: white;
+}
 img {
   width: 100%;
 }

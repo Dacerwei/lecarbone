@@ -111,18 +111,17 @@ $color_yellow: #F1CF69
   // font-family:
 
 #roadmap
-  padding: 40px 0;
+  padding: 30px 0;
   h1
     text-align: center
-    margin-bottom: 15px
-    font-size: 36px
+    margin-bottom: 5px
+    font-size: 32px
     color: $color_yellow
   hr.title
     width: 40px
     border: 1px solid $color_yellow
     background-color: $color_yellow
-    margin-bottom: 40px
-    margin: 0 auto
+    margin: 0 auto 40px auto;
   .uppermap
     font-size: 0px
     padding-left: 4%

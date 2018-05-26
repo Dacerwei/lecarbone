@@ -4,7 +4,7 @@
         <h1 class="section-title">{{ $t('message.OurTeamSection.title') }}</h1>
         <hr class="title-divider" />
       </div>
-      <div>
+      <div class="header-container">
         <p class="header-content">{{ $t('message.OurTeamSection.header_content_1') }}</p>
         <p class="header-content">{{ $t('message.OurTeamSection.header_content_2') }}</p>
         <p class="header-content">{{ $t('message.OurTeamSection.header_content_3') }}</p>
@@ -20,10 +20,12 @@
                 </v-flex>
                 <v-flex xs9>
                   <div>
-                    <h2>{{ CEOData.firstName }} {{ CEOData.LastName }} {{ CEOData.degree }}</h2>
-                    <h3>{{ CEOData.title }}</h3>
+                    <h2 class="first-name">
+                      {{ CEOData.firstName }} {{ CEOData.LastName }} {{ CEOData.degree }}
+                    </h2>
+                    <h3 class="title">{{ CEOData.title }}</h3>
                     <p class="member-description">{{ CEOData.description }}</p>
-                    <ul v-if="CEOData.experienceList">
+                    <ul class="member-experience-list" v-if="CEOData.experienceList">
                       <li v-for="exp in CEOData.experienceList" :key="exp.id">
                         {{ exp.description }}
                       </li>
@@ -46,10 +48,12 @@
                 </v-flex>
                 <v-flex xs9>
                   <div>
-                    <h2>{{ member.firstName }} {{member.LastName}} {{ member.degree }}</h2>
-                    <h3>{{ member.title }}</h3>
-                    <p>{{ member.description }}</p>
-                    <ul v-if="member.experienceList">
+                    <h2 class="first-name">
+                      {{ member.firstName }} {{member.LastName}} {{ member.degree }}
+                    </h2>
+                    <h3 class="title">{{ member.title }}</h3>
+                    <p class="member-description">{{ member.description }}</p>
+                    <ul class="member-experience-list" v-if="member.experienceList">
                       <li v-for="exp in member.experienceList" :key="exp.id">
                         {{ exp.description }}
                       </li>
@@ -166,10 +170,14 @@ export default {
 </script>
 
 <style scoped>
+.header-container {
+  width: 70%;
+  margin: 0 auto 100px auto;
+}
 .section-title {
   text-align: center;
   color: #F1CF69;
-  font-size: 30pt;
+  font-size: 32px;
   margin-top: 20px;
   margin-bottom: 10px;
 }
@@ -178,7 +186,7 @@ export default {
   width: 40px;
   border: 1px solid #F1CF69;
   color: #F1CF69;
-  margin-bottom: 20px
+  margin-bottom: 40px
 }
 .header-content {
   text-align: center;
@@ -187,5 +195,12 @@ export default {
 .member-description {
   text-align: left;
 };
+.first-name {
+  font-size: 12px;
+  color: #4A8B71;
+}
+.title {
+  font-size: 12px;
+}
 </style>
 

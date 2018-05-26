@@ -100,16 +100,18 @@ export default {
   width: 40px;
   border: 1px solid #F1CF69;
   color: #F1CF69;
-  margin-bottom: 40px
+  margin-bottom: 20px;
 }
 
 .use-of-found-wrapper {
-  padding: 5%;
+  padding: 2%;
 }
 .use-of-found-container {
   background-color: white;
   text-align: center;
   border-radius: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 </style>
 
