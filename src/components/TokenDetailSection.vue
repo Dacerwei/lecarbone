@@ -1,12 +1,12 @@
 <template>
   <v-container id="token-detail">
-    <h1>Token Details</h1>
+    <h1 class="detail-title">Token Details</h1>
     <v-layout row wrap>
-        <v-flex xs12 sm6>
+        <v-flex xs12 sm6 class="info-container">
             <h2>Genernal Info</h2>
             <ul class="info-list">
                 <li class="info-item" v-for="item in genernalInfoData" :key="item.fieldName">
-                  <span>{{ item.fieldName }}</span>：<span>{{ item.value }}</span>
+                  <span>{{ item.fieldName }}</span>：<span class="info-value">{{ item.value }}</span>
                 </li>
             </ul>
         </v-flex>
@@ -102,9 +102,20 @@ export default {
 </script>
 
 <style scoped>
+#token-detail {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
 .info-item {
   text-align: left;
   list-style: none;
-};
+}
+.detail-title, .info-value {
+  color: #4A8B71;
+}
+.info-container {
+  padding-left: 80px;
+  padding-top: 20px;
+}
 </style>
 

@@ -58,7 +58,7 @@ export default {
   background-color: white;
 }
 .why-title {
-  font-size: 36px;
+  font-size: 32px;
   text-align: center;
   margin-top: 40px;
   color: #F1CF69;

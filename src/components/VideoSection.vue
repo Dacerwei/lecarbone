@@ -102,11 +102,12 @@ export default {
 
 .rank-wrapper {
   margin-top: 2%;
+  padding: 0 10%;
 }
 
 .rank-container {
-  padding: 2%;
-  margin: 10px;
+  padding: 5%;
+  margin: 1%;
 }
 
 /* RWD for ifame  */
