@@ -170,7 +170,7 @@ export default {
 </script>
 
 <style scoped>
-.header-container{
+.header-container {
   width: 70%;
   margin: 0 auto 100px auto;
 }

@@ -1,12 +1,12 @@
 module.exports = {
   message: {
     NavBar: {
-      about: 'about',
-      roadMap: 'roadmap',
-      tokenDetail: 'token detail',
-      team: 'team',
-      contact: 'contact',
-      language: 'languages',
+      about: 'ABOUT',
+      roadMap: 'ROADMAP',
+      tokenDetail: 'TOKEN DETAIL',
+      team: 'TEAM',
+      contact: 'CONTACT',
+      language: 'LANGUAGES',
       contribute: 'Contribute',
     },
     WhyLecarboneSection: {
