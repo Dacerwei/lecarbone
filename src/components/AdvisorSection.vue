@@ -2,7 +2,7 @@
   <v-container>
     <v-layout row wrap>
       <v-flex xs12 sm4>
-        <h1>Advisor</h1>
+        <h1 class="advisor-title">Advisor</h1>
       </v-flex>
       <v-flex xs12 sm8 v-for="advisor in advisorList" :key="advisor.id">
         <div class="member-card">
@@ -59,6 +59,10 @@ export default {
 </script>
 
 <style scoped>
+.advisor-title {
+  color: #5A8973;
+  text-align: center;
+}
 .avatar {
   width: 80%;
 }

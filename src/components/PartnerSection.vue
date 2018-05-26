@@ -39,6 +39,7 @@ export default {
 
 <style scoped>
 .partners-title {
+  text-align: center;
   color: #ECCF78;
 }
 .img-container {
