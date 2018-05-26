@@ -62,7 +62,6 @@ export default {
 .avatar {
   width: 80%;
 }
-
 .member-card {
   min-height: 400px;
 }
