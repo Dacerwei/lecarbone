@@ -1,5 +1,7 @@
 <template>
+  <v-container class="works-container">
     <img :src="imgSrc"/>
+  </v-container>
 </template>
 
 <script>
@@ -18,5 +20,7 @@ export default {
 img {
   width: 100%;
 }
+.works-container {
+  padding: 5%;
+}
 </style>
-

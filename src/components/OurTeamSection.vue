@@ -20,7 +20,9 @@
                 </v-flex>
                 <v-flex xs9>
                   <div>
-                    <h2 class="first-name">{{ CEOData.firstName }} {{ CEOData.LastName }} {{ CEOData.degree }}</h2>
+                    <h2 class="first-name">
+                      {{ CEOData.firstName }} {{ CEOData.LastName }} {{ CEOData.degree }}
+                    </h2>
                     <h3 class="title">{{ CEOData.title }}</h3>
                     <p class="member-description">{{ CEOData.description }}</p>
                     <ul class="member-experience-list" v-if="CEOData.experienceList">
@@ -46,7 +48,9 @@
                 </v-flex>
                 <v-flex xs9>
                   <div>
-                    <h2 class="first-name">{{ member.firstName }} {{member.LastName}} {{ member.degree }}</h2>
+                    <h2 class="first-name">
+                      {{ member.firstName }} {{member.LastName}} {{ member.degree }}
+                    </h2>
                     <h3 class="title">{{ member.title }}</h3>
                     <p class="member-description">{{ member.description }}</p>
                     <ul class="member-experience-list" v-if="member.experienceList">
