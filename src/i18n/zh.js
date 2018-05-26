@@ -44,5 +44,20 @@ module.exports = {
     UseOfFoundSection: {
       title: '資金使用',
     },
+    TokenDetail: {
+      title: '代幣細節',
+      sub_title: '一般資訊',
+      token_name: '代幣名稱',
+      token_symbol: '代幣符號',
+      platform: '平台',
+      token_standard: '代幣標準',
+      price_per_token: '每單位代幣售價',
+      token_issuing: '代幣發行 (首次時間)',
+      total_token_supply: '代幣供應 (最大值)',
+      unsale_token: '未銷售代幣',
+      decimails_of_precision: '小數點精準度',
+      token_sale: '{percentage} 代幣發售',
+      private_sale: '{percentage} 私人發售',
+    },
   },
 };

@@ -1,12 +1,13 @@
 <template>
   <v-container id="token-detail">
-    <h1 class="detail-title">Token Details</h1>
+    <h1 class="detail-title">{{ $t('message.TokenDetail.title') }}</h1>
     <v-layout row wrap>
         <v-flex xs12 sm6 class="info-container">
-            <h2>Genernal Info</h2>
+            <h2>{{ $t('message.TokenDetail.sub_title') }}</h2>
             <ul class="info-list">
                 <li class="info-item" v-for="item in genernalInfoData" :key="item.fieldName">
-                  <span>{{ item.fieldName }}</span>：<span class="info-value">{{ item.value }}</span>
+                  <span>{{ $t(`message.TokenDetail.${item.fieldName}`) }} ：</span>
+                  <span class="info-value">{{ item.value }}</span>
                 </li>
             </ul>
         </v-flex>
@@ -29,12 +30,12 @@ import _ from 'lodash';
 
 const useOfFoundData = [
   {
-    title: '80% Token Sale',
+    title: 'Token Sale',
     data: 80,
     color: '#5A8973',
   },
   {
-    title: '20% Private Sale',
+    title: 'Private Sale',
     data: 20,
     color: '#ECCF78',
   },
@@ -42,50 +43,42 @@ const useOfFoundData = [
 
 const genernalInfoData = [
   {
-    fieldName: 'Token name',
+    fieldName: 'token_name',
     value: 'LeCarbone Token',
   },
   {
-    fieldName: 'Token symbol',
+    fieldName: 'token_symbol',
     value: 'LCT',
   },
   {
-    fieldName: 'Platform',
+    fieldName: 'platform',
     value: 'Ethereum',
   },
   {
-    fieldName: 'Token standard',
+    fieldName: 'token_standard',
     value: 'ERC 20',
   },
   {
-    fieldName: 'Price Per Token',
+    fieldName: 'price_per_token',
     value: '1LCT:10USD',
   },
   {
-    fieldName: 'Token issuing(first time)',
+    fieldName: 'token_issuing',
     value: '9,000,000 LCT',
   },
   {
-    fieldName: 'Total token supply (max)',
+    fieldName: 'total_token_supply',
     value: 'Depends on the next developing project',
   },
   {
-    fieldName: 'Unsale token',
+    fieldName: 'unsale_token',
     value: 'We will reserve it until we sell it',
   },
   {
-    fieldName: 'Decimails of Precision',
+    fieldName: 'decimails_of_precision',
     value: '3',
   },
 ];
-
-const chartData = {
-  labels: _.map(useOfFoundData, data => data.title),
-  datasets: [{
-    data: _.map(useOfFoundData, data => data.data),
-    backgroundColor: _.map(useOfFoundData, data => data.color),
-  }],
-};
 
 export default {
   name: 'TokenDetailSection',
@@ -94,9 +87,19 @@ export default {
   },
   data() {
     return {
-      chartData,
       genernalInfoData,
     };
+  },
+  computed: {
+    chartData() {
+      return {
+        labels: _.map(useOfFoundData, data => `${data.title}(%)`),
+        datasets: [{
+          data: _.map(useOfFoundData, data => data.data),
+          backgroundColor: _.map(useOfFoundData, data => data.color),
+        }],
+      };
+    },
   },
 };
 </script>

@@ -44,5 +44,20 @@ module.exports = {
     UseOfFoundSection: {
       title: 'Use Of Found',
     },
+    TokenDetail: {
+      title: 'Token Details',
+      sub_title: 'Genernal Info',
+      token_name: 'Token name',
+      token_symbol: 'Token Symbol',
+      platform: 'Platform',
+      token_standard: 'Token Standard',
+      price_per_token: 'Price Per Token',
+      token_issuing: 'Token issuing (first time)',
+      total_token_supply: 'Total Token Supply (max)',
+      unsale_token: 'Unsale token',
+      decimails_of_precision: 'Decimails of Precision',
+      token_sale: '{percentage} Token Sale',
+      private_sale: '{percentage} Private Sale',
+    },
   },
 };
