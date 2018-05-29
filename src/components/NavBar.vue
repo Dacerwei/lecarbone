@@ -2,7 +2,9 @@
   <v-toolbar height="70px">
     <v-layout row align-center>
       <v-flex xs2 sm1>
-        <img class="logo" :src="logo" />
+        <a href="/">
+          <img class="logo" :src="logo" />
+        </a>
       </v-flex>
       <v-flex xs10 class="hidden-md-and-up">
         <div class="mobile-menu-container">
