@@ -1,20 +1,145 @@
 <template>
   <div>
-    <h1>page: {{ page }}</h1>
+    <nav-bar></nav-bar>
+    <v-container>
+      <v-layout row wrap>
+        <v-flex xs12 md6>
+          <h1>Token Sale: week 1</h1>
+          <p>
+            Min.pledge
+            <span>200 LCT (less amounts of tokens will not be delivered to your ETH address)</span>
+          </p>
+          <p>Initial price
+            <span>1 LCT = 10 USD</span>
+          </p>
+          <p>
+            Tokens sold
+            <span>29,387,423 LCT</span>
+          </p>
+          <p>
+            Available
+            <span>320,398 LCT</span>
+          </p>
+        </v-flex>
+        <v-flex xs12 md6>
+          <count-down-timer :end-date="'20180628 1200'"></count-down-timer>
+        </v-flex>
+      </v-layout>
+      <v-layout row wrap>
+        <v-flex xs12 md6>
+          <h1>Buy Tokens</h1>
+          <p>
+            Fund your account in order to confirm purchase.
+            The number of Lecarbone token will be automatically
+            calculated when we recieve your deposit.
+          </p>
+          <div>
+            <p>Please enter the amount of Lecarbone token you want to buy:</p>
+            <v-layout row wrap>
+              <v-flex xs12 md8>
+                <input /><span>equal to</span><span><input /></span>
+              </v-flex>
+              <v-flex xs12 md4>
+                <p>Rate 1 ETH: 500.32 USD</p>
+                <p>(the rate will update at anytime)</p>
+              </v-flex>
+            </v-layout>
+            <v-layout row>
+              <v-btn outline color="white">BUY NOW</v-btn>
+            </v-layout>
+            <p>
+              each transaction will be precessed accordingly
+            </p>
+            <p>
+              Transactions will be automatically added to
+              your balace when they are confirmed by the network.
+              It may take up to few hours. Please be patient.
+            </p>
+          </div>
+        </v-flex>
+        <v-flex xs12 md6>
+          <h1>Watch video tutorials</h1>
+          <div class="video-container">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/ZIY5tuU7RWg"
+              frameborder="0"
+              allow="autoplay; encrypted-media"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div>
+            <p>
+              Make sure you have set the sufficient gas
+              limit and gas price, or your transaction
+              can be returned by Ethereum Networks.
+            </p>
+            <p>
+              Gas limit: 21000
+            </p>
+            <p>
+              Max gas price: 50 GWei
+            </p>
+          </div>
+        </v-flex>
+      </v-layout>
+      <h1>Transactions</h1>
+      <v-container>
+        <ul>
+          <li v-for="item in [0, 1, 2]" :key="item">
+            <v-layout row wrap>
+              <v-flex xs4>
+                icon
+              </v-flex>
+              <v-flex xs4>
+                1.2345654345
+              </v-flex>
+              <v-flex xs4>
+                2018/21/19 19:12:11
+              </v-flex>
+            </v-layout>
+          </li>
+        </ul>
+      </v-container>
+      <div>
+        <h1>Affiliate program</h1>
+      </div>
+    </v-container>
+    <Footer></Footer>
   </div>
 </template>
 
 <script>
+import NavBar from '@/components/NavBar';
+import Footer from '@/components/Footer';
+import CountDownTimer from '@/components/CountDownTimer';
+
 export default {
   name: 'TokenSale',
-  data() {
-    return {
-      page: 'token sale',
-    };
+  components: {
+    NavBar,
+    CountDownTimer,
+    Footer,
   },
 };
 </script>
 
 <style scoped>
+/* RWD for ifame  */
+.video-container {
+  position:relative;
+  padding-bottom:54%;
+  height:0;overflow:hidden;
+}
 
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+}
 </style>
