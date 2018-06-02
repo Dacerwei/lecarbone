@@ -105,6 +105,7 @@
       <div>
         <h1>Affiliate program</h1>
       </div>
+      <questions-section></questions-section>
     </v-container>
     <Footer></Footer>
   </div>
@@ -113,6 +114,7 @@
 <script>
 import NavBar from '@/components/NavBar';
 import Footer from '@/components/Footer';
+import QuestionsSection from '@/components/QuestionsSection';
 import CountDownTimer from '@/components/CountDownTimer';
 
 export default {
@@ -120,6 +122,7 @@ export default {
   components: {
     NavBar,
     CountDownTimer,
+    QuestionsSection,
     Footer,
   },
 };
