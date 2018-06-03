@@ -84,24 +84,7 @@
           </div>
         </v-flex>
       </v-layout>
-      <h1>Transactions</h1>
-      <v-container>
-        <ul>
-          <li v-for="item in [0, 1, 2]" :key="item">
-            <v-layout row wrap>
-              <v-flex xs4>
-                icon
-              </v-flex>
-              <v-flex xs4>
-                1.2345654345
-              </v-flex>
-              <v-flex xs4>
-                2018/21/19 19:12:11
-              </v-flex>
-            </v-layout>
-          </li>
-        </ul>
-      </v-container>
+      <transaction-section></transaction-section>
       <affiliate-section></affiliate-section>
       <receipt-section></receipt-section>
       <questions-section></questions-section>
@@ -117,6 +100,7 @@ import QuestionsSection from '@/components/QuestionsSection';
 import AffiliateSection from '@/components/AffiliateSection';
 import CountDownTimer from '@/components/CountDownTimer';
 import ReceiptSection from '@/components/ReceiptSection';
+import TransactionSection from '@/components/TransactionSection';
 
 export default {
   name: 'TokenSale',
@@ -125,6 +109,7 @@ export default {
     CountDownTimer,
     QuestionsSection,
     AffiliateSection,
+    TransactionSection,
     ReceiptSection,
     Footer,
   },
