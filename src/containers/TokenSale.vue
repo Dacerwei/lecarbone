@@ -102,9 +102,8 @@
           </li>
         </ul>
       </v-container>
-      <div>
-        <h1>Affiliate program</h1>
-      </div>
+      <affiliate-section></affiliate-section>
+      <receipt-section></receipt-section>
       <questions-section></questions-section>
     </v-container>
     <Footer></Footer>
@@ -115,7 +114,9 @@
 import NavBar from '@/components/NavBar';
 import Footer from '@/components/Footer';
 import QuestionsSection from '@/components/QuestionsSection';
+import AffiliateSection from '@/components/AffiliateSection';
 import CountDownTimer from '@/components/CountDownTimer';
+import ReceiptSection from '@/components/ReceiptSection';
 
 export default {
   name: 'TokenSale',
@@ -123,6 +124,8 @@ export default {
     NavBar,
     CountDownTimer,
     QuestionsSection,
+    AffiliateSection,
+    ReceiptSection,
     Footer,
   },
 };
