@@ -9,47 +9,47 @@
       <v-flex xs10 class="hidden-md-and-up">
         <div class="mobile-menu-container">
           <v-menu offset-y>
-              <v-btn flat icon large color="black" dark slot="activator">
-                <i class="fas fa-bars"></i>
-              </v-btn>
-              <v-list>
-                <v-list-tile>
-                  <v-list-tile-content>
-                    <a class="nav-btn" v-scroll-to="'#our-vision'">
-                      {{ $t('message.NavBar.about') }}
-                    </a>
-                  </v-list-tile-content>
-                </v-list-tile>
-                <v-list-tile>
-                  <v-list-tile-content>
-                    <a class="nav-btn" v-scroll-to="'#roadmap'">
-                      {{ $t('message.NavBar.roadMap') }}
-                    </a>
-                  </v-list-tile-content>
-                </v-list-tile>
-                <v-list-tile>
-                  <v-list-tile-content>
-                    <a class="nav-btn" v-scroll-to="'#token-detail'">
-                      {{ $t('message.NavBar.tokenDetail') }}
-                    </a>
-                  </v-list-tile-content>
-                </v-list-tile>
-                <v-list-tile>
-                  <v-list-tile-content>
-                    <a class="nav-btn" v-scroll-to="'#team'">
-                      {{ $t('message.NavBar.team') }}
-                    </a>
-                  </v-list-tile-content>
-                </v-list-tile>
-                <v-list-tile>
-                  <v-list-tile-content>
-                    <a class="nav-btn" v-scroll-to="'#footer'">
-                      {{ $t('message.NavBar.contact') }}
-                    </a>
-                  </v-list-tile-content>
-                </v-list-tile>
-              </v-list>
-            </v-menu>
+            <v-btn slot="activator" icon large>
+              <i class="fas fa-bars"></i>
+            </v-btn>
+            <v-list>
+              <v-list-tile>
+                <v-list-tile-title>
+                  <a class="nav-btn" v-scroll-to="'#our-vision'">
+                    {{ $t('message.NavBar.about') }}
+                  </a>
+                </v-list-tile-title>
+              </v-list-tile>
+              <v-list-tile>
+                <v-list-tile-title>
+                  <a class="nav-btn" v-scroll-to="'#roadmap'">
+                    {{ $t('message.NavBar.roadMap') }}
+                  </a>
+                </v-list-tile-title>
+              </v-list-tile>
+              <v-list-tile>
+                <v-list-tile-title>
+                  <a class="nav-btn" v-scroll-to="'#token-detail'">
+                    {{ $t('message.NavBar.tokenDetail') }}
+                  </a>
+                </v-list-tile-title>
+              </v-list-tile>
+              <v-list-tile>
+                <v-list-tile-title>
+                  <a class="nav-btn" v-scroll-to="'#team'">
+                    {{ $t('message.NavBar.team') }}
+                  </a>
+                </v-list-tile-title>
+              </v-list-tile>
+              <v-list-tile>
+                <v-list-tile-title>
+                  <a class="nav-btn" v-scroll-to="'#footer'">
+                    {{ $t('message.NavBar.contact') }}
+                  </a>
+                </v-list-tile-title>
+              </v-list-tile>
+            </v-list>
+          </v-menu>
         </div>
       </v-flex>
       <v-flex sm6 class="hidden-sm-and-down">
