@@ -2,11 +2,13 @@
   <div class="main-section" :style="containerStyle">
     <v-container>
       <h1 class="main-text">{{ $t('message.MainSection.main_text') }}</h1>
-      <count-down-timer :end-date="endDate"></count-down-timer>
+      <count-down-timer :end-date="endDate" :time-zone="'PDT'"></count-down-timer>
       <prgress-bar :total="total" :current-value="progress"></prgress-bar>
       <v-layout row wrap>
         <v-flex xs12  md2>
-          <v-btn outline color="green">Contribute Now</v-btn>
+          <router-link to="/tokensale">
+            <v-btn outline color="green">Contribute Now</v-btn>
+          </router-link>
         </v-flex>
         <v-flex xs12 md4 tag="div">
           <p class="download-text">{{ $t('message.MainSection.download_white_paper') }}</p>

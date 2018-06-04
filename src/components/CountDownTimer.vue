@@ -3,7 +3,7 @@
     <div class="timer-title">{{ $t('message.MainSection.timer_title') }}</div>
     <div class="timer-text">
       {{ $t('message.MainSection.timer_till') }}
-      {{ dueDate.format('MMMM Do, h:mm a') }} PDT
+      {{ dueDate.format('MMMM Do, h:mm a') }} {{ timeZone }}
     </div>
     <v-layout row wrap justify-space-between class="timer-display-area" >
       <v-flex tag='li' sm1>
