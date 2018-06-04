@@ -27,34 +27,36 @@
       </v-layout>
       <v-layout row wrap>
         <v-flex xs12 md6>
-          <h1>Buy Tokens</h1>
-          <p>
-            Fund your account in order to confirm purchase.
-            The number of Lecarbone token will be automatically
-            calculated when we recieve your deposit.
-          </p>
-          <div>
-            <p>Please enter the amount of Lecarbone token you want to buy:</p>
-            <v-layout row wrap>
-              <v-flex xs12 md8>
-                <input /><span>equal to</span><span><input /></span>
-              </v-flex>
-              <v-flex xs12 md4>
-                <p>Rate 1 ETH: 500.32 USD</p>
-                <p>(the rate will update at anytime)</p>
-              </v-flex>
-            </v-layout>
-            <v-layout row>
-              <v-btn outline color="white">BUY NOW</v-btn>
-            </v-layout>
+          <div class="buy-token-wrapper">
+            <h1 class="buy-token-title">Buy Tokens</h1>
             <p>
-              each transaction will be precessed accordingly
+              Fund your account in order to confirm purchase.
+              The number of Lecarbone token will be automatically
+              calculated when we recieve your deposit.
             </p>
-            <p>
-              Transactions will be automatically added to
-              your balace when they are confirmed by the network.
-              It may take up to few hours. Please be patient.
-            </p>
+            <div>
+              <p>Please enter the amount of Lecarbone token you want to buy:</p>
+              <v-layout row wrap>
+                <v-flex xs12 md8>
+                  <input /><span>equal to</span><span><input /></span>
+                </v-flex>
+                <v-flex xs12 md4>
+                  <p>Rate 1 ETH: 500.32 USD</p>
+                  <p>(the rate will update at anytime)</p>
+                </v-flex>
+              </v-layout>
+              <v-layout row>
+                <v-btn outline color="white">BUY NOW</v-btn>
+              </v-layout>
+              <p>
+                each transaction will be precessed accordingly
+              </p>
+              <p>
+                Transactions will be automatically added to
+                your balace when they are confirmed by the network.
+                It may take up to few hours. Please be patient.
+              </p>
+            </div>
           </div>
         </v-flex>
         <v-flex xs12 md6>
@@ -117,6 +119,15 @@ export default {
 </script>
 
 <style scoped>
+.buy-token-title {
+  color: #f1cf69;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.buy-token-wrapper {
+  padding: 5px;
+}
+
 /* RWD for ifame  */
 .video-container {
   position:relative;
