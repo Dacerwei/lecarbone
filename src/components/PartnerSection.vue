@@ -1,10 +1,10 @@
 <template>
   <v-container>
     <v-layout row wrap>
-      <v-flex xs12 sm4>
+      <v-flex xs12 sm3>
         <h1 class="partners-title">Partners</h1>
       </v-flex>
-      <v-flex xs12 sm8>
+      <v-flex xs12 sm9>
         <v-layout row wrap justify-space-between>
           <v-flex xs12 sm12 md6>
             <div class="img-container">
@@ -40,7 +40,7 @@ export default {
 <style scoped>
 .partners-title {
   text-align: center;
-  color: #ECCF78;
+  color: #F1CF69;
 }
 .img-container {
   height: 80px;

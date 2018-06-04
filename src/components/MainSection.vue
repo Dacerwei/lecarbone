@@ -5,16 +5,16 @@
       <count-down-timer :end-date="endDate" :time-zone="'PDT'"></count-down-timer>
       <prgress-bar :total="total" :current-value="progress"></prgress-bar>
       <v-layout row wrap>
-        <v-flex xs12  md2>
+        <v-flex xs12  md3>
           <router-link to="/tokensale">
-            <v-btn outline color="green">Contribute Now</v-btn>
+            <v-btn class="contribute" outline>Contribute Now</v-btn>
           </router-link>
         </v-flex>
         <v-flex xs12 md4 tag="div">
           <p class="download-text">{{ $t('message.MainSection.download_white_paper') }}</p>
           <div class="btn-area">
-              <span><v-btn outline color="white">ENGLISH</v-btn></span>
-              <span><v-btn outline color="white">中文</v-btn></span>
+              <span><v-btn class="download-btn" outline color="white">ENGLISH</v-btn></span>
+              <span><v-btn class="download-btn" outline color="white">中文</v-btn></span>
           </div>
         </v-flex>
       </v-layout>
@@ -25,7 +25,7 @@
 <script>
 import CountDownTimer from '@/components/CountDownTimer';
 import PrgressBar from '@/components/ProgressBar';
-import MainSectionBackground from '@/assets/background/main_section.jpg';
+import MainSectionBackground from '@/assets/background/main_section.png';
 
 export default {
   name: 'MainSection',
@@ -51,6 +51,9 @@ export default {
 </script>
 
 <style scoped>
+a {
+  text-decoration: none;
+}
 .main-section {
   padding: 50px 0;
 }
@@ -59,15 +62,28 @@ export default {
   text-align: left;
   font-weight: bold;
   line-height: 1.2em;
+  margin-bottom: 40px;
 }
 .download-text {
-  text-align: center;
+  text-align: left;
   color: white;
-  margin: 0;
+  margin: 0 0 5px 0;
   font-weight: bold;
 }
-.btn-area {
-  text-align: center;
+.download-btn {
+  font-size: 12px;
+  height: 30px;
+  width: 120px;
+  margin: 0;
 }
+.contribute {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border-color: #69F193;
+  height: 50px;
+  width: 250px;
+}
+
 </style>
 

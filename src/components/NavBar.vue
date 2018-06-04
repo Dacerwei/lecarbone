@@ -86,7 +86,7 @@
         <v-layout row align-center justify-end>
           <v-flex sm3>
             <v-menu offset-y>
-              <v-btn flat color="black" dark slot="activator">
+              <v-btn class="language" flat color="black" dark slot="activator">
                 {{ $t('message.NavBar.language') }}
               </v-btn>
               <v-list>
@@ -121,7 +121,7 @@
           <v-flex sm1>
             <v-btn icon small><i class="fab fa-medium-m"></i></v-btn>
           </v-flex>
-          <v-flex sm4>
+          <v-flex sm3>
             <router-link to="/tokensale" class="contribute">
               {{ $t('message.NavBar.contribute') }}
             </router-link>
@@ -154,10 +154,14 @@ export default {
 </script>
 
 <style scoped>
+a {
+  text-decoration: none;
+}
 .logo {
   width: 120px;
   height: 30px;
   margin-right: 1%;
+  margin-left: 40px;
 }
 .flag {
   width: 30px;
@@ -169,18 +173,23 @@ export default {
 }
 .nav-btn {
   text-align: center;
-  font-size: 100%;
+  font-size: 12px;
   display: block;
   color: black;
 }
 .contribute {
   background: #69F193;
   color: #fff;
+  font-weight: bold;
   border-radius: 4px;
   text-align: center;
-  padding: 5px 30px;
+  text-transform: capitalize;
+  padding: 10px 30px;
+  margin-left: 10px;
 }
-
+.language {
+  font-size: 12px;
+}
 .mobile-menu-container {
   text-align: right;
 }
