@@ -3,7 +3,7 @@
     <h1 class="detail-title">{{ $t('message.TokenDetail.title') }}</h1>
     <v-layout row wrap>
         <v-flex xs12 sm6 class="info-container">
-            <h2>{{ $t('message.TokenDetail.sub_title') }}</h2>
+            <h2 class="info-title">{{ $t('message.TokenDetail.sub_title') }}</h2>
             <ul class="info-list">
                 <li class="info-item" v-for="item in genernalInfoData" :key="item.fieldName">
                   <span>{{ $t(`message.TokenDetail.${item.fieldName}`) }} ：</span>
@@ -106,8 +106,7 @@ export default {
 
 <style scoped>
 #token-detail {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding: 50px 0;
 }
 .info-item {
   text-align: left;
@@ -116,9 +115,20 @@ export default {
 .detail-title, .info-value {
   color: #4A8B71;
 }
+.detail-title {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 32px;
+}
 .info-container {
-  padding-left: 80px;
-  padding-top: 20px;
+  padding-left: 170px;
+  padding-top: 10px;
+}
+.info-title {
+  margin-bottom: 20px;
+}
+.info-list {
+  line-height: 30px;
 }
 </style>
 

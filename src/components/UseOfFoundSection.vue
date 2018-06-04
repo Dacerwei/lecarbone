@@ -102,16 +102,13 @@ export default {
   color: #F1CF69;
   margin-bottom: 20px;
 }
-
-.use-of-found-wrapper {
-  padding: 2%;
-}
 .use-of-found-container {
+  width: 50%;
   background-color: white;
   text-align: center;
   border-radius: 40px;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding: 50px;
+  margin: 20px auto;
 }
 </style>
 

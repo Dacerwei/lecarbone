@@ -20,7 +20,7 @@
                       :src="CEOData.avatarPhoto"/>
                   </div>
                 </v-flex>
-                <v-flex xs12 sm9>
+                <v-flex xs12 sm9 class="text-container">
                   <div>
                     <h2 class="first-name">
                       {{ CEOData.firstName }} {{ CEOData.LastName }} {{ CEOData.degree }}
@@ -50,7 +50,7 @@
                       :src="member.avatarPhoto"/>
                   </div>
                 </v-flex>
-                <v-flex xs12 sm9>
+                <v-flex xs12 sm9 class="text-container">
                   <div>
                     <h2 class="first-name">
                       {{ member.firstName }} {{member.LastName}} {{ member.degree }}
@@ -176,7 +176,10 @@ export default {
 <style scoped>
 .header-container {
   width: 70%;
-  margin: 0 auto 100px auto;
+  margin: 0 auto 50px auto;
+}
+.text-container {
+  padding: 0 20px;
 }
 .section-title {
   text-align: center;
@@ -197,21 +200,28 @@ export default {
   font-size: 10pt;
 }
 .member-card {
-  min-height: 400px;
+  margin: 30px 0;
 }
 .img-container {
-  padding: 10%;
-  margin: 0 auto;
+  padding: 0 10%;
+}
+.member-experience-list {
+  font-size: 12px;
+  line-height: 20px;
 }
 .member-description {
   text-align: left;
+  font-size: 12px;
+  margin-top: 20px;
+  line-height: 20px;
 }
 .first-name {
-  font-size: 12px;
+  font-size: 14px;
   color: #4A8B71;
 }
 .member-title {
   font-size: 12px;
+  font-weight: 400;
 }
 </style>
 
