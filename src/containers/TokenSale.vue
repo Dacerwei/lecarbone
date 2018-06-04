@@ -1,4 +1,5 @@
 <template>
+<v-app>
   <div>
     <nav-bar></nav-bar>
     <v-container>
@@ -93,6 +94,7 @@
     </v-container>
     <Footer></Footer>
   </div>
+</v-app>
 </template>
 
 <script>
