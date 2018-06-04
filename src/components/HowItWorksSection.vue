@@ -1,7 +1,8 @@
 <template>
-  <v-container class="works-container">
+  <div class="works-container">
+    <h1>How it works</h1>
     <img :src="imgSrc"/>
-  </v-container>
+  </div>
 </template>
 
 <script>
@@ -17,10 +18,21 @@ export default {
 };
 </script>
 <style scoped>
+h1 {
+  text-align: center;
+  color: #4A8B71;
+  font-size: 32px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
 img {
-  width: 100%;
+  display: block;
+  width: 50%;
+  margin: 0 auto;
 }
 .works-container {
-  padding: 5%;
+  width: 100%;
+  padding: 40px 0 60px 0;
+  background: linear-gradient(#FFF9E0,#EEFFFD);
 }
 </style>

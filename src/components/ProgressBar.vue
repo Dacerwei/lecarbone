@@ -8,7 +8,7 @@
     <v-progress-linear
       id="progress-bar"
       :value="progress"
-      height="30"
+      height="20"
       color="green"
       style="border-radius: 10px">
     </v-progress-linear>
@@ -42,16 +42,16 @@ export default {
 
 <style scoped>
 .progress-wrapper {
-  margin-top: 2%;
-  margin-bottom: 2%;
+  margin: 20px 0 60px 0;
 }
 #progress-bar {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 .label {
   color: white;
-  font-size: 70%;
+  font-size: 12px;
+  font-weight: 900;
 }
 </style>
 

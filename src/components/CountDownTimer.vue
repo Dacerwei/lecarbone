@@ -113,20 +113,26 @@ li {
   font-size: 250%;
   text-align: left;
   color: #F1CF69;
+  font-size: 32px;
+  line-height: 1.2em;
+  font-weight: bold;
 }
 .timer-text {
   color: #F1CF69;
+  font-size: 16px;
+  font-weight: bold;
 }
 .timer-item {
   text-align: center;
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
-  width: 80px;
+  width: 70px;
+  height: 100px;
   border-radius: 10px;
   padding: 5px
 }
 .timer-time {
-  font-size: 200%;
+  font-size: 42px;
   padding: 2px;
 }
 .timer-label {

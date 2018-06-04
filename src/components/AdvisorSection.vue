@@ -1,7 +1,7 @@
 <template>
   <v-container>
     <v-layout row wrap>
-      <v-flex xs12 sm4>
+      <v-flex xs12 sm3>
         <h1 class="advisor-title">Advisor</h1>
       </v-flex>
       <v-flex xs12 sm8 v-for="advisor in advisorList" :key="advisor.id">
@@ -17,14 +17,14 @@
               </v-flex>
               <v-flex xs12 sm9>
                 <div>
-                  <p>{{ advisor.affiliation }}</p>
+                  <p class="affiliation">{{ advisor.affiliation }}</p>
                   <h2>{{ advisor.firstName }} {{advisor.LastName}}</h2>
                   <h3>{{ advisor.title }}</h3>
                 </div>
               </v-flex>
             </v-layout>
             <v-container>
-              <p>{{ advisor.description }}</p>
+              <p class="description">{{ advisor.description }}</p>
             </v-container>
           </v-container>
         </div>
@@ -62,16 +62,38 @@ export default {
 .advisor-title {
   color: #5A8973;
   text-align: center;
+  font-size: 32px;
+  font-weight: bold;
 }
 .avatar {
   width: 80%;
 }
 .member-card {
-  min-height: 400px;
+  min-height: 300px;
 }
 .img-container {
-  padding: 10%;
-  margin: 0 auto;
+  width: 150px;
 }
+p {
+  margin-bottom: 0;
+}
+.affiliation {
+  font-size: 12px;
+  font-style: italic;
+}
+h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+h3 {
+  font-weight: 400;
+  font-size: 12px;
+  width: 75%;
+}
+.description {
+  margin-top: 20px;
+  font-size: 12px;
+}
+
 </style>
 

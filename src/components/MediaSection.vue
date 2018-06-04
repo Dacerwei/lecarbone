@@ -7,13 +7,11 @@
         alt=""/>
     </v-flex>
   </v-layout>
-  <v-container class="media">
-    <v-layout row wrap justify-space-between>
-      <v-flex xs4 sm3 v-for=" media in mediaList" :key="media.id">
-        <div :style="formatStyle(media)"></div>
-      </v-flex>
-    </v-layout>
-  </v-container>
+  <v-layout row wrap justify-space-between class="media">
+    <v-flex xs4 sm3 v-for=" media in mediaList" :key="media.id">
+      <div :style="formatStyle(media)"></div>
+    </v-flex>
+  </v-layout>
 </div>
 </template>
 
@@ -132,8 +130,8 @@ export default {
   methods: {
     formatStyle(obj) {
       return {
-        height: '30px',
-        margin: '10%',
+        height: '80px',
+        margin: '5%',
         backgroundImage: `url(${obj.src})`,
         backgroundPosition: 'center',
         backgroundSize: 'contain',
@@ -155,8 +153,9 @@ export default {
 .social-item {
   width: 100%;
 }
-.media{
-  padding: 50px 0;
+.media {
+  padding: 50px 100px;
+  background-color: #eee;
 }
 </style>
 
