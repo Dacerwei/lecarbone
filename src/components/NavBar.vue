@@ -2,9 +2,9 @@
   <v-toolbar height="70px">
     <v-layout row align-center>
       <v-flex xs2 sm1>
-        <a href="/">
+        <router-link to="/">
           <img class="logo" :src="logo" />
-        </a>
+        </router-link>
       </v-flex>
       <v-flex xs10 class="hidden-md-and-up">
         <div class="mobile-menu-container">
@@ -122,7 +122,9 @@
             <v-btn icon small><i class="fab fa-medium-m"></i></v-btn>
           </v-flex>
           <v-flex sm4>
-            <a class="contribute">{{ $t('message.NavBar.contribute') }}</a>
+            <router-link to="/tokensale" class="contribute">
+              {{ $t('message.NavBar.contribute') }}
+            </router-link>
           </v-flex>
         </v-layout>
       </v-flex>
