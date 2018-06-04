@@ -26,41 +26,11 @@
           <count-down-timer :end-date="'20180628 1200'"></count-down-timer>
         </v-flex>
       </v-layout>
-      <v-layout row wrap>
-        <v-flex xs12 md6>
-          <div class="buy-token-wrapper">
-            <h1 class="buy-token-title">Buy Tokens</h1>
-            <p>
-              Fund your account in order to confirm purchase.
-              The number of Lecarbone token will be automatically
-              calculated when we recieve your deposit.
-            </p>
-            <div>
-              <p>Please enter the amount of Lecarbone token you want to buy:</p>
-              <v-layout row wrap>
-                <v-flex xs12 md8>
-                  <input /><span>equal to</span><span><input /></span>
-                </v-flex>
-                <v-flex xs12 md4>
-                  <p>Rate 1 ETH: 500.32 USD</p>
-                  <p>(the rate will update at anytime)</p>
-                </v-flex>
-              </v-layout>
-              <v-layout row>
-                <v-btn outline color="white">BUY NOW</v-btn>
-              </v-layout>
-              <p>
-                each transaction will be precessed accordingly
-              </p>
-              <p>
-                Transactions will be automatically added to
-                your balace when they are confirmed by the network.
-                It may take up to few hours. Please be patient.
-              </p>
-            </div>
-          </div>
+      <v-layout row wrap justify-space-between>
+        <v-flex xs12 md7>
+          <buy-tokens></buy-tokens>
         </v-flex>
-        <v-flex xs12 md6>
+        <v-flex xs12 md5>
           <h1>Watch video tutorials</h1>
           <div class="video-container">
             <iframe
@@ -100,6 +70,7 @@
 <script>
 import NavBar from '@/components/NavBar';
 import Footer from '@/components/Footer';
+import BuyTokens from '@/components/BuyTokens';
 import QuestionsSection from '@/components/QuestionsSection';
 import AffiliateSection from '@/components/AffiliateSection';
 import CountDownTimer from '@/components/CountDownTimer';
@@ -110,6 +81,7 @@ export default {
   name: 'TokenSale',
   components: {
     NavBar,
+    BuyTokens,
     CountDownTimer,
     QuestionsSection,
     AffiliateSection,
@@ -121,15 +93,6 @@ export default {
 </script>
 
 <style scoped>
-.buy-token-title {
-  color: #f1cf69;
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-.buy-token-wrapper {
-  padding: 5px;
-}
-
 /* RWD for ifame  */
 .video-container {
   position:relative;
