@@ -161,7 +161,8 @@ a {
   width: 120px;
   height: 30px;
   margin-right: 1%;
-  margin-left: 40px;
+  margin-left: 20px;
+  margin-top: 3px;
 }
 .flag {
   width: 30px;

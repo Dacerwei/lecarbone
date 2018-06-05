@@ -2,7 +2,9 @@
   <div class="main-section" :style="containerStyle">
     <v-container>
       <h1 class="main-text">{{ $t('message.MainSection.main_text') }}</h1>
-      <count-down-timer :end-date="endDate" :time-zone="'PDT'"></count-down-timer>
+      <v-flex tag="div" class="timer-wrapper" xs12 sm6 md4>
+        <count-down-timer :end-date="endDate" :time-zone="'PDT'"></count-down-timer>
+      </v-flex>
       <prgress-bar :total="total" :current-value="progress"></prgress-bar>
       <v-layout row wrap>
         <v-flex xs12  md3>
