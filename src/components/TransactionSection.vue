@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container class="transactions-section">
     <h1 class="transaction-title">Transactions</h1>
     <ul class="transaction-list">
       <hr>
@@ -55,19 +55,21 @@ export default {
 </script>
 
 <style scoped>
+.transactions-section {
+  margin: 20px 0;
+}
 .transaction-title {
   color: #F1CF69;
   font-size: 32px;
 }
 
 .transaction-list {
-  margin-top: 5%;
-  margin-bottom: 5%;
+  margin: 30px 0;
 }
 
 .transaction-item {
   list-style: none;
-  text-align: center;
+  text-align: left;
   line-height: 3em;
 }
 

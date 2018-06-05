@@ -68,7 +68,7 @@ export default {
     return {
       background,
       ranks,
-      videoSrc: 'https://www.youtube.com/embed/ZIY5tuU7RWg',
+      videoSrc: 'https://www.youtube.com/embed/j23HnORQXvs',
     };
   },
 };
