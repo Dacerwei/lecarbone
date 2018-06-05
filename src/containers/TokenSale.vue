@@ -3,35 +3,40 @@
   <div>
     <nav-bar></nav-bar>
     <v-container>
-      <v-layout row wrap>
-        <v-flex xs12 md6>
-          <h1>Token Sale: week 1</h1>
-          <p>
-            Min.pledge
-            <span>200 LCT (less amounts of tokens will not be delivered to your ETH address)</span>
-          </p>
-          <p>Initial price
-            <span>1 LCT = 10 USD</span>
-          </p>
-          <p>
-            Tokens sold
-            <span>29,387,423 LCT</span>
-          </p>
-          <p>
-            Available
-            <span>320,398 LCT</span>
-          </p>
+      <v-layout row wrap class="token-sale-section">
+        <v-flex xs12 md7>
+          <h1 class="token-sale-title">Token Sale: week 1</h1>
+          <v-layout row wrap>
+            <v-flex xs12 md3>
+              <ul class="token-list-title">
+                <li>Min.pledge</li>
+                <li>Initial price</li>
+                <li>Tokens sold</li>
+                <li>Available</li>
+              </ul>
+            </v-flex>
+            <v-flex xs12 md9>
+              <ul class="token-list-content">
+                <li>200 LCT <span>(less amounts of tokens will not be delivered to your ETH address)</span></li>
+                <li>1 LCT = 10 USD</li>
+                <li>29,387,423 LCT</li>
+                <li>320,398 LCT</li>
+              </ul>
+            </v-flex>
+          </v-layout>
         </v-flex>
-        <v-flex xs12 md6>
-          <count-down-timer :end-date="'20180628 1200'"></count-down-timer>
+        <v-flex xs12 md5>
+          <v-flex xs12 md9>
+            <count-down-timer :end-date="'20180628 1200'"></count-down-timer>
+          </v-flex>
         </v-flex>
       </v-layout>
       <v-layout row wrap justify-space-between>
-        <v-flex xs12 md7>
+        <v-flex xs12 md6>
           <buy-tokens></buy-tokens>
         </v-flex>
         <v-flex xs12 md5>
-          <h1>Watch video tutorials</h1>
+          <h1 class="video-title">Watch video tutorials</h1>
           <div class="video-container">
             <iframe
               width="560"
@@ -42,16 +47,14 @@
               allowfullscreen>
             </iframe>
           </div>
-          <div>
+          <div class="video-content">
             <p>
               Make sure you have set the sufficient gas
               limit and gas price, or your transaction
               can be returned by Ethereum Networks.
             </p>
             <p>
-              Gas limit: 21000
-            </p>
-            <p>
+              Gas limit: 21000<br>
               Max gas price: 50 GWei
             </p>
           </div>
@@ -94,19 +97,48 @@ export default {
 
 <style scoped>
 /* RWD for ifame  */
-.video-container {
-  position:relative;
-  padding-bottom:54%;
-  height:0;overflow:hidden;
+.token-sale-section {
+  margin: 50px 0;
 }
-
+.token-sale-title {
+  color: #F1CF69;
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+.token-list-title, .token-list-content {
+  list-style-type: none;
+}
+.token-list-title {
+  font-weight: bold;
+}
+li {
+  margin-bottom: 10px;
+}
+.token-list-content span{
+  font-size: 9px;
+}
+.video-container {
+  position: relative;
+  padding: 120px;
+  height: 0;
+  overflow: hidden;
+}
+.video-title {
+  font-size: 18px;
+  color: #F1CF69;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.video-content p{
+  margin: 20px 0;
+}
 .video-container iframe,
 .video-container object,
 .video-container embed {
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 </style>

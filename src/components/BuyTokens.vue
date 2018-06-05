@@ -1,7 +1,7 @@
 <template>
 <div class="buy-token-wrapper">
   <h1 class="buy-token-title">Buy Tokens</h1>
-  <p>
+  <p class="buy-token-content">
     Fund your account in order to confirm purchase.
     The number of Lecarbone token will be automatically
     calculated when we recieve your deposit.
@@ -25,7 +25,7 @@
     </v-layout>
     <v-layout row>
       <v-flex xs12 sm3 class="btn-container">
-        <v-btn outline color="green" class="buy-btn">BUY NOW</v-btn>
+        <div class="buy-btn" outline>BUY NOW</div>
       </v-flex>
     </v-layout>
     <p>
@@ -49,8 +49,10 @@ export default {
 <style scoped>
 .buy-token-title {
   color: #f1cf69;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin-bottom: 20px;
+}
+.buy-token-content {
+  margin-bottom: 30px;
 }
 .buy-token-wrapper {
   padding: 5px;
@@ -59,7 +61,7 @@ export default {
   border-style: solid;
   border-width: 1px;
   border-color: lightgrey;
-  padding: 20px;
+  padding: 30px;
 }
 .input-container {
   text-align: center;
@@ -76,18 +78,23 @@ export default {
   text-align: center;
 }
 .buy-btn {
-  width: 80%;
-  margin: 0 auto;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  background: #69F193;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 4px;
+  text-align: center;
+  padding: 5px 10px;
+  margin: 20px 0;
+  cursor: pointer;
 }
 .exchange-icon {
   text-align: center;
 }
 .exchange-tip {
-  text-align: center;
-  font-size: 6pt;
+  text-align: left;
+  font-size: 8px;
+  font-weight: bold;
   margin: 0;
-  color: orange;
+  color: #F1CF69;
 }
 </style>

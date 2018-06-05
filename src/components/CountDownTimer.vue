@@ -1,5 +1,5 @@
 <template>
-  <v-flex tag="div" class="timer-wrapper" xs12 sm6 md4>
+  <v-flex tag="div" class="timer-wrapper">
     <div class="timer-title">{{ $t('message.MainSection.timer_title') }}</div>
     <div class="timer-text">
       {{ $t('message.MainSection.timer_till') }}
@@ -137,7 +137,7 @@ li {
 }
 .timer-label {
   font-size: 70%;
-  color: grey;
+  color: #ccc;
   font-weight: bold;
 }
 </style>
