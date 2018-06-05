@@ -10,16 +10,26 @@
     <p>Please enter the amount of Lecarbone token you want to buy:</p>
     <v-layout row wrap justify-space-between align-content-center>
       <v-flex xs12 sm3 md4 class="input-container">
-        <input id="lct-input" class="token-input"/>
+        <label>LCT</label>
+        <input @change="lctToEth"
+          id="lct-input"
+          class="token-input"
+          :value="lctOutPut"
+          placeholder="LCT">
       </v-flex>
       <v-flex xs12 sm1 md1>
         <div class="exchange-icon"><i class="fas fa-exchange-alt"></i></div>
       </v-flex>
       <v-flex xs12 sm3 md4 class="input-container">
-        <input id="eth-input" class="token-input"/>
+        <label>ETH</label>
+        <input @change="ethToLct"
+          id="eth-input"
+          class="token-input"
+          :value="ethOutPut"
+          placeholder="ETH"/>
       </v-flex>
       <v-flex xs12 sm3 md3>
-        <p class="exchange-tip">Rate 1 ETH: 500.32 USD</p>
+        <p class="exchange-tip">Rate 1 ETH: {{ ethToUsdRate }} USD</p>
         <p class="exchange-tip">(the rate will update at anytime)</p>
       </v-flex>
     </v-layout>
@@ -41,8 +51,37 @@
 </template>
 
 <script>
+import _ from 'lodash';
+
 export default {
   name: 'BuyTokens',
+  data() {
+    return {
+      lctOutPut: null,
+      ethOutPut: null,
+      lctToEthRate: null,
+      ethToUsdRate: null,
+    };
+  },
+  mounted() {
+    this.initExchangeRate();
+  },
+  methods: {
+    initExchangeRate() {
+      this.lctToEthRate = 0.5;
+      this.ethToUsdRate = 500;
+    },
+    lctToEth(e) {
+      const value = _.toNumber(e.target.value);
+      this.lctOutPut = value;
+      this.ethOutPut = _.round(value * this.lctToEthRate, 2);
+    },
+    ethToLct(e) {
+      const value = _.toNumber(e.target.value);
+      this.ethOutPut = value;
+      this.lctOutPut = _.round(_.divide(value, this.lctToEthRate), 2);
+    },
+  },
 };
 </script>
 
