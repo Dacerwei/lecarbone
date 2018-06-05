@@ -23,7 +23,7 @@
           <v-flex xs12 sm1>
             <span>LCT</span>
           </v-flex>
-          <v-flex xs12 sm2>  
+          <v-flex xs12 sm2>
             <div class="bonus-btn">
               GET MORE BONUS
             </div>
@@ -39,7 +39,7 @@
           <v-flex xs12 sm1>
             <span>People</span>
           </v-flex>
-        </v-layout>      
+        </v-layout>
         <p class="receipt-text">
           If the total amount(Purchase and Bonuse) is less than 50 LCT(min. pledge).
           The Bonus will not be delivered to your ETH Address. Token distrubtion to

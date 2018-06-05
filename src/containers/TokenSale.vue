@@ -17,7 +17,9 @@
             </v-flex>
             <v-flex xs12 md9>
               <ul class="token-list-content">
-                <li>200 LCT <span>(less amounts of tokens will not be delivered to your ETH address)</span></li>
+                <li>200 LCT
+                  <span>(less amounts of tokens will not be delivered to your ETH address)</span>
+                </li>
                 <li>1 LCT = 10 USD</li>
                 <li>29,387,423 LCT</li>
                 <li>320,398 LCT</li>
@@ -41,7 +43,7 @@
             <iframe
               width="560"
               height="315"
-              src="https://www.youtube.com/embed/ZIY5tuU7RWg"
+              src="https://www.youtube.com/embed/j23HnORQXvs"
               frameborder="0"
               allow="autoplay; encrypted-media"
               allowfullscreen>
