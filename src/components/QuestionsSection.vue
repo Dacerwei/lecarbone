@@ -58,7 +58,7 @@ export default {
 }
 .title-divider {
   margin: 0 auto;
-  width: 5%;
+  width: 30px;
   border: 0;
   background-color: #F1CF69;
   height: 2px;

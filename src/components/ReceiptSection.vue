@@ -122,6 +122,10 @@ export default {
   color: #F1CF69;
 }
 
+.address-content {
+  font-size: 10px;
+}
+
 .address-title {
   font-size: 16px;
 }
