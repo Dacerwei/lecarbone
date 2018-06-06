@@ -70,7 +70,10 @@ export default {
 .qa-list-item {
   font-weight: bold;
   list-style: none;
-  padding: 10px 120px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10%;
+  padding-right: 10%;
   margin: 30px 0;
 }
 
