@@ -14,7 +14,7 @@
           <div class="member-card">
             <v-container>
               <v-layout row wrap>
-                <v-flex xs10 sm3>
+                <v-flex xs12 sm3>
                   <div class="img-container">
                     <img class="avatar"
                       :src="CEOData.avatarPhoto"/>
@@ -44,7 +44,7 @@
           <div class="member-card">
             <v-container>
               <v-layout row wrap>
-                <v-flex xs10 sm3>
+                <v-flex xs12 sm3>
                   <div class="img-container">
                     <img class="avatar"
                       :src="member.avatarPhoto"/>
@@ -203,7 +203,12 @@ export default {
   margin: 30px 0;
 }
 .img-container {
+  text-align: center;
   padding: 0 10%;
+  margin-bottom: 20px;
+}
+.avatar {
+  max-width: 120px;
 }
 .member-experience-list {
   font-size: 12px;
