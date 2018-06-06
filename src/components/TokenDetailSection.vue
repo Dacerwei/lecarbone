@@ -121,7 +121,7 @@ export default {
   font-size: 32px;
 }
 .info-container {
-  padding-left: 170px;
+  padding-left: 10%;
   padding-top: 10px;
 }
 .info-title {

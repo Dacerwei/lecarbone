@@ -90,6 +90,10 @@ export default {
 </script>
 
 <style scoped>
+.use-of-found-wrapper {
+  background-size: cover;
+  padding: 2%;
+}
 .use-title {
   color: #F1CF69;
   font-size: 30px;
@@ -103,11 +107,11 @@ export default {
   margin-bottom: 20px;
 }
 .use-of-found-container {
-  width: 50%;
+  width: 80%;
   background-color: white;
   text-align: center;
   border-radius: 40px;
-  padding: 50px;
+  padding: 5%;
   margin: 20px auto;
 }
 </style>
