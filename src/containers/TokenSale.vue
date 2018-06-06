@@ -4,28 +4,43 @@
     <nav-bar></nav-bar>
     <v-container>
       <v-layout row wrap class="token-sale-section">
-        <v-flex xs12 md7>
-          <h1 class="token-sale-title">Token Sale: week 1</h1>
-          <v-layout row wrap>
-            <v-flex xs12 md3>
-              <ul class="token-list-title">
-                <li>Min.pledge</li>
-                <li>Initial price</li>
-                <li>Tokens sold</li>
-                <li>Available</li>
-              </ul>
-            </v-flex>
-            <v-flex xs12 md9>
-              <ul class="token-list-content">
-                <li>200 LCT
-                  <span>(less amounts of tokens will not be delivered to your ETH address)</span>
-                </li>
-                <li>1 LCT = 10 USD</li>
-                <li>29,387,423 LCT</li>
-                <li>320,398 LCT</li>
-              </ul>
-            </v-flex>
-          </v-layout>
+        <v-flex class="token-sale-list" xs12 md7>
+            <h1 class="token-sale-title">Token Sale: week 1</h1>
+            <v-layout class="token-sale-row" row wrap>
+              <v-flex xs12 sm3>
+                <h2>Min.pledge</h2>
+              </v-flex>
+              <v-flex xs12 sm2>
+                <span>200 LCT</span>
+              </v-flex>
+              <v-flex xs12 sm5 class="token-list-content">
+                <span>(less amounts of tokens will not be delivered to your ETH address)</span>
+              </v-flex>
+            </v-layout>
+            <v-layout class="token-sale-row" row wrap>
+              <v-flex xs12 sm3>
+                <h2>Tokens sold</h2>
+              </v-flex>
+              <v-flex xs12 sm2>
+                <span>29,387,423 LCT</span>
+              </v-flex>
+            </v-layout>
+            <v-layout class="token-sale-row" row wrap>
+              <v-flex xs12 sm3>
+                <h2>Tokens sold</h2>
+              </v-flex>
+              <v-flex xs12 sm2>
+                <span>29,387,423 LCT</span>
+              </v-flex>
+            </v-layout>
+            <v-layout class="token-sale-row" row wrap>
+              <v-flex xs12 sm3>
+                <h2>Available</h2>
+              </v-flex>
+              <v-flex xs12 sm2>
+                <span>320,398 LCT</span>
+              </v-flex>
+            </v-layout>
         </v-flex>
         <v-flex xs12 md5>
           <v-flex xs12 md9>
@@ -107,16 +122,17 @@ export default {
   margin-bottom: 20px;
   font-size: 32px;
 }
-.token-list-title, .token-list-content {
-  list-style-type: none;
+.token-sale-row {
+  margin: 8px 0;
 }
-.token-list-title {
-  font-weight: bold;
+
+.token-sale-section h2{
+  font-size: 16px;
 }
 li {
   margin-bottom: 10px;
 }
-.token-list-content span{
+.token-list-content{
   font-size: 9px;
 }
 .video-container {
