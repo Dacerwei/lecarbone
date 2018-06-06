@@ -1,25 +1,27 @@
 <template>
   <div :style="{'background-image': 'url(' + footer + ')' }" id="footer">
     <v-content>
-      <v-layout row wrap>
-        <v-flex xs12 md4>
+      <v-layout row wrap justify-space-around>
+        <v-flex sm12 md4>
+          <div class="logo-container">
             <img class="logo" :src="logo"/>
+          </div>
         </v-flex>
-        <v-flex xs12 md4>
-            <p class="footer-info">
+        <v-flex sm12 md4>
+            <p class="footer-info text-xs-center text-md-left">
               Asia Assets Developments Co., Ltd.(AAD) is a corporate that dedicates
                itself to establishing green economies and developing assets.
                From our belief in making Earth a better place for our future generations,
                LeCarbone was born.<br><br><span>service@lecarbone.com</span>
             </p>
         </v-flex>
-        <v-flex xs12 md2>
-        </v-flex>
-        <v-flex xs12 md2>
-          <v-btn icon small><i color="white" class="fab fa-facebook-square"></i></v-btn>
-          <v-btn icon small><i color="white" class="fab fa-telegram-plane"></i></v-btn>
-          <v-btn icon small><i color="white" class="fab fa-twitter"></i></v-btn>
-          <v-btn icon small><i color="white" class="fab fa-medium-m"></i></v-btn>
+        <v-flex sm12 md4>
+          <div class="sns-container">
+            <v-btn icon large><i color="white" class="fab fa-facebook-square"></i></v-btn>
+            <v-btn icon large><i color="white" class="fab fa-telegram-plane"></i></v-btn>
+            <v-btn icon large><i color="white" class="fab fa-twitter"></i></v-btn>
+            <v-btn icon large><i color="white" class="fab fa-medium-m"></i></v-btn>
+          </div>
         </v-flex>
       </v-layout>
     </v-content>
@@ -55,17 +57,23 @@ export default {
   padding-top: 50px;
   background-position: 0 -350px;
 }
-
+.logo-container {
+  text-align: center;
+}
 .logo {
   width: 100px;
-  margin-left: 50%;
 }
 
 .footer-info {
   color: #EEEEEE;
-  margin-bottom: 50px;
+  margin: 0 auto;
+  margin-bottom: 5%;
   width: 90%;
   font-size: 12px;
+}
+
+.sns-container {
+  text-align: center;
 }
 
 .copyright {
