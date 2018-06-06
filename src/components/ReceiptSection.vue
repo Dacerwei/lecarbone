@@ -6,7 +6,7 @@
           <v-flex xs12 sm5>
             <h2>Your LeCarbone token</h2>
           </v-flex>
-          <v-flex xs12 sm2>
+          <v-flex class="amount-container" xs12 sm2>
             <span class="receipt-amount">32</span>
           </v-flex>
           <v-flex xs12 sm1>
@@ -17,7 +17,7 @@
           <v-flex xs12 sm5>
             <h2>Bonus from referrals</h2>
           </v-flex>
-          <v-flex xs12 sm2>
+          <v-flex class="amount-container" xs12 sm2>
             <span class="receipt-amount">20.49</span>
           </v-flex>
           <v-flex xs12 sm1>
@@ -33,7 +33,7 @@
           <v-flex xs12 sm5>
             <h2>Registrations</h2>
           </v-flex>
-          <v-flex xs12 sm2>
+          <v-flex class="amount-container" xs12 sm2>
             <span class="receipt-amount">23</span>
           </v-flex>
           <v-flex xs12 sm1>
@@ -95,6 +95,9 @@ export default {
   text-align: center;
   text-transform: capitalize;
 }
+.amount-container {
+  margin: 15px 0;
+}
 .receipt-amount {
   padding: 5px 15px;
   border-style: solid;
@@ -104,6 +107,7 @@ export default {
   font-size: 21px;
   color: #69F193;
   font-weight: 900;
+  margin: 10px 0;
 }
 .receipt-text {
   padding-right: 25%;
