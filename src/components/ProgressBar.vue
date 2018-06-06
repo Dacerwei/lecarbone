@@ -42,7 +42,7 @@ export default {
 
 <style scoped>
 .progress-wrapper {
-  margin: 20px 0 60px 0;
+  margin: 20px 0 20px 0;
 }
 #progress-bar {
   margin-top: 5px;

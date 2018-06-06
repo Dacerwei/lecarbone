@@ -7,16 +7,20 @@
       </v-flex>
       <prgress-bar :total="total" :current-value="progress"></prgress-bar>
       <v-layout row wrap>
-        <v-flex xs12  md3>
-          <router-link to="/tokensale">
-            <v-btn class="contribute" outline>Contribute Now</v-btn>
-          </router-link>
+        <v-flex xs12 md3>
+          <div class="contribute-container">
+            <router-link to="/tokensale">
+              <div class="contribute">CONTRIBUTE NOW</div>
+            </router-link>
+          </div>
         </v-flex>
-        <v-flex xs12 md4 tag="div">
-          <p class="download-text">{{ $t('message.MainSection.download_white_paper') }}</p>
-          <div class="btn-area">
-              <span><v-btn class="download-btn" outline color="white">ENGLISH</v-btn></span>
-              <span><v-btn class="download-btn" outline color="white">中文</v-btn></span>
+        <v-flex xs12 md4>
+          <div class="btn-area-container">
+            <p class="download-text">{{ $t('message.MainSection.download_white_paper') }}</p>
+            <div class="btn-area">
+                <span><v-btn class="download-btn" outline color="white">ENGLISH</v-btn></span>
+                <span><v-btn class="download-btn" outline color="white">中文</v-btn></span>
+            </div>
           </div>
         </v-flex>
       </v-layout>
@@ -67,10 +71,13 @@ a {
   margin-bottom: 40px;
 }
 .download-text {
-  text-align: left;
+  text-align: center;
   color: white;
   margin: 0 0 5px 0;
   font-weight: bold;
+}
+.btn-area {
+  text-align: center;
 }
 .download-btn {
   font-size: 12px;
@@ -83,9 +90,18 @@ a {
   font-size: 18px;
   font-weight: bold;
   border-color: #69F193;
+  border-style: solid;
+  border-width: 1px;
+  text-align: center;
   height: 50px;
-  width: 250px;
+  line-height: 50px;
+  width: 100%;
+  margin-top: 20px;
 }
-
+.btn-area-container {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
 </style>
 

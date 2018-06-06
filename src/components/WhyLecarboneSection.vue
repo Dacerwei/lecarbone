@@ -8,6 +8,7 @@
         <div class="why-item">
           <div class="item-icon" :style="{'background-image': 'url(' + content.icon + ')' }"></div>
           <h3 class="item-title">{{ $t(`message.WhyLecarboneSection.${content.title}`) }}</h3>
+          <hr class="divider">
           <p class="item-content">{{ $t(`message.WhyLecarboneSection.${content.description}`)}}</p>
         </div>
       </v-flex>
@@ -77,7 +78,6 @@ export default {
 .item-title {
   text-align: center;
   color: #4A8B71;
-  height: 45px;
   margin-top: 30px;
   margin-bottom: 10px;
 }
@@ -91,5 +91,13 @@ export default {
 .item-content {
   padding: 5px;
   text-align: center;
+}
+.divider {
+  background-color: #4A8B71;
+  width: 40px;
+  height: 2px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 </style>
