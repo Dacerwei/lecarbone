@@ -9,7 +9,7 @@
           <v-flex class="amount-container" xs12 sm2>
             <span class="receipt-amount">32</span>
           </v-flex>
-          <v-flex xs12 sm1>
+          <v-flex class="receipt-line-text" xs12 sm1>
             <span>LCT</span>
           </v-flex>
         </v-layout>
@@ -20,7 +20,7 @@
           <v-flex class="amount-container" xs12 sm2>
             <span class="receipt-amount">20.49</span>
           </v-flex>
-          <v-flex xs12 sm1>
+          <v-flex class="receipt-line-text" xs12 sm1>
             <span>LCT</span>
           </v-flex>
           <v-flex xs12 sm2>
@@ -36,7 +36,7 @@
           <v-flex class="amount-container" xs12 sm2>
             <span class="receipt-amount">23</span>
           </v-flex>
-          <v-flex xs12 sm1>
+          <v-flex class="receipt-line-text" xs12 sm1>
             <span>People</span>
           </v-flex>
         </v-layout>
@@ -81,8 +81,11 @@ export default {
 .receipt-line {
   margin-bottom: 35px;
 }
-.receipt-line h2{
-  line-height: 15px;
+.receipt-line h2 {
+  margin: 5px 0;
+}
+.receipt-line-text {
+  margin: 10px 0;
 }
 .bonus-btn {
   background: #69F193;
@@ -94,9 +97,10 @@ export default {
   cursor: pointer;
   text-align: center;
   text-transform: capitalize;
+  margin: 10px 0;
 }
 .amount-container {
-  margin: 15px 0;
+  margin: 5px 0;
 }
 .receipt-amount {
   padding: 5px 15px;
