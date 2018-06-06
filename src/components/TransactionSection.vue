@@ -7,15 +7,15 @@
         class="transaction-item"
         :key="transaction.id">
         <v-layout row wrap justify-center align-center>
-          <v-flex xs4>
+          <v-flex md4 xs1>
             <div class="trasaction-icon">
               <i class="fab fa-ethereum"></i>
             </div>
           </v-flex>
-          <v-flex xs4>
+          <v-flex md4 xs9>
             <div class="trasaction-value">{{ transaction.value }}</div>
           </v-flex>
-          <v-flex xs4>
+          <v-flex md4 xs10>
             <div class="trasaction-date">{{ transaction.date.format('YYYY-MM-DD  HH:mm:ss') }}</div>
           </v-flex>
         </v-layout>
