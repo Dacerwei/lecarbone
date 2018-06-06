@@ -10,7 +10,7 @@
         <p class="header-content">{{ $t('message.OurTeamSection.header_content_3') }}</p>
       </div>
       <v-layout row>
-        <v-flex xs12 sm6>
+        <v-flex sm12 md6>
           <div class="member-card">
             <v-container>
               <v-layout row wrap>
@@ -21,18 +21,18 @@
                   </div>
                 </v-flex>
                 <v-flex xs12 sm9 class="text-container">
-                  <div>
+                  <div class="member-title-contianer text-xs-center text-sm-left">
                     <h2 class="first-name">
                       {{ CEOData.firstName }} {{ CEOData.LastName }} {{ CEOData.degree }}
                     </h2>
                     <h3 class="member-title">{{ CEOData.title }}</h3>
-                    <p class="member-description">{{ CEOData.description }}</p>
-                    <ul class="member-experience-list" v-if="CEOData.experienceList">
-                      <li v-for="exp in CEOData.experienceList" :key="exp.id">
-                        {{ exp.description }}
-                      </li>
-                    </ul>
                   </div>
+                  <p class="member-description">{{ CEOData.description }}</p>
+                  <ul class="member-experience-list" v-if="CEOData.experienceList">
+                    <li v-for="exp in CEOData.experienceList" :key="exp.id">
+                      {{ exp.description }}
+                    </li>
+                  </ul>
                 </v-flex>
               </v-layout>
             </v-container>
@@ -51,18 +51,18 @@
                   </div>
                 </v-flex>
                 <v-flex xs12 sm9 class="text-container">
-                  <div>
+                  <div class="member-title-contianer text-xs-center text-sm-left">
                     <h2 class="first-name">
                       {{ member.firstName }} {{member.LastName}} {{ member.degree }}
                     </h2>
                     <h3 class="member-title">{{ member.title }}</h3>
-                    <p class="member-description">{{ member.description }}</p>
-                    <ul class="member-experience-list" v-if="member.experienceList">
-                      <li v-for="exp in member.experienceList" :key="exp.id">
-                        {{ exp.description }}
-                      </li>
-                    </ul>
                   </div>
+                  <p class="member-description">{{ member.description }}</p>
+                  <ul class="member-experience-list" v-if="member.experienceList">
+                    <li v-for="exp in member.experienceList" :key="exp.id">
+                      {{ exp.description }}
+                    </li>
+                  </ul>
                 </v-flex>
               </v-layout>
             </v-container>

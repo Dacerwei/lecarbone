@@ -1,14 +1,14 @@
 <template>
   <v-container>
     <v-layout row wrap>
-      <v-flex xs12 sm3>
+      <v-flex sm12 md3>
         <h1 class="advisor-title">Advisor</h1>
       </v-flex>
-      <v-flex xs12 sm8 v-for="advisor in advisorList" :key="advisor.id">
+      <v-flex sm12 md8 v-for="advisor in advisorList" :key="advisor.id">
         <div class="member-card">
           <v-container>
             <v-layout wrap row>
-              <v-flex xs10 sm3>
+              <v-flex xs12 sm3>
                 <div class="img-container">
                   <img
                     :src="advisor.avatarPhoto"
@@ -16,7 +16,7 @@
                 </div>
               </v-flex>
               <v-flex xs12 sm9>
-                <div>
+                <div class="member-title-contianer text-xs-center text-sm-left">
                   <p class="affiliation">{{ advisor.affiliation }}</p>
                   <h2>{{ advisor.firstName }} {{advisor.LastName}}</h2>
                   <h3>{{ advisor.title }}</h3>
@@ -65,14 +65,15 @@ export default {
   font-size: 32px;
   font-weight: bold;
 }
+.img-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
 .avatar {
-  width: 80%;
+  max-width: 120px;
 }
 .member-card {
   min-height: 300px;
-}
-.img-container {
-  width: 150px;
 }
 p {
   margin-bottom: 0;
@@ -88,7 +89,6 @@ h2 {
 h3 {
   font-weight: 400;
   font-size: 12px;
-  width: 75%;
 }
 .description {
   margin-top: 20px;
