@@ -14,7 +14,7 @@
           <v-flex xs12 sm3>
             <p class="referral-text">Your Referral Link:</p>
           </v-flex>
-          <v-flex xs8 sm5>
+          <v-flex xs12 sm5>
             <input type="text" :value="referralLink" id="referral-link">
           </v-flex>
           <v-flex xs4 sm1>
@@ -60,7 +60,8 @@ export default {
 }
 .affiliate-title {
   text-align: left;
-  font-size: 27px;
+  font-size: 21px;
+  margin-bottom: 10px;
   color: #A2A2A2;
   font-weight: 400;
 }
@@ -75,6 +76,7 @@ export default {
   text-align: center;
   border-radius: 5px;
   height: 32px;
+  margin-bottom: 10px;
 }
 .copy-btn {
   background: #69F193;

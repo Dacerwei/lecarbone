@@ -2,44 +2,50 @@
   <v-container class="receipt-section">
     <v-layout row wrap>
       <v-flex xs12 sm8>
-        <v-layout class="receipt-line" row wrap>
-          <v-flex xs12 sm5>
-            <h2>Your LeCarbone token</h2>
-          </v-flex>
-          <v-flex xs12 sm2>
-            <span class="receipt-amount">32</span>
-          </v-flex>
-          <v-flex xs12 sm1>
-            <span>LCT</span>
-          </v-flex>
-        </v-layout>
-        <v-layout class="receipt-line" row wrap>
-          <v-flex xs12 sm5>
-            <h2>Bonus from referrals</h2>
-          </v-flex>
-          <v-flex xs12 sm2>
-            <span class="receipt-amount">20.49</span>
-          </v-flex>
-          <v-flex xs12 sm1>
-            <span>LCT</span>
-          </v-flex>
-          <v-flex xs12 sm2>
-            <div class="bonus-btn">
-              GET MORE BONUS
-            </div>
-          </v-flex>
-        </v-layout>
-        <v-layout class="receipt-line" row wrap>
-          <v-flex xs12 sm5>
-            <h2>Registrations</h2>
-          </v-flex>
-          <v-flex xs12 sm2>
-            <span class="receipt-amount">23</span>
-          </v-flex>
-          <v-flex xs12 sm1>
-            <span>People</span>
-          </v-flex>
-        </v-layout>
+        <div class="receipt-line">
+          <v-layout row wrap>
+            <v-flex xs12 sm5>
+              <h2>Your LeCarbone token</h2>
+            </v-flex>
+            <v-flex xs12 sm2>
+              <span class="receipt-amount">32</span>
+            </v-flex>
+            <v-flex xs12 sm1>
+              <span>LCT</span>
+            </v-flex>
+          </v-layout>
+        </div>
+        <div class="receipt-line">
+          <v-layout row wrap>
+            <v-flex xs12 sm5>
+              <h2>Bonus from referrals</h2>
+            </v-flex>
+            <v-flex xs12 sm2>
+              <span class="receipt-amount">20.49</span>
+            </v-flex>
+            <v-flex xs12 sm1>
+              <span>LCT</span>
+            </v-flex>
+            <v-flex xs12 sm2>
+              <div class="bonus-btn">
+                GET MORE BONUS
+              </div>
+            </v-flex>
+          </v-layout>
+        </div>
+        <div class="receipt-line">
+          <v-layout row wrap>
+            <v-flex xs12 sm5>
+              <h2>Registrations</h2>
+            </v-flex>
+            <v-flex xs12 sm2>
+              <span class="receipt-amount">23</span>
+            </v-flex>
+            <v-flex xs12 sm1>
+              <span>People</span>
+            </v-flex>
+          </v-layout>
+        </div>
         <p class="receipt-text">
           If the total amount(Purchase and Bonuse) is less than 50 LCT(min. pledge).
           The Bonus will not be delivered to your ETH Address. Token distrubtion to
@@ -81,9 +87,6 @@ export default {
 .receipt-line {
   margin-bottom: 35px;
 }
-.receipt-line h2{
-  line-height: 15px;
-}
 .bonus-btn {
   background: #69F193;
   color: #fff;
@@ -95,6 +98,9 @@ export default {
   text-align: center;
   text-transform: capitalize;
 }
+.amount-container {
+  margin: 5px 0;
+}
 .receipt-amount {
   padding: 5px 15px;
   border-style: solid;
@@ -104,6 +110,7 @@ export default {
   font-size: 21px;
   color: #69F193;
   font-weight: 900;
+  margin: 10px 0;
 }
 .receipt-text {
   padding-right: 25%;
@@ -112,6 +119,10 @@ export default {
 
 .address-title, .address-content {
   color: #F1CF69;
+}
+
+.address-content {
+  font-size: 10px;
 }
 
 .address-title {
