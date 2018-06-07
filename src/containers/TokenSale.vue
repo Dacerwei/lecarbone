@@ -16,7 +16,9 @@
                     <span>200 LCT</span>
                   </v-flex>
                   <v-flex xs12 sm5>
-                    <span class="token-list-content">(less amounts of tokens will not be delivered to your ETH address)</span>
+                    <span class="token-list-content">
+                      (less amounts of tokens will not be delivered to your ETH address)
+                    </span>
                   </v-flex>
                 </v-layout>
               </div>
@@ -122,7 +124,6 @@ export default {
 </script>
 
 <style scoped>
-/* RWD for ifame  */
 .token-sale-section {
   margin: 50px 0;
 }
@@ -141,15 +142,16 @@ export default {
   line-height: 1.2em;
   font-weight: bold;
 }
-.token-sale-section h2{
+.token-sale-section h2 {
   font-size: 16px;
 }
 li {
   margin-bottom: 10px;
 }
-.token-list-content{
+.token-list-content {
   font-size: 9px;
 }
+/* RWD for ifame  */
 .video-container {
   position: relative;
   padding: 120px;
@@ -162,7 +164,7 @@ li {
   margin-top: 10px;
   margin-bottom: 30px;
 }
-.video-content p{
+.video-content p {
   margin: 20px 0;
 }
 .video-container iframe,

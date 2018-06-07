@@ -1,12 +1,37 @@
 <template>
   <v-toolbar height="70px">
-    <v-layout row align-center>
-      <v-flex xs2 sm1>
+    <v-layout row align-center justify-space-between>
+      <v-flex xs7 sm1>
         <router-link to="/">
           <img class="logo" :src="logo" />
         </router-link>
       </v-flex>
-      <v-flex xs10 class="hidden-md-and-up">
+      <v-flex xs3 class="hidden-md-and-up">
+        <v-menu offset-y>
+          <v-btn class="language" flat color="black" dark slot="activator">
+            {{ $t('message.NavBar.language') }}
+          </v-btn>
+          <v-list>
+            <v-list-tile @click="changeLanguage('en')">
+              <v-list-tile-action>
+                <img class="flag" :src="UK"/>
+              </v-list-tile-action>
+                  <v-list-tile-content>
+                    <v-list-tile-title>English</v-list-tile-title>
+                  </v-list-tile-content>
+            </v-list-tile>
+            <v-list-tile @click="changeLanguage('zh')">
+              <v-list-tile-action>
+                <img class="flag" :src="TW"/>
+              </v-list-tile-action>
+                  <v-list-tile-content>
+                    <v-list-tile-title>中文</v-list-tile-title>
+                  </v-list-tile-content>
+              </v-list-tile>
+          </v-list>
+        </v-menu>
+      </v-flex>
+      <v-flex xs2 class="hidden-md-and-up">
         <div class="mobile-menu-container">
           <v-menu offset-y>
             <v-btn slot="activator" icon large>
