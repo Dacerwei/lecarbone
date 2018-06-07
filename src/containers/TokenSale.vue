@@ -3,51 +3,61 @@
   <div>
     <nav-bar></nav-bar>
     <v-container>
-      <v-layout row wrap class="token-sale-section">
-        <v-flex class="token-sale-list" xs12 md7>
-            <h1 class="token-sale-title">Token Sale: week 1</h1>
-            <v-layout class="token-sale-row" row wrap>
-              <v-flex xs12 sm3>
-                <h2>Min.pledge</h2>
-              </v-flex>
-              <v-flex xs12 sm2>
-                <span>200 LCT</span>
-              </v-flex>
-              <v-flex xs12 sm5 class="token-list-content">
-                <span>(less amounts of tokens will not be delivered to your ETH address)</span>
-              </v-flex>
-            </v-layout>
-            <v-layout class="token-sale-row" row wrap>
-              <v-flex xs12 sm3>
-                <h2>Tokens sold</h2>
-              </v-flex>
-              <v-flex xs12 sm2>
-                <span>29,387,423 LCT</span>
-              </v-flex>
-            </v-layout>
-            <v-layout class="token-sale-row" row wrap>
-              <v-flex xs12 sm3>
-                <h2>Tokens sold</h2>
-              </v-flex>
-              <v-flex xs12 sm2>
-                <span>29,387,423 LCT</span>
-              </v-flex>
-            </v-layout>
-            <v-layout class="token-sale-row" row wrap>
-              <v-flex xs12 sm3>
-                <h2>Available</h2>
-              </v-flex>
-              <v-flex xs12 sm2>
-                <span>320,398 LCT</span>
-              </v-flex>
-            </v-layout>
-        </v-flex>
-        <v-flex xs12 md5>
-          <v-flex xs12 md9>
-            <count-down-timer :end-date="'20180628 1200'"></count-down-timer>
+      <div class="token-sale-section">
+        <v-layout row wrap>
+          <v-flex xs12 md7>
+              <h1 class="token-sale-title">Token Sale: week 1</h1>
+              <div class="token-sale-row">
+                <v-layout row wrap>
+                  <v-flex xs12 sm3>
+                    <h2>Min.pledge</h2>
+                  </v-flex>
+                  <v-flex xs12 sm2>
+                    <span>200 LCT</span>
+                  </v-flex>
+                  <v-flex xs12 sm5>
+                    <span class="token-list-content">(less amounts of tokens will not be delivered to your ETH address)</span>
+                  </v-flex>
+                </v-layout>
+              </div>
+              <div class="token-sale-row">
+                <v-layout row wrap>
+                  <v-flex xs12 sm3>
+                    <h2>Tokens sold</h2>
+                  </v-flex>
+                  <v-flex xs12 sm2>
+                    <span>29,387,423 LCT</span>
+                  </v-flex>
+                </v-layout>
+              </div>
+              <div class="token-sale-row">
+                <v-layout row wrap>
+                  <v-flex xs12 sm3>
+                    <h2>Tokens sold</h2>
+                  </v-flex>
+                  <v-flex xs12 sm2>
+                    <span>29,387,423 LCT</span>
+                  </v-flex>
+                </v-layout>
+              </div>
+              <div class="token-sale-row">
+               <v-layout row wrap>
+                  <v-flex xs12 sm3>
+                    <h2>Available</h2>
+                  </v-flex>
+                  <v-flex xs12 sm2>
+                    <span>320,398 LCT</span>
+                  </v-flex>
+                </v-layout>
+              </div>
           </v-flex>
-        </v-flex>
-      </v-layout>
+          <v-flex xs12 md5>
+            <v-flex xs12 md9>
+              <count-down-timer :end-date="'20180628 1200'"></count-down-timer>
+            </v-flex>
+          </v-flex>
+        </v-layout>
+      </div>
       <v-layout row wrap justify-space-between>
         <v-flex xs12 md6>
           <buy-tokens></buy-tokens>
