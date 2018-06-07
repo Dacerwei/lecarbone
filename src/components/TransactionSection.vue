@@ -12,10 +12,10 @@
               <i class="fab fa-ethereum"></i>
             </div>
           </v-flex>
-          <v-flex md4 xs9>
+          <v-flex md4 xs8>
             <div class="trasaction-value">{{ transaction.value }}</div>
           </v-flex>
-          <v-flex md4 xs10>
+          <v-flex md4 xs3>
             <div class="trasaction-date">{{ transaction.date.format('YYYY-MM-DD  HH:mm:ss') }}</div>
           </v-flex>
         </v-layout>
