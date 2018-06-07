@@ -59,5 +59,11 @@ module.exports = {
       token_sale: '{percentage} Token Sale',
       private_sale: '{percentage} Private Sale',
     },
+    Advisor: {
+      title: 'Advisor',
+    },
+    Partners: {
+      title: 'Partners',
+    },
   },
 };

@@ -59,5 +59,11 @@ module.exports = {
       token_sale: '{percentage} 代幣發售',
       private_sale: '{percentage} 私人發售',
     },
+    Advisor: {
+      title: '顧問',
+    },
+    Partners: {
+      title: '夥伴',
+    },
   },
 };
