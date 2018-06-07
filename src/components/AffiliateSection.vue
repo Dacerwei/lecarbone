@@ -14,7 +14,7 @@
           <v-flex xs12 sm3>
             <p class="referral-text">Your Referral Link:</p>
           </v-flex>
-          <v-flex xs8 sm5 xs12>
+          <v-flex xs12 sm5>
             <input type="text" :value="referralLink" id="referral-link">
           </v-flex>
           <v-flex xs4 sm1>
