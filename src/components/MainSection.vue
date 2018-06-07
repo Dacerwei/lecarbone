@@ -8,7 +8,7 @@
           {{ $t('message.MainSection.timer_till') }}
           {{ this.formatDate(this.endDate) }} PDT
         </div>
-        <count-down-timer :end-date="endDate" :time-zone="'PDT'"></count-down-timer>
+        <count-down-timer :end-date="endDate"></count-down-timer>
       </v-flex>
       <prgress-bar :total="total" :current-value="progress"></prgress-bar>
       <v-layout row wrap>
