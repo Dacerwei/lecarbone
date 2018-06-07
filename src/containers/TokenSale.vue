@@ -4,7 +4,7 @@
     <nav-bar></nav-bar>
     <v-container>
       <v-layout row wrap class="token-sale-section">
-        <v-flex xs12 md7>
+        <v-flex xs12 sm7>
           <h1 class="token-sale-title">Token Sale: week 1</h1>
           <v-layout row wrap>
             <v-flex xs12 md3>
@@ -27,10 +27,9 @@
             </v-flex>
           </v-layout>
         </v-flex>
-        <v-flex xs12 md5>
-          <v-flex xs12 md9>
+        <v-flex xs12 sm5>
+            <h1 class="timer-title">Ends in</h1>
             <count-down-timer :end-date="'20180628 1200'"></count-down-timer>
-          </v-flex>
         </v-flex>
       </v-layout>
       <v-layout row wrap justify-space-between>
@@ -116,8 +115,15 @@ export default {
 li {
   margin-bottom: 10px;
 }
-.token-list-content span{
+.token-list-content span {
   font-size: 9px;
+}
+.timer-title {
+  font-size: 16pt;
+  text-align: left;
+  color: #F1CF69;
+  line-height: 1.2em;
+  font-weight: bold;
 }
 .video-container {
   position: relative;
@@ -131,7 +137,7 @@ li {
   margin-top: 10px;
   margin-bottom: 30px;
 }
-.video-content p{
+.video-content p {
   margin: 20px 0;
 }
 .video-container iframe,
