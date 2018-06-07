@@ -51,10 +51,9 @@
                 </v-layout>
               </div>
           </v-flex>
-          <v-flex xs12 md5>
-            <v-flex xs12 md9>
+          <v-flex xs12 sm5>
+              <h1 class="timer-title">Ends in</h1>
               <count-down-timer :end-date="'20180628 1200'"></count-down-timer>
-            </v-flex>
           </v-flex>
         </v-layout>
       </div>
@@ -135,7 +134,13 @@ export default {
 .token-sale-row {
   margin: 8px 0;
 }
-
+.timer-title {
+  font-size: 16pt;
+  text-align: left;
+  color: #F1CF69;
+  line-height: 1.2em;
+  font-weight: bold;
+}
 .token-sale-section h2{
   font-size: 16px;
 }
