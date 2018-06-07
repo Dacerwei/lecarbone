@@ -65,5 +65,11 @@ module.exports = {
     Partners: {
       title: 'Partners',
     },
+    AffiliateProgram: {
+      title: 'Affiliate Program',
+      text_content: 'Additional 0.5% bonus token you will get from all your friends that will use your referral link! Any user registered with this link will get 0.2 LeCarbone token as a welcome bonus.',
+      link: 'Your Referral Link',
+      copy: 'COPY',
+    },
   },
 };

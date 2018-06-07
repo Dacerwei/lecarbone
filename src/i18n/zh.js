@@ -65,5 +65,11 @@ module.exports = {
     Partners: {
       title: '夥伴',
     },
+    AffiliateProgram: {
+      title: '聯盟行銷',
+      text_content: '額外的0.5％獎勵代幣，您將從所有使用您的推介鏈接的朋友處獲得！ 任何使用此鏈接註冊的用戶都將獲得0.2 LeCarbone代幣作為受歡迎的獎勵。',
+      link: '你的推薦連結',
+      copy: '複製',
+    },
   },
 };

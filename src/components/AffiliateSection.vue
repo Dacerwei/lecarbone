@@ -2,17 +2,14 @@
   <div class="affiliate-container">
     <v-layout row wrap>
       <v-flex xs12 sm4>
-        <h1 class="affiliate-title">Affiliate Program</h1>
+        <h1 class="affiliate-title">{{ $t('message.AffiliateProgram.title') }}</h1>
       </v-flex>
       <v-flex xs12 sm8>
-        <p class="affiliate-text">
-          Additional 0.5% bonus token you will get from all your
-          friends that will use your referral link!
-          Any user registered with this link will get 0.2 LeCarbone token as a welcome bonus.
+        <p class="affiliate-text">{{ $t('message.AffiliateProgram.text_content') }}
         </p>
         <v-layout row wrap align-content-center>
           <v-flex xs12 sm3>
-            <p class="referral-text">Your Referral Link:</p>
+            <p class="referral-text">{{ $t('message.AffiliateProgram.link') }}:</p>
           </v-flex>
           <v-flex xs12 sm5>
             <input type="text" :value="referralLink" id="referral-link">
@@ -21,7 +18,7 @@
             <div class="copy-btn" @click="copyLinkClicked"
               outline
               >
-              COPY
+              {{ $t('message.AffiliateProgram.copy')}}
             </div>
           </v-flex>
         </v-layout>
