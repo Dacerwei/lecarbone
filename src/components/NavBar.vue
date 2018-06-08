@@ -1,12 +1,15 @@
 <template>
   <v-toolbar height="70px">
     <v-layout row align-center justify-space-between>
-      <v-flex xs7 sm1>
-        <router-link to="/">
-          <img class="logo" :src="logo" />
-        </router-link>
+      <v-flex xs7 sm2>
+        <div class="logo-container">
+          <router-link to="/">
+            <img class="logo" :src="logo" />
+          </router-link>
+        </div>
       </v-flex>
       <v-flex xs3 class="hidden-md-and-up">
+        <div class="">
         <v-menu offset-y>
           <v-btn class="language" flat color="black" dark slot="activator">
             {{ $t('message.NavBar.language') }}
@@ -182,12 +185,13 @@ export default {
 a {
   text-decoration: none;
 }
+.logo-container {
+  width: 100%;
+  padding-left: 5%;
+}
 .logo {
-  width: 120px;
+  max-width: 120px;
   height: 30px;
-  margin-right: 1%;
-  margin-left: 20px;
-  margin-top: 3px;
 }
 .flag {
   width: 30px;
