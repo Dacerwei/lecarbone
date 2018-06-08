@@ -1,6 +1,5 @@
 <template>
 <v-app>
-  <NavBar></NavBar>
   <main-section></main-section>
   <media-section></media-section>
   <Video-section></Video-section>
@@ -12,12 +11,9 @@
   <our-team-section></our-team-section>
   <advisor-section></advisor-section>
   <partner-section></partner-section>
-  <Footer></Footer>
 </v-app>
 </template>
 <script>
-import NavBar from '@/components/NavBar';
-import Footer from '@/components/Footer';
 import MainSection from '@/components/MainSection';
 import HowItWorksSection from '@/components/HowItWorksSection';
 import MediaSection from '@/components/MediaSection';
@@ -32,7 +28,6 @@ import RoadMapSection from '@/components/RoadMapSection';
 
 export default {
   components: {
-    NavBar,
     VideoSection,
     MainSection,
     OurTeamSection,
@@ -43,7 +38,6 @@ export default {
     UseOfFoundSection,
     PartnerSection,
     AdvisorSection,
-    Footer,
     RoadMapSection,
   },
 };

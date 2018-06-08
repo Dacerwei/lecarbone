@@ -1,7 +1,6 @@
 <template>
 <v-app>
   <div>
-    <nav-bar></nav-bar>
     <v-container>
       <div class="token-sale-section">
         <v-layout row wrap>
@@ -86,14 +85,11 @@
       <receipt-section></receipt-section>
       <questions-section></questions-section>
     </v-container>
-    <Footer></Footer>
   </div>
 </v-app>
 </template>
 
 <script>
-import NavBar from '@/components/NavBar';
-import Footer from '@/components/Footer';
 import BuyTokens from '@/components/BuyTokens';
 import QuestionsSection from '@/components/QuestionsSection';
 import AffiliateSection from '@/components/AffiliateSection';
@@ -104,14 +100,12 @@ import TransactionSection from '@/components/TransactionSection';
 export default {
   name: 'TokenSale',
   components: {
-    NavBar,
     BuyTokens,
     CountDownTimer,
     QuestionsSection,
     AffiliateSection,
     TransactionSection,
     ReceiptSection,
-    Footer,
   },
 };
 </script>
