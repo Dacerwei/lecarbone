@@ -87,5 +87,15 @@ module.exports = {
       text_content: 'Make sure you have set the sufficient gas limit and gas price, or your transaction can be returned by Ethereum Networks.',
       limitation: 'Gas limit: 21000 <br> Max gas price: 50 GWei',
     },
+    BuyTokens: {
+      title: 'Buy Tokens',
+      subtitle: 'Fund your account in order to confirm purchase. The number of Lecarbone token will be automatically calculated when we recieve your deposit.',
+      exchange_rate: 'Rate 1 ETH: {rate} USD',
+      rate_tip: 'the rate will update at anytime',
+      book_now: 'BUY NOW',
+      tip_1: 'Please enter the amount of Lecarbone token you want to buy',
+      tip_2: 'Each transaction will be processed accordingly',
+      introduction: 'Transactions will be automatically added to your balace when they are confirmed by the network. It may take up to few hours. Please be patient.',
+    },
   },
 };

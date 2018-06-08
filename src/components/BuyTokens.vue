@@ -1,13 +1,9 @@
 <template>
 <div class="buy-token-wrapper">
-  <h1 class="buy-token-title">Buy Tokens</h1>
-  <p class="buy-token-content">
-    Fund your account in order to confirm purchase.
-    The number of Lecarbone token will be automatically
-    calculated when we recieve your deposit.
-  </p>
+  <h1 class="buy-token-title">{{ $t('message.BuyTokens.title') }}</h1>
+  <p class="buy-token-content">{{ $t('message.BuyTokens.subtitle') }}</p>
   <div class="transaction-area">
-    <p>Please enter the amount of Lecarbone token you want to buy:</p>
+    <p>{{ $t('message.BuyTokens.tip_1') }}:</p>
     <v-layout row wrap justify-space-between align-content-center>
       <v-flex xs12 sm3 md4 class="input-container">
         <label>LCT</label>
@@ -29,23 +25,19 @@
           placeholder="ETH"/>
       </v-flex>
       <v-flex xs12 sm3 md3>
-        <p class="exchange-tip">Rate 1 ETH: {{ ethToUsdRate }} USD</p>
-        <p class="exchange-tip">(the rate will update at anytime)</p>
+        <p class="exchange-tip">
+          {{ $t('message.BuyTokens.exchange_rate', {rate: ethToUsdRate}) }}
+        </p>
+        <p class="exchange-tip">{{ $t('message.BuyTokens.rate_tip') }}</p>
       </v-flex>
     </v-layout>
     <v-layout row>
       <v-flex xs12 sm3 class="btn-container">
-        <div class="buy-btn" outline>BUY NOW</div>
+        <div class="buy-btn" outline>{{ $t('message.BuyTokens.book_now') }}</div>
       </v-flex>
     </v-layout>
-    <p>
-      Each transaction will be precessed accordingly
-    </p>
-    <p>
-      Transactions will be automatically added to
-      your balace when they are confirmed by the network.
-      It may take up to few hours. Please be patient.
-    </p>
+    <p>{{ $t('message.BuyTokens.tip_2') }}</p>
+    <p>{{ $t('message.BuyTokens.introduction') }}</p>
   </div>
 </div>
 </template>

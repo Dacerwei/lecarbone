@@ -87,5 +87,15 @@ module.exports = {
       text_content: '確保你已經設置了足夠的 gas 限制和 gas 價格，或者你的交易可以由Ethereum Networks返回。',
       limitation: 'Gas 限制: 21000 <br> 最高 gas 價格: 50 GWei',
     },
+    BuyTokens: {
+      title: '購賣代幣',
+      subtitle: '資金您的帳戶，以確認購買。 Carbon token的數量將在我們收到您的押金後自動計算。',
+      exchange_rate: '匯率 1 ETH: {rate} USD',
+      rate_tip: '匯率隨時會更新',
+      book_now: '立刻購買',
+      tip_1: '請輸入欲夠買的 Lecarbone 代幣數量',
+      tip_2: '每筆交易都將相應處理',
+      introduction: '交易將在網絡確認後自動添加到您的餘額中。 這可能需要幾個小時。 請耐心等待。',
+    },
   },
 };
