@@ -9,7 +9,6 @@
         </div>
       </v-flex>
       <v-flex xs3 class="hidden-md-and-up">
-        <div class="">
         <v-menu offset-y>
           <v-btn class="language" flat color="black" dark slot="activator">
             {{ $t('message.NavBar.language') }}
