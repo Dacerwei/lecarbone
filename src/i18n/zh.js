@@ -89,7 +89,7 @@ module.exports = {
     },
     BuyTokens: {
       title: '購賣代幣',
-      subtitle: '資金您的帳戶，以確認購買。 Carbon token的數量將在我們收到您的押金後自動計算。',
+      subtitle: '投資您的帳戶，以確認購買。 LeCarbon Token 的數量將在我們收到您的押金後自動計算。',
       exchange_rate: '匯率 1 ETH: {rate} USD',
       rate_tip: '匯率隨時會更新',
       book_now: '立刻購買',
@@ -110,10 +110,10 @@ module.exports = {
       title: '交易紀錄',
     },
     ReceiptSection: {
-      your_token: '妳的 LeCarbone 代幣',
+      your_token: '你的 LeCarbone 代幣',
       bonus_from_referrals: '轉介獎金',
       more_bonus: '獲得更多獎勵',
-      registrations: '註冊',
+      registrations: '註冊人數',
       people_unit: '人',
       text_content: '如果總金額（購買和Bonus）少於50 LCT（最低質押）。 獎金將不會傳送到您的ETH地址。 代幣銷售結束一周後，代幣將會分發給貢獻者。',
       address: '你的 ETH 地址',
