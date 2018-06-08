@@ -6,18 +6,18 @@
       <div class="token-sale-section">
         <v-layout row wrap>
           <v-flex xs12 md7>
-              <h1 class="token-sale-title">Token Sale: week 1</h1>
+              <h1 class="token-sale-title">{{ $t('message.TokenSale.title') }}</h1>
               <div class="token-sale-row">
                 <v-layout row wrap>
                   <v-flex xs12 sm3>
-                    <h2>Min.pledge</h2>
+                    <h2>{{ $t('message.TokenSale.min_pledge') }}</h2>
                   </v-flex>
                   <v-flex xs12 sm2>
                     <span>200 LCT</span>
                   </v-flex>
                   <v-flex xs12 sm5>
                     <span class="token-list-content">
-                      (less amounts of tokens will not be delivered to your ETH address)
+                      ({{ $t('message.TokenSale.min_pledge_tip') }})
                     </span>
                   </v-flex>
                 </v-layout>
@@ -25,7 +25,7 @@
               <div class="token-sale-row">
                 <v-layout row wrap>
                   <v-flex xs12 sm3>
-                    <h2>Tokens sold</h2>
+                    <h2>{{ $t('message.TokenSale.initial_price') }}</h2>
                   </v-flex>
                   <v-flex xs12 sm2>
                     <span>29,387,423 LCT</span>
@@ -35,7 +35,7 @@
               <div class="token-sale-row">
                 <v-layout row wrap>
                   <v-flex xs12 sm3>
-                    <h2>Tokens sold</h2>
+                    <h2>{{ $t('message.TokenSale.tokens_sold') }}</h2>
                   </v-flex>
                   <v-flex xs12 sm2>
                     <span>29,387,423 LCT</span>
@@ -45,7 +45,7 @@
               <div class="token-sale-row">
                <v-layout row wrap>
                   <v-flex xs12 sm3>
-                    <h2>Available</h2>
+                    <h2>{{ $t('message.TokenSale.available') }}</h2>
                   </v-flex>
                   <v-flex xs12 sm2>
                     <span>320,398 LCT</span>
@@ -54,7 +54,7 @@
               </div>
           </v-flex>
           <v-flex xs12 sm5>
-              <h1 class="timer-title">Ends in</h1>
+              <h1 class="timer-title">{{ $t('message.TokenSale.count_down_title') }}</h1>
               <count-down-timer :end-date="'20180628 1200'"></count-down-timer>
           </v-flex>
         </v-layout>

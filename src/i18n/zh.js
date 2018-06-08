@@ -97,5 +97,14 @@ module.exports = {
       tip_2: '每筆交易都將相應處理',
       introduction: '交易將在網絡確認後自動添加到您的餘額中。 這可能需要幾個小時。 請耐心等待。',
     },
+    TokenSale: {
+      title: '代幣出售: Week 1!',
+      min_pledge: '最低保證',
+      min_pledge_tip: '少量的代幣不會傳送到您的 ETH 地址',
+      initial_price: '初始價格',
+      tokens_sold: '已出售代幣',
+      available: '可出售代幣',
+      count_down_title: '結束於',
+    },
   },
 };

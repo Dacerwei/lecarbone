@@ -97,5 +97,14 @@ module.exports = {
       tip_2: 'Each transaction will be processed accordingly',
       introduction: 'Transactions will be automatically added to your balace when they are confirmed by the network. It may take up to few hours. Please be patient.',
     },
+    TokenSale: {
+      title: 'Token Sale: Week 1!',
+      min_pledge: 'Min.pledge',
+      min_pledge_tip: 'less amounts of tokens will not be delivered to your ETH address',
+      initial_price: 'Initial Price',
+      tokens_sold: 'Tokens Sold',
+      available: 'Available',
+      count_down_title: 'Ends in',
+    },
   },
 };
