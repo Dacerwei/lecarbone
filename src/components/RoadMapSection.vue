@@ -2,7 +2,7 @@
     <section id="roadmap">
       <h1>Roadmap</h1>
       <hr class="title" />
-      <div class="roadmap" v-if = "!isMobile">
+      <div class="roadmap" v-if="!isMobile">
         <div class="uppermap">
           <div class="up_container">
             <div class="utitle">2017 Q1</div>
@@ -95,10 +95,10 @@
         </div>
       </div>
       <div class="roadmapMobile" v-if = "isMobile">
-        <div class="qContainer" v-for = "question in questionList" :key="question.id">
+        <div class="questionContainer" v-for = "question in questionList" :key="question.id">
           <div class="point"></div>
-          <h2 class="qTitle">{{question.title}}</h2>
-          <p class="qDescribtion" v-html="question.describtion"></p>
+          <h2 class="questionTitle">{{question.title}}</h2>
+          <p class="qDescribtion">{{question.describtion}}</p>
         </div>
       </div>
     </section>
@@ -183,7 +183,6 @@ export default {
   methods: {
     onResize() {
       this.isMobile = window.innerWidth < 600;
-      // this.isMobile = window.innerWidth < 600
     },
   },
 };
@@ -193,8 +192,6 @@ export default {
 $color_yellow: #F1CF69
 *
   position: relative
-  // border: solid 1px
-  // font-family:
 
 #roadmap
   padding: 30px 0
@@ -205,7 +202,7 @@ $color_yellow: #F1CF69
     color: $color_yellow
   hr.title
     width: 40px
-    border: 1px solid $color_yellow
+    border: 2px solid $color_yellow
     background-color: $color_yellow
     margin: 0 auto 40px auto
   .uppermap
@@ -232,7 +229,7 @@ $color_yellow: #F1CF69
         z-index: 2
       .uinfo
         width: 70%
-        border-left: solid 1px $color_yellow
+        border-left: solid 2px $color_yellow
         padding: 0px 15px
         font-size: 12px
       .u1
@@ -265,7 +262,7 @@ $color_yellow: #F1CF69
       .dinfo
         width: 50%
         height: 150px
-        border-left: solid 0.1px $color_yellow
+        border-left: solid 2px $color_yellow
         padding: 0px 15px
         font-size: 12px
         p
@@ -294,10 +291,10 @@ $color_yellow: #F1CF69
     border: solid 1px $color_yellow
   .roadmapMobile
     padding: 0% 8% 0% 20%
-    .qContainer
+    .questionContainer
       padding: 0px 20px
       height: 250px
-      border-left: solid 1px $color_yellow
+      border-left: solid 2px $color_yellow
       .point
         position: absolute
         width: 15px
@@ -307,8 +304,7 @@ $color_yellow: #F1CF69
         left: 0px
         transform: translate(-50%, -50%)
         background-color: $color_yellow
-      .qTitle
-        // margin-top: -20px
+      .questionTitle
         bottom: 20px
       .qDescribtion
         margin-top: -15px
