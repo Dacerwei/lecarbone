@@ -94,8 +94,8 @@
           </div>
         </div>
       </div>
-      <div class="roadmapMobile" v-if = "isMobile">
-        <div class="questionContainer" v-for = "question in questionList" :key="question.id">
+      <div class="roadmapMobile" v-if="isMobile">
+        <div class="questionContainer" v-for="question in questionList" :key="question.id">
           <div class="point"></div>
           <h2 class="questionTitle">{{question.title}}</h2>
           <p class="qDescribtion">{{question.describtion}}</p>
@@ -176,7 +176,7 @@ export default {
     window.addEventListener('resize', this.onResize, { passive: true });
   },
   beforeDestroy() {
-    if(typeof window !== 'undefined') {
+    if (typeof window !== 'undefined') {
       window.removeEventListener('resize', this.onResize, { passive: true });
     }
   },
@@ -308,6 +308,4 @@ $color_yellow: #F1CF69
         bottom: 20px
       .qDescribtion
         margin-top: -15px
-
-
 </style>
