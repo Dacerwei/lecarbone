@@ -176,7 +176,7 @@ export default {
     window.addEventListener('resize', this.onResize, { passive: true });
   },
   beforeDestroy() {
-    if (typeof window !== 'undefined') {
+    if(typeof window !== 'undefined') {
       window.removeEventListener('resize', this.onResize, { passive: true });
     }
   },
