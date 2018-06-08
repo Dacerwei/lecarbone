@@ -71,5 +71,16 @@ module.exports = {
       link: '你的推薦連結',
       copy: '複製',
     },
+    QuestionsSection: {
+      title: '常見問題',
+      question_1: '如何添加 LeCarbone 代幣至我的錢包？',
+      answer_1: '解答',
+      question_2: '如何添加 LeCarbone 代幣至我的錢包？',
+      answer_2: '解答',
+      question_3: '如何添加 LeCarbone 代幣至我的錢包？',
+      answer_3: '解答',
+      question_4: '如何添加 LeCarbone 代幣至我的錢包？',
+      answer_4: '解答',
+    },
   },
 };

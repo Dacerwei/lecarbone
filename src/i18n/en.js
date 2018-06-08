@@ -71,5 +71,16 @@ module.exports = {
       link: 'Your Referral Link',
       copy: 'COPY',
     },
+    QuestionsSection: {
+      title: 'FAQ',
+      question_1: 'How to add to LeCarbone token to my wallet',
+      answer_1: 'answer',
+      question_2: 'How to add to LeCarbone token to my wallet',
+      answer_2: 'answer',
+      question_3: 'How to add to LeCarbone token to my wallet',
+      answer_3: 'answer',
+      question_4: 'How to add to LeCarbone token to my wallet',
+      answer_4: 'answer',
+    },
   },
 };
