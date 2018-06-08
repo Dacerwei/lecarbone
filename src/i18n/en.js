@@ -82,5 +82,10 @@ module.exports = {
       question_4: 'How to add to LeCarbone token to my wallet',
       answer_4: 'answer',
     },
+    VideoTutorial: {
+      title: 'Watch video tutorials',
+      text_content: 'Make sure you have set the sufficient gas limit and gas price, or your transaction can be returned by Ethereum Networks.',
+      limitation: 'Gas limit: 21000 <br> Max gas price: 50 GWei',
+    },
   },
 };

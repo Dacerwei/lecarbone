@@ -64,7 +64,7 @@
           <buy-tokens></buy-tokens>
         </v-flex>
         <v-flex xs12 md5>
-          <h1 class="video-title">Watch video tutorials</h1>
+          <h1 class="video-title">{{ $t('message.VideoTutorial.title') }}</h1>
           <div class="video-container">
             <iframe
               width="560"
@@ -76,15 +76,8 @@
             </iframe>
           </div>
           <div class="video-content">
-            <p>
-              Make sure you have set the sufficient gas
-              limit and gas price, or your transaction
-              can be returned by Ethereum Networks.
-            </p>
-            <p>
-              Gas limit: 21000<br>
-              Max gas price: 50 GWei
-            </p>
+            <p>{{ $t('message.VideoTutorial.text_content') }}</p>
+            <p v-html="$t('message.VideoTutorial.limitation')"></p>
           </div>
         </v-flex>
       </v-layout>

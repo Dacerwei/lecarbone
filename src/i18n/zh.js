@@ -82,5 +82,10 @@ module.exports = {
       question_4: '如何添加 LeCarbone 代幣至我的錢包？',
       answer_4: '解答',
     },
+    VideoTutorial: {
+      title: '觀看影片教學',
+      text_content: '確保你已經設置了足夠的 gas 限制和 gas 價格，或者你的交易可以由Ethereum Networks返回。',
+      limitation: 'Gas 限制: 21000 <br> 最高 gas 價格: 50 GWei',
+    },
   },
 };
