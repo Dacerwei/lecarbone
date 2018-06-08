@@ -1,6 +1,6 @@
 <template>
   <v-container class="transactions-section">
-    <h1 class="transaction-title">Transactions</h1>
+    <h1 class="transaction-title">{{ $t('message.Transactions.title') }}</h1>
     <ul class="transaction-list">
       <hr>
       <li v-for="transaction in transactions"

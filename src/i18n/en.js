@@ -106,5 +106,17 @@ module.exports = {
       available: 'Available',
       count_down_title: 'Ends in',
     },
+    Transactions: {
+      title: 'Transactions',
+    },
+    ReceiptSection: {
+      your_token: 'Your LeCarbone Token',
+      bonus_from_referrals: 'Bonus from referrals',
+      more_bonus: 'GET MORE BONUS',
+      registrations: 'Registrations',
+      people_unit: 'People',
+      text_content: 'If the total amount(Purchase and Bonuse) is less than 50 LCT(min. pledge). The Bonus will not be delivered to your ETH Address. Token distrubtion to contributors will take place one week after the end of Token Sale.',
+      address: 'Your ETH Address',
+    },
   },
 };

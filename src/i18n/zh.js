@@ -106,5 +106,17 @@ module.exports = {
       available: '可出售代幣',
       count_down_title: '結束於',
     },
+    Transactions: {
+      title: '交易紀錄',
+    },
+    ReceiptSection: {
+      your_token: '妳的 LeCarbone 代幣',
+      bonus_from_referrals: '轉介獎金',
+      more_bonus: '獲得更多獎勵',
+      registrations: '註冊',
+      people_unit: '人',
+      text_content: '如果總金額（購買和Bonus）少於50 LCT（最低質押）。 獎金將不會傳送到您的ETH地址。 代幣銷售結束一周後，代幣將會分發給貢獻者。',
+      address: '你的 ETH 地址',
+    },
   },
 };

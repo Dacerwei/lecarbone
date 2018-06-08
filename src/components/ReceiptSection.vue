@@ -5,7 +5,7 @@
         <div class="receipt-line">
           <v-layout row wrap>
             <v-flex xs12 sm5>
-              <h2>Your LeCarbone token</h2>
+              <h2>{{ $t('message.ReceiptSection.your_token') }}</h2>
             </v-flex>
             <v-flex xs12 sm2>
               <span class="receipt-amount">32</span>
@@ -18,7 +18,7 @@
         <div class="receipt-line">
           <v-layout row wrap>
             <v-flex xs12 sm5>
-              <h2>Bonus from referrals</h2>
+              <h2>{{ $t('message.ReceiptSection.bonus_from_referrals') }}</h2>
             </v-flex>
             <v-flex xs12 sm2>
               <span class="receipt-amount">20.49</span>
@@ -28,7 +28,7 @@
             </v-flex>
             <v-flex xs12 sm2>
               <div class="bonus-btn">
-                GET MORE BONUS
+                {{ $t('message.ReceiptSection.more_bonus') }}
               </div>
             </v-flex>
           </v-layout>
@@ -36,22 +36,18 @@
         <div class="receipt-line">
           <v-layout row wrap>
             <v-flex xs12 sm5>
-              <h2>Registrations</h2>
+              <h2>{{ $t('message.ReceiptSection.registrations') }}</h2>
             </v-flex>
             <v-flex xs12 sm2>
               <span class="receipt-amount">23</span>
             </v-flex>
             <v-flex xs12 sm1>
-              <span>People</span>
+              <span>{{ $t('message.ReceiptSection.people_unit') }}</span>
             </v-flex>
           </v-layout>
         </div>
-        <p class="receipt-text">
-          If the total amount(Purchase and Bonuse) is less than 50 LCT(min. pledge).
-          The Bonus will not be delivered to your ETH Address. Token distrubtion to
-          contributors will take place one week after the end of Token Sale.
-        </p>
-        <h2 class="address-title">Your ETH Address</h2>
+        <p class="receipt-text">{{ $t('message.ReceiptSection.text_content') }}</p>
+        <h2 class="address-title">{{ $t('message.ReceiptSection.address') }}</h2>
         <span class="address-content">3VFUDCBHDJVBJ2345675434535FJVSJDNXVN</span>
       </v-flex>
       <v-flex xs12 sm4 class="note">
