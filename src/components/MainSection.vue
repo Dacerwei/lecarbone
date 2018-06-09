@@ -2,8 +2,13 @@
   <div class="main-section" :style="containerStyle">
     <v-container>
       <h1 class="main-text">{{ $t('message.MainSection.main_text') }}</h1>
-      <v-flex tag="div" class="timer-wrapper" xs12 sm6 md4>
-        <count-down-timer :end-date="endDate" :time-zone="'PDT'"></count-down-timer>
+      <v-flex tag="div" class="timer-wrapper" sm10 md5>
+        <div class="timer-title">{{ $t('message.MainSection.timer_title') }}</div>
+        <div class="timer-text">
+          {{ $t('message.MainSection.timer_till') }}
+          {{ this.formatDate(this.endDate) }} PDT
+        </div>
+        <count-down-timer :end-date="endDate"></count-down-timer>
       </v-flex>
       <prgress-bar :total="total" :current-value="progress"></prgress-bar>
       <v-layout row wrap>
@@ -32,6 +37,7 @@
 import CountDownTimer from '@/components/CountDownTimer';
 import PrgressBar from '@/components/ProgressBar';
 import MainSectionBackground from '@/assets/background/main_section.png';
+import moment from 'moment';
 
 export default {
   name: 'MainSection',
@@ -52,6 +58,9 @@ export default {
     PrgressBar,
   },
   methods: {
+    formatDate(date) {
+      return moment(date).format('MMMM Do, h:mm a');
+    },
   },
 };
 </script>
@@ -69,6 +78,18 @@ a {
   font-weight: bold;
   line-height: 1.2em;
   margin-bottom: 40px;
+}
+.timer-title {
+  font-size: 250%;
+  text-align: left;
+  color: #F1CF69;
+  line-height: 1.2em;
+  font-weight: bold;
+}
+.timer-text {
+  color: #F1CF69;
+  font-size: 16px;
+  font-weight: bold;
 }
 .download-text {
   text-align: center;

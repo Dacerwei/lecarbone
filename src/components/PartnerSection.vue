@@ -2,7 +2,7 @@
   <v-container>
     <v-layout row wrap>
       <v-flex xs12 sm3>
-        <h1 class="partners-title">Partners</h1>
+        <h1 class="partners-title">{{ $t('message.Partners.title') }}</h1>
       </v-flex>
       <v-flex xs12 sm9>
         <v-layout row wrap justify-space-between>

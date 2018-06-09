@@ -2,7 +2,7 @@
   <v-container>
     <v-layout row wrap>
       <v-flex sm12 md3>
-        <h1 class="advisor-title">Advisor</h1>
+        <h1 class="advisor-title">{{ $t('message.Advisor.title') }}</h1>
       </v-flex>
       <v-flex sm12 md8 v-for="advisor in advisorList" :key="advisor.id">
         <div class="member-card">

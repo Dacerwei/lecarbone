@@ -1,13 +1,13 @@
 <template>
   <v-container class="FAQ-section">
-    <h1 class="qa-title">FAQ</h1>
+    <h1 class="qa-title">{{ $t('message.QuestionsSection.title') }}</h1>
     <hr class="title-divider">
     <ul class="qa-list">
       <template v-for="q in questions">
         <li class="qa-list-item" :key="q.id">
           <span class="dot"></span>
-          <h2>{{ q.questions }}</h2>
-          <p>{{ q.answer }}</p>
+          <h2>{{ $t( `message.QuestionsSection.${q.questions}`) }}</h2>
+          <p>{{ $t( `message.QuestionsSection.${q.answer}`) }}</p>
         </li>
         <hr color="#F1CF69" size="1px" :key="q.id + 'divider'">
       </template>
@@ -18,23 +18,23 @@
 const questions = [
   {
     id: 0,
-    questions: 'How to add to LeCarbone token to my wallet',
-    answer: 'answer',
+    questions: 'question_1',
+    answer: 'answer_1',
   },
   {
     id: 1,
-    questions: 'How to add to LeCarbone token to my wallet',
-    answer: 'answer',
+    questions: 'question_2',
+    answer: 'answer_2',
   },
   {
     id: 2,
-    questions: 'How to add to LeCarbone token to my wallet',
-    answer: 'answer',
+    questions: 'question_3',
+    answer: 'answer_3',
   },
   {
     id: 3,
-    questions: 'How to add to LeCarbone token to my wallet',
-    answer: 'answer',
+    questions: 'question_4',
+    answer: 'answer_4',
   },
 ];
 export default {
@@ -58,7 +58,7 @@ export default {
 }
 .title-divider {
   margin: 0 auto;
-  width: 5%;
+  width: 30px;
   border: 0;
   background-color: #F1CF69;
   height: 2px;

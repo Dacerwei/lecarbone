@@ -1,10 +1,12 @@
 <template>
 <div>
-  <v-layout row wrap align-content-center justify-space-between class="social-media-wrapper">
-    <v-flex xs6 sm2 v-for="media in socialMediaList" :key="media.id">
-      <img class="social-item"
-        :src="media.src"
-        alt=""/>
+  <v-layout row wrap align-content-center justify-space-around class="social-media-wrapper">
+    <v-flex xs6 sm6 md2 v-for="media in socialMediaList" :key="media.id">
+      <div class="image-container">
+        <img class="social-item"
+          :src="media.src"
+          alt=""/>
+      </div>
     </v-flex>
   </v-layout>
   <v-layout row wrap justify-space-between class="media">
@@ -147,8 +149,10 @@ export default {
   width: 100%;
   padding-top: 40px;
   padding-bottom: 40px;
-  padding-left: 23%;
-  padding-right: 23%;
+}
+.image-container {
+  width: 60%;
+  margin: 0 auto;
 }
 .social-item {
   width: 100%;

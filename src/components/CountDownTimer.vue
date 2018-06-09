@@ -1,43 +1,38 @@
 <template>
-  <v-flex tag="div" class="timer-wrapper">
-    <div class="timer-title">{{ $t('message.MainSection.timer_title') }}</div>
-    <div class="timer-text">
-      {{ $t('message.MainSection.timer_till') }}
-      {{ dueDate.format('MMMM Do, h:mm a') }} {{ timeZone }}
-    </div>
-    <v-layout row wrap justify-space-between class="timer-display-area" >
-      <v-flex tag='li' sm1>
+  <div class="timer-wrapper">
+    <v-layout row justify-space-between>
+      <v-flex tag='li' xs2>
         <div class="timer-item">
           <div class="timer-time">{{ month }}</div>
           <div class="timer-label">{{ $t('message.MainSection.timer_months') }}</div>
         </div>
       </v-flex>
-      <v-flex tag='li' sm1>
+      <v-flex tag='li' xs2>
         <div class="timer-item">
           <div class="timer-time">{{ day }}</div>
           <div class="timer-label">{{ $t('message.MainSection.timer_days') }}</div>
         </div>
       </v-flex>
-      <v-flex tag='li' sm1>
+      <v-flex tag='li' xs2>
         <div class="timer-item">
           <div class="timer-time">{{ hour }}</div>
           <div class="timer-label">{{ $t('message.MainSection.timer_hours') }}</div>
         </div>
       </v-flex>
-      <v-flex tag='li' sm1>
+      <v-flex tag='li' xs2>
         <div class="timer-item">
           <div class="timer-time">{{ minute }}</div>
           <div class="timer-label">{{ $t('message.MainSection.timer_minutes') }}</div>
         </div>
       </v-flex>
-      <v-flex tag='li' sm1>
+      <v-flex tag='li' xs2>
         <div class="timer-item">
           <div class="timer-time">{{ second }}</div>
           <div class="timer-label">{{ $t('message.MainSection.timer_seconds') }}</div>
         </div>
       </v-flex>
     </v-layout>
-  </v-flex>
+  </div>
 </template>
 
 <script>
@@ -47,10 +42,6 @@ export default {
   name: 'CountDownTimer',
   props: {
     endDate: {
-      type: String,
-      default: '',
-    },
-    timeZone: {
       type: String,
       default: '',
     },
@@ -97,43 +88,29 @@ export default {
 };
 </script>
 <style scoped>
-.timer-display-area {
-  margin-top: 5%;
-  margin-bottom: 5%;
-}
 li {
   list-style: none;
 }
 
 .timer-wrapper {
-  margin-top: 2%;
-  margin-bottom: 2%;
-}
-.timer-title {
-  font-size: 250%;
-  text-align: left;
-  color: #F1CF69;
-  font-size: 32px;
-  line-height: 1.2em;
-  font-weight: bold;
-}
-.timer-text {
-  color: #F1CF69;
-  font-size: 16px;
-  font-weight: bold;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 .timer-item {
   text-align: center;
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
-  width: 70px;
+  max-width: 80px;
+  min-width: 60px;
   height: 100px;
   border-radius: 10px;
-  padding: 5px
+  padding: 5px;
+  margin: 0 auto;
 }
 .timer-time {
-  font-size: 42px;
+  font-size: 250%;
   padding: 2px;
+  line-height: 180%;
 }
 .timer-label {
   font-size: 70%;
