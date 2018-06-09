@@ -1,117 +1,45 @@
 <template>
   <v-toolbar height="70px">
     <v-layout row align-center justify-space-between>
-      <v-flex xs7 sm2>
+      <v-flex md1>
         <div class="logo-container">
           <router-link to="/">
             <img class="logo" :src="logo" />
           </router-link>
         </div>
       </v-flex>
-      <v-flex xs3 class="hidden-md-and-up">
-        <v-menu offset-y>
-          <v-btn class="language" flat color="black" dark slot="activator">
-            {{ $t('message.NavBar.language') }}
-          </v-btn>
-          <v-list>
-            <v-list-tile @click="changeLanguage('en')">
-              <v-list-tile-action>
-                <img class="flag" :src="UK"/>
-              </v-list-tile-action>
-                  <v-list-tile-content>
-                    <v-list-tile-title>English</v-list-tile-title>
-                  </v-list-tile-content>
-            </v-list-tile>
-            <v-list-tile @click="changeLanguage('zh')">
-              <v-list-tile-action>
-                <img class="flag" :src="TW"/>
-              </v-list-tile-action>
-                  <v-list-tile-content>
-                    <v-list-tile-title>中文</v-list-tile-title>
-                  </v-list-tile-content>
-              </v-list-tile>
-          </v-list>
-        </v-menu>
-      </v-flex>
-      <v-flex xs2 class="hidden-md-and-up">
-        <div class="mobile-menu-container">
-          <v-menu offset-y>
-            <v-btn slot="activator" icon large>
-              <i class="fas fa-bars"></i>
-            </v-btn>
-            <v-list>
-              <v-list-tile>
-                <v-list-tile-title>
-                  <a class="nav-btn" v-scroll-to="'#our-vision'">
-                    {{ $t('message.NavBar.about') }}
-                  </a>
-                </v-list-tile-title>
-              </v-list-tile>
-              <v-list-tile>
-                <v-list-tile-title>
-                  <a class="nav-btn" v-scroll-to="'#roadmap'">
-                    {{ $t('message.NavBar.roadMap') }}
-                  </a>
-                </v-list-tile-title>
-              </v-list-tile>
-              <v-list-tile>
-                <v-list-tile-title>
-                  <a class="nav-btn" v-scroll-to="'#token-detail'">
-                    {{ $t('message.NavBar.tokenDetail') }}
-                  </a>
-                </v-list-tile-title>
-              </v-list-tile>
-              <v-list-tile>
-                <v-list-tile-title>
-                  <a class="nav-btn" v-scroll-to="'#team'">
-                    {{ $t('message.NavBar.team') }}
-                  </a>
-                </v-list-tile-title>
-              </v-list-tile>
-              <v-list-tile>
-                <v-list-tile-title>
-                  <a class="nav-btn" v-scroll-to="'#footer'">
-                    {{ $t('message.NavBar.contact') }}
-                  </a>
-                </v-list-tile-title>
-              </v-list-tile>
-            </v-list>
-          </v-menu>
-        </div>
-      </v-flex>
-      <v-flex sm6 class="hidden-sm-and-down">
+      <v-flex md6>
         <v-layout row justify-center align-center>
-          <v-flex sm2>
+          <v-flex md2>
             <a class="nav-btn" v-scroll-to="'#our-vision'">
               {{ $t('message.NavBar.about') }}
             </a>
           </v-flex>
-          <v-flex sm2>
+          <v-flex md2>
             <a class="nav-btn" v-scroll-to="'#roadmap'">
               {{ $t('message.NavBar.roadMap') }}
             </a>
           </v-flex>
-          <v-flex sm2>
+          <v-flex md2>
             <a class="nav-btn" v-scroll-to="'#token-detail'">
               {{ $t('message.NavBar.tokenDetail') }}
             </a>
           </v-flex>
-          <v-flex sm2>
+          <v-flex md2>
             <a class="nav-btn" v-scroll-to="'#team'">
               {{ $t('message.NavBar.team') }}
             </a>
           </v-flex>
-          <v-flex sm2>
+          <v-flex md2>
             <a class="nav-btn" v-scroll-to="'#footer'">
               {{ $t('message.NavBar.contact') }}
             </a>
           </v-flex>
         </v-layout>
       </v-flex>
-      <v-spacer sm1></v-spacer>
-      <v-flex sm5 class="nav-r hidden-sm-and-down">
+      <v-flex md5 class="nav-r">
         <v-layout row align-center justify-end>
-          <v-flex sm3>
+          <v-flex md3>
             <v-menu offset-y>
               <v-btn class="language" flat color="black" dark slot="activator">
                 {{ $t('message.NavBar.language') }}
@@ -136,19 +64,19 @@
               </v-list>
             </v-menu>
           </v-flex>
-          <v-flex sm1>
+          <v-flex md1>
             <v-btn icon small><i class="fab fa-telegram-plane"></i></v-btn>
           </v-flex>
-          <v-flex sm1>
+          <v-flex md1>
             <v-btn icon small><i class="fab fa-facebook-square"></i></v-btn>
           </v-flex>
-          <v-flex sm1>
+          <v-flex md1>
             <v-btn icon small><i class="fab fa-twitter"></i></v-btn>
           </v-flex>
-          <v-flex sm1>
+          <v-flex md1>
             <v-btn icon small><i class="fab fa-medium-m"></i></v-btn>
           </v-flex>
-          <v-flex sm3>
+          <v-flex md3>
             <router-link to="/tokensale" class="contribute">
               {{ $t('message.NavBar.contribute') }}
             </router-link>
@@ -164,7 +92,7 @@ import UK from '@/assets/flag_uk.png';
 import TW from '@/assets/flag_tw.png';
 
 export default {
-  name: 'nav-bar',
+  name: 'DesktopNavBar',
   data() {
     return {
       logo: Logo,
