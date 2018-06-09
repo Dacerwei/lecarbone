@@ -1,4 +1,5 @@
 <template>
+<div id="token-sale">
   <v-container>
     <div class="token-sale-section">
       <v-layout row wrap>
@@ -83,6 +84,7 @@
     <receipt-section></receipt-section>
     <questions-section></questions-section>
   </v-container>
+</div>
 </template>
 
 <script>
