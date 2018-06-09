@@ -1,44 +1,20 @@
 <template>
-  <div id="app">
-    <desktop-nav-bar v-if="!isMobile"></desktop-nav-bar>
-    <mobile-nav-bar v-else></mobile-nav-bar>
+  <v-app id="app">
+    <navigation-bar></navigation-bar>
     <router-view/>
     <Footer></Footer>
-  </div>
+  </v-app>
 </template>
 
 <script>
-import DesktopNavBar from '@/components/DesktopNavBar';
-import MobileNavBar from '@/components/MobileNavBar';
+import NavigationBar from '@/components/NavigationBar';
 import Footer from '@/components/Footer';
 
 export default {
   name: 'App',
   components: {
-    DesktopNavBar,
-    MobileNavBar,
+    NavigationBar,
     Footer,
-  },
-  data() {
-    return {
-      isMobile: false,
-    };
-  },
-  created() {
-    window.addEventListener('resize', this.onResize, { passive: true });
-  },
-  mounted() {
-    this.onResize();
-  },
-  beforeDestroy() {
-    if (typeof window !== 'undefined') {
-      window.removeEventListener('resize', this.onResize, { passive: true });
-    }
-  },
-  methods: {
-    onResize() {
-      this.isMobile = window.innerWidth < 960;
-    },
   },
 };
 </script>

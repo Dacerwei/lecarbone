@@ -117,7 +117,7 @@ a {
   padding-left: 5%;
 }
 .logo {
-  max-width: 120px;
+  width: 120px;
   height: 30px;
 }
 .flag {
