@@ -1,12 +1,21 @@
 <template>
-  <div id="app">
+  <v-app id="app">
+    <navigation-bar></navigation-bar>
     <router-view/>
-  </div>
+    <Footer></Footer>
+  </v-app>
 </template>
 
 <script>
+import NavigationBar from '@/components/NavigationBar';
+import Footer from '@/components/Footer';
+
 export default {
   name: 'App',
+  components: {
+    NavigationBar,
+    Footer,
+  },
 };
 </script>
 
