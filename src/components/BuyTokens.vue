@@ -25,10 +25,10 @@
           placeholder="ETH"/>
       </v-flex>
       <v-flex xs12 sm3 md3>
-        <p class="exchange-tip">
+        <p class="exchange-tip text-xs-center">
           {{ $t('message.BuyTokens.exchange_rate', {rate: ethToUsdRate}) }}
         </p>
-        <p class="exchange-tip">{{ $t('message.BuyTokens.rate_tip') }}</p>
+        <p class="exchange-tip text-xs-center">{{ $t('message.BuyTokens.rate_tip') }}</p>
       </v-flex>
     </v-layout>
     <v-layout row>

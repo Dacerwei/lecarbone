@@ -7,10 +7,10 @@
             <v-flex xs12 sm5>
               <h2>{{ $t('message.ReceiptSection.your_token') }}</h2>
             </v-flex>
-            <v-flex xs12 sm2>
+            <v-flex xs6 sm2>
               <span class="receipt-amount">32</span>
             </v-flex>
-            <v-flex xs12 sm1>
+            <v-flex xs6 sm1>
               <span>LCT</span>
             </v-flex>
           </v-layout>
@@ -20,13 +20,13 @@
             <v-flex xs12 sm5>
               <h2>{{ $t('message.ReceiptSection.bonus_from_referrals') }}</h2>
             </v-flex>
-            <v-flex xs12 sm2>
+            <v-flex xs6 sm2>
               <span class="receipt-amount">20.49</span>
             </v-flex>
-            <v-flex xs12 sm1>
+            <v-flex xs3 sm1>
               <span>LCT</span>
             </v-flex>
-            <v-flex xs12 sm2>
+            <v-flex xs3 sm2>
               <div class="bonus-btn">
                 {{ $t('message.ReceiptSection.more_bonus') }}
               </div>
@@ -38,10 +38,10 @@
             <v-flex xs12 sm5>
               <h2>{{ $t('message.ReceiptSection.registrations') }}</h2>
             </v-flex>
-            <v-flex xs12 sm2>
+            <v-flex xs6 sm2>
               <span class="receipt-amount">23</span>
             </v-flex>
-            <v-flex xs12 sm1>
+            <v-flex xs6 sm1>
               <span>{{ $t('message.ReceiptSection.people_unit') }}</span>
             </v-flex>
           </v-layout>
