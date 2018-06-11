@@ -6,46 +6,30 @@
     <Footer></Footer>
     <v-navigation-drawer
       v-model="openMenu"
-      absolute
       right
+      fixed
       width="150"
       temporary>
       <v-list>
-        <a class="nav-btn" v-scroll-to="'#our-vision'" @click="openMenu = !openMenu">
+        <a v-for="(value, key) in navigation"
+          :key="key"
+          class="nav-btn"
+          v-scroll-to="`#${value}`"
+          @click="openMenu = !openMenu">
           <v-list-tile>
             <v-list-tile-title>
-                {{ $t('message.NavBar.about') }}
+                {{ $t( `message.NavBar.${key}`) }}
             </v-list-tile-title>
           </v-list-tile>
         </a>
-        <a class="nav-btn" v-scroll-to="'#roadmap'"  @click="openMenu = !openMenu">
-          <v-list-tile>
-            <v-list-tile-title>
-              {{ $t('message.NavBar.roadMap') }}
-            </v-list-tile-title>
-          </v-list-tile>
-        </a>
-        <a class="nav-btn" v-scroll-to="'#token-detail'" @click="openMenu = !openMenu">
-          <v-list-tile>
-            <v-list-tile-title>
-              {{ $t('message.NavBar.tokenDetail') }}
-            </v-list-tile-title>
-          </v-list-tile>
-        </a>
-        <a class="nav-btn" v-scroll-to="'#team'"  @click="openMenu = !openMenu">
-          <v-list-tile>
-            <v-list-tile-title>
-              {{ $t('message.NavBar.team') }}
-            </v-list-tile-title>
-          </v-list-tile>
-        </a>
-        <a class="nav-btn" v-scroll-to="'#footer'" @click="openMenu = !openMenu">
-          <v-list-tile>
-            <v-list-tile-title>
-              {{ $t('message.NavBar.contact') }}
-            </v-list-tile-title>
-          </v-list-tile>
-        </a>
+        <v-list-tile>
+          <v-btn icon small><i class="fab fa-telegram-plane"></i></v-btn>
+          <v-btn icon small><i class="fab fa-medium-m"></i></v-btn>
+        </v-list-tile>
+        <v-list-tile>
+          <v-btn icon small><i class="fab fa-facebook-square"></i></v-btn>
+          <v-btn icon small><i class="fab fa-twitter"></i></v-btn>
+        </v-list-tile>
       </v-list>
     </v-navigation-drawer>
   </v-app>
@@ -55,6 +39,14 @@
 import DesktopNavBar from '@/components/DesktopNavBar';
 import MobileNavBar from '@/components/MobileNavBar';
 import Footer from '@/components/Footer';
+
+const navigation = {
+  about: 'our-vision',
+  roadMap: 'roadmap',
+  tokenDetail: 'token-detail',
+  team: 'team',
+  contact: 'footer',
+};
 
 export default {
   name: 'App',
@@ -67,6 +59,7 @@ export default {
     return {
       isMobile: false,
       openMenu: false,
+      navigation,
     };
   },
   created() {
