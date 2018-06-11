@@ -10,7 +10,7 @@
     </v-flex>
   </v-layout>
   <v-layout row wrap justify-space-between class="media">
-    <v-flex xs4 sm3 v-for=" media in mediaList" :key="media.id">
+    <v-flex xs6 sm3 v-for=" media in mediaList" :key="media.id">
       <div :style="formatStyle(media)"></div>
     </v-flex>
   </v-layout>
