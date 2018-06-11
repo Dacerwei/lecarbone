@@ -293,7 +293,7 @@ $color_yellow: #F1CF69
     padding: 0% 8% 0% 20%
     .questionContainer
       padding: 0px 20px
-      height: 250px
+      min-height: 150px
       border-left: solid 2px $color_yellow
       .point
         position: absolute
