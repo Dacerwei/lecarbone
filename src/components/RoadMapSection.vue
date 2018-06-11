@@ -18,7 +18,7 @@
           <div class="up_container">
             <div class="utitle">2017 Q3</div>
             <div class="uinfo u2">
-              <p>Land acquisition and felling permits from the Government.<br>Land development.</p>
+              <p>Land acquisition and felling permits from the Government. Land development.</p>
             </div>
             <div class="upoint"></div>
           </div>
@@ -119,7 +119,7 @@ const questionList = [
   {
     id: 2,
     title: 'Q3 2017',
-    describtion: 'Land acquisition and felling permits from the Government.<br/>Land development.',
+    describtion: 'Land acquisition and felling permits from the Government. Land development.',
   },
   {
     id: 3,
