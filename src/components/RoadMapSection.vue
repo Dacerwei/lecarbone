@@ -1,6 +1,6 @@
 <template>
     <section id="roadmap">
-      <h1>Roadmap</h1>
+      <h1>{{ $t('message.RoadMapSection.title') }}</h1>
       <hr class="title" />
       <div class="roadmap" v-if="!isMobile">
         <div class="uppermap">
@@ -98,7 +98,7 @@
         <div class="questionContainer" v-for="question in questionList" :key="question.id">
           <div class="point"></div>
           <h2 class="questionTitle">{{question.title}}</h2>
-          <p class="qDescribtion">{{question.describtion}}</p>
+          <p class="qDescribtion">{{ $t(`message.RoadMapSection.${question.describtion}`) }}</p>
         </div>
       </div>
     </section>
@@ -109,57 +109,57 @@ const questionList = [
   {
     id: 0,
     title: 'Q1 2017',
-    describtion: 'Indonesian Chamber of Commerce and Industry enter into contract with Pelestarian Alam Nusantara Foundation Forest protection & poverty alleviation education',
+    describtion: 'item_content_1',
   },
   {
     id: 1,
     title: 'Q2 2017',
-    describtion: 'Forest protection & poverty alleviation education',
+    describtion: 'item_content_2',
   },
   {
     id: 2,
     title: 'Q3 2017',
-    describtion: 'Land acquisition and felling permits from the Government. Land development.',
+    describtion: 'item_content_3',
   },
   {
     id: 3,
     title: 'Q1 2017',
-    describtion: 'Legel consultancy Under-forest operation Private Sale',
+    describtion: 'item_content_4',
   },
   {
     id: 4,
     title: 'Q2 2018',
-    describtion: 'Baseline survey Poverty alleviation material transpotation & allocation',
+    describtion: 'item_content_5',
   },
   {
     id: 5,
     title: 'Q3 2018',
-    describtion: 'Agarwood formation and fungus-growing',
+    describtion: 'item_content_6',
   },
   {
     id: 6,
     title: 'Q4 2018',
-    describtion: 'Certification of carbon credits completed. Price of carbon credits set, with announcement on amount carbon credits acquired',
+    describtion: 'item_content_7',
   },
   {
     id: 7,
     title: 'Q1 2019',
-    describtion: 'Launch of online exchange for carbon credits.',
+    describtion: 'item_content_8',
   },
   {
     id: 8,
     title: 'Q2 2019',
-    describtion: 'Launch of online charity donation system. Launch of online exchange system for sponsored goods.',
+    describtion: 'item_content_9',
   },
   {
     id: 9,
     title: 'Q3 2019',
-    describtion: 'Launch of online exchange system for under-forest products.',
+    describtion: 'item_content_10',
   },
   {
     id: 10,
     title: 'Q4 2019',
-    describtion: 'Contract renewal',
+    describtion: 'item_content_11',
   },
 ];
 
