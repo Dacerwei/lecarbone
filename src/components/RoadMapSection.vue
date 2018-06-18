@@ -3,94 +3,12 @@
       <h1>{{ $t('message.RoadMapSection.title') }}</h1>
       <hr class="title" />
       <div class="roadmap" v-if="!isMobile">
-        <div class="uppermap">
-          <div class="up_container">
-            <div class="utitle">2017 Q1</div>
-            <div class="uinfo u1">
-              <p>
-                Indonesian Chamber of Commerce and Industry enter into
-                contract with Pelestarian Alam Nusantara Foundation
-                Forest protection & poverty alleviation education
-              </p>
-            </div>
-            <div class="upoint"></div>
-          </div>
-          <div class="up_container">
-            <div class="utitle">2017 Q3</div>
-            <div class="uinfo u2">
-              <p>Land acquisition and felling permits from the Government. Land development.</p>
-            </div>
-            <div class="upoint"></div>
-          </div>
-          <div class="up_container">
-            <div class="utitle">2018 Q2</div>
-            <div class="uinfo u3">
-              <p>Baseline survey Poverty alleviation material transpotation & allocation</p>
-            </div>
-            <div class="upoint"></div>
-          </div>
-          <div class="up_container">
-            <div class="utitle">2018 Q4</div>
-            <div class="uinfo u4">
-              <p>Certification of carbon credits completed.
-                Price of carbon credits set, with announcement on amount
-                carbon credits acquired
-              </p>
-            </div>
-            <div class="upoint"></div>
-          </div>
-          <div class="up_container">
-            <div class="utitle">2019 Q2</div>
-            <div class="uinfo u5">
-              <p>Launch of online charity donation system.
-                Launch of online exchange system for sponsored goods.</p>
-            </div>
-            <div class="upoint"></div>
-          </div>
-          <div class="up_container last">
-            <div class="utitle">2019 Q4</div>
-            <div class="uinfo u6">
-              <p>Contract renewal</p>
-            </div>
-            <div class="upoint"></div>
-          </div>
-        </div>
-        <hr class="centerline" />
-        <div class="lowermap">
-          <div class="dp_container d1">
-            <div class="dinfo">
-              <p>Forest protection & poverty alleviation education</p>
-            </div>
-            <div class="dpoint"></div>
-            <div class="dtitle">2017 Q2</div>
-          </div>
-          <div class="dp_container">
-            <div class="dinfo">
-              <p>Legel consultancy Under-forest operation Private Sale</p>
-            </div>
-            <div class="dpoint"></div>
-            <div class="dtitle">2017 Q1</div>
-          </div>
-          <div class="dp_container d3">
-            <div class="dinfo">
-              <p>Agarwood formation and fungus-growing</p>
-            </div>
-            <div class="dpoint"></div>
-            <div class="dtitle">2018 Q3</div>
-          </div>
-          <div class="dp_container d4">
-            <div class="dinfo">
-              <p>Launch of online exchange for carbon credits.</p>
-            </div>
-            <div class="dpoint"></div>
-            <div class="dtitle">2019 Q1</div>
-          </div>
-          <div class="dp_container">
-            <div class="dinfo">
-              <p>Launch of online exchange system for under-forest products.</p>
-            </div>
-            <div class="dpoint"></div>
-            <div class="dtitle">2019 Q3</div>
+        <div class="roadmapCanvas">
+          <hr class="centerline">
+          <div v-for="(q,id) in questionList" :key="q.id" :class="'question-d' + id">
+            <div class="pointDesktop"></div>
+            <h2 class="titleDesktop">{{q.title}}</h2>
+            <p class="descriptionDesktop">{{ $t(`message.RoadMapSection.${q.describtion}`) }}</p>
           </div>
         </div>
       </div>
@@ -205,96 +123,95 @@ $color_yellow: #F1CF69
     border: 2px solid $color_yellow
     background-color: $color_yellow
     margin: 0 auto 40px auto
-  .uppermap
-    font-size: 0px
-    padding-left: 4%
-    .up_container
-      vertical-align: bottom
-      font-size: initial
-      display: inline-block
-      width: calc(100% / 6 + 5px)
-      .utitle
-        margin-bottom: 15px
-        padding: 0px 6%
-        font-weight: 900
-      .upoint
-        width: 15px
-        height: 15px
-        position: absolute
-        left: 0px
-        bottom: 0px
-        transform: translate(-50%, 50%)
-        border-radius: 50%
-        background-color: $color_yellow
-        z-index: 2
-      .uinfo
-        width: 70%
-        border-left: solid 2px $color_yellow
-        padding: 0px 15px
-        font-size: 12px
-      .u1
-        height: 250px
-      .u2
-        height: 150px
-      .u3
-        height: 150px
-      .u4
-        height: 250px
-      .u5
-        height: 150px
-      .u6
-        height: 150px
-
-    .up_container.last
-      width: calc(100% / 6 - 4%)
-  .lowermap
-    font-size: 0px
-    padding-left: 12%
-    .dp_container
+  .roadmapCanvas
+    width: 100%
+    height: 500px
+    top: 50px
+    .centerline
+      width: 100%
+      margin: 0px
+      border: solid 1px $color_yellow
+      position: absolute
+      top: calc(50% - 0.5px)
+    .pointDesktop
+      position: absolute
+      width: 15px
+      height: 15px
+      border-radius: 50%
+      background-color: $color_yellow
+    .titleDesktop
+      font-size: 18px
+      font-weight: bold
+    .descriptionDesktop
+      font-size: 12px
+    .question-d0, .question-d2, .question-d4, .question-d6, .question-d8, .question-d10
+      width: calc(100% / 6)
+      position: absolute
+      bottom: 50%
       vertical-align: top
-      font-size: initial
-      display: inline-block
-      width: calc(100% / 6 + 5px)
-      .dtitle
-        margin-top: 15px
-        padding: 0px 6%
-        font-weight: 900
-      .dinfo
-        width: 50%
-        height: 150px
-        border-left: solid 2px $color_yellow
-        padding: 0px 15px
-        font-size: 12px
-        p
-          position: absolute
-          bottom: 0px
-          margin: 0px
-      .dpoint
-        width: 15px
-        height: 15px
-        position: absolute
-        border-radius: 50%
+      border-left: solid 2px $color_yellow
+      .pointDesktop
+        bottom: -15px
+        left: 0px
+        transform: translate(-50%, -50%)
+      .titleDesktop
+        bottom: 40px
+      .descriptionDesktop
+        padding: 0px 70px 0px 15px
+        bottom: 25px
+    .question-d0
+      height: 250px
+      left: 4%
+    .question-d2
+      height: 150px
+      left: calc(4% + 100% / 6)
+    .question-d4
+      height: 150px
+      left: calc(4% + 100% / 3)
+    .question-d6
+      height: 250px
+      left: calc(4% + 100% / 2)
+    .question-d8
+      height: 150px
+      left: calc(4% + 200% / 3)
+    .question-d10
+      height: 150px
+      left: calc(4% + 500% / 6)
+    .question-d1, .question-d3, .question-d5, .question-d7, .question-d9
+      height: 150px
+      width: calc(100% / 6)
+      position: absolute
+      top: 50%
+      border-left: solid 2px $color_yellow
+      .pointDesktop
         top: 0px
         left: 0px
         transform: translate(-50%, -50%)
-        background-color: $color_yellow
-    .dp_container.d1
-      width: calc(100% / 6 + 60px)
-    .dp_container.d3
-      width: calc(100% / 6 + 30px)
-    .dp_container.d4
-      width: calc(100% / 6 + 30px)
-
-  .centerline
-    width: 100%
-    margin: 0px
-    border: solid 1px $color_yellow
+      .descriptionDesktop
+        padding: 0px 70px 0px 15px
+        position: absolute
+        bottom: 0px
+        margin-bottom: 3px
+      .titleDesktop
+        position: absolute
+        bottom: -40px
+    .question-d1
+      left: 14%
+    .question-d3
+      left: calc(14% + 100% / 6)
+    .question-d5
+      left: calc(14% + 100% / 3)
+    .question-d7
+      left: calc(14% + 100% / 2)
+    .question-d9
+      left: calc(14% + 200% / 3)
   .roadmapMobile
     padding: 0% 8% 0% 20%
     .questionContainer
       padding: 0px 20px
       min-height: 150px
       border-left: solid 2px $color_yellow
+      margin-bottom: -10px
       .point
         position: absolute
         width: 15px
