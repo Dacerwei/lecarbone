@@ -1,5 +1,5 @@
 <template>
-  <v-container class="FAQ-section">
+  <v-container class="FAQ-section" id="faq">
     <h1 class="qa-title">{{ $t('message.QuestionsSection.title') }}</h1>
     <hr class="title-divider">
     <ul class="qa-list">

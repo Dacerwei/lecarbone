@@ -1,7 +1,7 @@
 <template>
 <div id="token-sale">
   <v-container>
-    <div class="token-sale-section">
+    <div class="token-sale-section" id="token-sale">
       <v-layout row wrap>
         <v-flex xs12 md7>
             <h1 class="token-sale-title">{{ $t('message.TokenSale.title') }}</h1>

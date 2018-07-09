@@ -8,6 +8,11 @@ module.exports = {
       contact: '聯絡我們',
       language: '切換語言',
       contribute: '貢獻',
+      tokenSale: '代幣出售',
+      buyTokens: '購買代幣',
+      transactions: '交易紀錄',
+      affiliate: '聯盟行銷',
+      faq: '常見問題',
     },
     WhyLecarboneSection: {
       title: '選擇 LeCarbone 的理由',

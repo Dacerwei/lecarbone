@@ -1,5 +1,5 @@
 <template>
-<div class="buy-token-wrapper">
+<div class="buy-token-wrapper" id="buy-tokens">
   <h1 class="buy-token-title">{{ $t('message.BuyTokens.title') }}</h1>
   <p class="buy-token-content">{{ $t('message.BuyTokens.subtitle') }}</p>
   <div class="transaction-area">

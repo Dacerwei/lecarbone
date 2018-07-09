@@ -1,5 +1,5 @@
 <template>
-  <v-container class="transactions-section">
+  <v-container class="transactions-section" id="transactions">
     <h1 class="transaction-title">{{ $t('message.Transactions.title') }}</h1>
     <ul class="transaction-list">
       <hr>

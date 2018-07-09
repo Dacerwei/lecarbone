@@ -1,5 +1,5 @@
 <template>
-  <div class="affiliate-container">
+  <div class="affiliate-container" id="affiliate">
     <v-layout row wrap>
       <v-flex xs12 sm4>
         <h1 class="affiliate-title">{{ $t('message.AffiliateProgram.title') }}</h1>
