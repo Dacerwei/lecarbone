@@ -8,6 +8,11 @@ module.exports = {
       contact: 'CONTACT',
       language: 'LANGUAGES',
       contribute: 'Contribute',
+      tokenSale: 'Token Sale',
+      buyTokens: 'Buy Tokens',
+      transactions: 'Transactions',
+      affiliate: 'Affiliate Program',
+      faq: 'FAQ',
     },
     WhyLecarboneSection: {
       title: 'Why LeCarbone?',

@@ -1,5 +1,5 @@
 <template>
-  <v-container class="FAQ-section">
+  <v-container class="FAQ-section" id="faq">
     <h1 class="qa-title">{{ $t('message.QuestionsSection.title') }}</h1>
     <hr class="title-divider">
     <ul class="qa-list">
@@ -53,14 +53,14 @@ export default {
 }
 .qa-title {
   text-align: center;
-  color: #F1CF69;
+  color: #f1cf69;
   margin: 5px;
 }
 .title-divider {
   margin: 0 auto;
   width: 30px;
   border: 0;
-  background-color: #F1CF69;
+  background-color: #f1cf69;
   height: 2px;
 }
 .qa-list {
@@ -91,7 +91,7 @@ export default {
   margin-top: 2px;
   height: 15px;
   width: 15px;
-  background-color: #F1CF69;
+  background-color: #f1cf69;
   border-radius: 50%;
   display: inline-block;
 }

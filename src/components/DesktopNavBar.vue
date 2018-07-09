@@ -10,29 +10,11 @@
       </v-flex>
       <v-flex md6>
         <v-layout row justify-center align-center>
-          <v-flex md2>
-            <a class="nav-btn" v-scroll-to="'#our-vision'">
-              {{ $t('message.NavBar.about') }}
-            </a>
-          </v-flex>
-          <v-flex md2>
-            <a class="nav-btn" v-scroll-to="'#roadmap'">
-              {{ $t('message.NavBar.roadMap') }}
-            </a>
-          </v-flex>
-          <v-flex md2>
-            <a class="nav-btn" v-scroll-to="'#token-detail'">
-              {{ $t('message.NavBar.tokenDetail') }}
-            </a>
-          </v-flex>
-          <v-flex md2>
-            <a class="nav-btn" v-scroll-to="'#team'">
-              {{ $t('message.NavBar.team') }}
-            </a>
-          </v-flex>
-          <v-flex md2>
-            <a class="nav-btn" v-scroll-to="'#footer'">
-              {{ $t('message.NavBar.contact') }}
+          <v-flex md2
+            v-for="(value, key) in navigations"
+            :key="key">
+            <a class="nav-btn" v-scroll-to="`#${value}`">
+              {{ $t(`message.NavBar.${key}`) }}
             </a>
           </v-flex>
         </v-layout>
@@ -93,6 +75,12 @@ import TW from '@/assets/flag_tw.png';
 
 export default {
   name: 'DesktopNavBar',
+  props: {
+    navigations: {
+      type: Object,
+      default: null,
+    },
+  },
   data() {
     return {
       logo: Logo,
@@ -135,7 +123,7 @@ a {
   color: black;
 }
 .contribute {
-  background: #69F193;
+  background: #69f193;
   color: #fff;
   font-weight: bold;
   border-radius: 4px;

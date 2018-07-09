@@ -1,5 +1,5 @@
 <template>
-<div class="buy-token-wrapper">
+<div class="buy-token-wrapper" id="buy-tokens">
   <h1 class="buy-token-title">{{ $t('message.BuyTokens.title') }}</h1>
   <p class="buy-token-content">{{ $t('message.BuyTokens.subtitle') }}</p>
   <div class="transaction-area">
@@ -109,7 +109,7 @@ export default {
   text-align: center;
 }
 .buy-btn {
-  background: #69F193;
+  background: #69f193;
   color: #fff;
   font-weight: bold;
   border-radius: 4px;
@@ -126,6 +126,6 @@ export default {
   font-size: 8px;
   font-weight: bold;
   margin: 0;
-  color: #F1CF69;
+  color: #f1cf69;
 }
 </style>

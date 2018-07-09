@@ -1,7 +1,11 @@
 <template>
   <v-app id="app">
-    <desktop-nav-bar v-if="!isMobile"></desktop-nav-bar>
-    <mobile-nav-bar v-else :switch-menu="switchMenu"></mobile-nav-bar>
+    <desktop-nav-bar v-if="!isMobile"
+      :navigations="navigationItems">
+    </desktop-nav-bar>
+    <mobile-nav-bar v-else
+      :switch-menu="switchMenu">
+    </mobile-nav-bar>
     <router-view/>
     <Footer></Footer>
     <v-navigation-drawer
@@ -11,7 +15,7 @@
       width="150"
       temporary>
       <v-list>
-        <a v-for="(value, key) in navigation"
+        <a v-for="(value, key) in navigationItems"
           :key="key"
           class="nav-btn"
           v-scroll-to="`#${value}`"
@@ -39,14 +43,30 @@
 import DesktopNavBar from '@/components/DesktopNavBar';
 import MobileNavBar from '@/components/MobileNavBar';
 import Footer from '@/components/Footer';
+import _ from 'lodash';
 
-const navigation = {
-  about: 'our-vision',
-  roadMap: 'roadmap',
-  tokenDetail: 'token-detail',
-  team: 'team',
-  contact: 'footer',
-};
+const navigation = [
+  {
+    path: '/',
+    navigations: {
+      about: 'our-vision',
+      roadMap: 'roadmap',
+      tokenDetail: 'token-detail',
+      team: 'team',
+      contact: 'footer',
+    },
+  },
+  {
+    path: '/tokensale',
+    navigations: {
+      tokenSale: 'token-sale',
+      buyTokens: 'buy-tokens',
+      transactions: 'transactions',
+      affiliate: 'affiliate',
+      faq: 'faq',
+    },
+  },
+];
 
 export default {
   name: 'App',
@@ -59,6 +79,7 @@ export default {
     return {
       isMobile: false,
       openMenu: false,
+      currentPath: '/',
       navigation,
     };
   },
@@ -67,6 +88,19 @@ export default {
   },
   mounted() {
     this.onResize();
+    this.currentPath = this.$route.path;
+  },
+  watch: {
+    $route() {
+      this.currentPath = this.$route.path;
+    },
+  },
+  computed: {
+    navigationItems() {
+      return _.find(navigation, {
+        path: this.currentPath,
+      }).navigations;
+    },
   },
   beforeDestroy() {
     if (typeof window !== 'undefined') {

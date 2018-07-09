@@ -1,5 +1,5 @@
 <template>
-  <div class="affiliate-container">
+  <div class="affiliate-container" id="affiliate">
     <v-layout row wrap>
       <v-flex xs12 sm4>
         <h1 class="affiliate-title">{{ $t('message.AffiliateProgram.title') }}</h1>
@@ -48,7 +48,7 @@ export default {
 
 <style scoped>
 .affiliate-container {
-  background-color:#eee;
+  background-color: #eee;
   border-radius: 10px;
   padding: 30px 40px;
 }
@@ -59,7 +59,7 @@ export default {
   text-align: left;
   font-size: 21px;
   margin-bottom: 10px;
-  color: #A2A2A2;
+  color: #a2a2a2;
   font-weight: 400;
 }
 .referral-text {
@@ -76,7 +76,7 @@ export default {
   margin-bottom: 10px;
 }
 .copy-btn {
-  background: #69F193;
+  background: #69f193;
   color: #fff;
   font-size: 12px;
   font-weight: bold;
