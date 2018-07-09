@@ -59,7 +59,7 @@ export default {
   margin: 20px 0;
 }
 .transaction-title {
-  color: #F1CF69;
+  color: #f1cf69;
   font-size: 32px;
 }
 

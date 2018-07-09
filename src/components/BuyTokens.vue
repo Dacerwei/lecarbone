@@ -109,7 +109,7 @@ export default {
   text-align: center;
 }
 .buy-btn {
-  background: #69F193;
+  background: #69f193;
   color: #fff;
   font-weight: bold;
   border-radius: 4px;
@@ -126,6 +126,6 @@ export default {
   font-size: 8px;
   font-weight: bold;
   margin: 0;
-  color: #F1CF69;
+  color: #f1cf69;
 }
 </style>

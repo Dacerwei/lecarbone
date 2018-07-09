@@ -123,7 +123,7 @@ a {
   color: black;
 }
 .contribute {
-  background: #69F193;
+  background: #69f193;
   color: #fff;
   font-weight: bold;
   border-radius: 4px;

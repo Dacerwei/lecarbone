@@ -113,7 +113,7 @@ export default {
   margin: 50px 0;
 }
 .token-sale-title {
-  color: #F1CF69;
+  color: #f1cf69;
   margin-bottom: 20px;
   font-size: 32px;
 }
@@ -123,7 +123,7 @@ export default {
 .timer-title {
   font-size: 16pt;
   text-align: left;
-  color: #F1CF69;
+  color: #f1cf69;
   line-height: 1.2em;
   font-weight: bold;
 }
@@ -145,7 +145,7 @@ li {
 }
 .video-title {
   font-size: 18px;
-  color: #F1CF69;
+  color: #f1cf69;
   margin-top: 10px;
   margin-bottom: 30px;
 }
