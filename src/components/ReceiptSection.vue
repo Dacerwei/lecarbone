@@ -1,16 +1,16 @@
 <template>
   <v-container class="receipt-section">
     <v-layout row wrap>
-      <v-flex xs12 sm8>
+      <v-flex sm12 md8>
         <div class="receipt-line">
           <v-layout row wrap>
             <v-flex xs12 sm5>
               <h2>{{ $t('message.ReceiptSection.your_token') }}</h2>
             </v-flex>
-            <v-flex xs6 sm2>
+            <v-flex xs4 sm2 class="text-xs-center">
               <span class="receipt-amount">32</span>
             </v-flex>
-            <v-flex xs6 sm1>
+            <v-flex xs2 sm1 class="text-xs-center">
               <span>LCT</span>
             </v-flex>
           </v-layout>
@@ -20,13 +20,13 @@
             <v-flex xs12 sm5>
               <h2>{{ $t('message.ReceiptSection.bonus_from_referrals') }}</h2>
             </v-flex>
-            <v-flex xs6 sm2>
+            <v-flex xs4 sm2 class="text-xs-center">
               <span class="receipt-amount">20.49</span>
             </v-flex>
-            <v-flex xs3 sm1>
+            <v-flex xs2 sm1 class="text-xs-center">
               <span>LCT</span>
             </v-flex>
-            <v-flex xs3 sm2>
+            <v-flex xs4 sm2 class="text-xs-center">
               <div class="bonus-btn">
                 {{ $t('message.ReceiptSection.more_bonus') }}
               </div>
@@ -38,10 +38,10 @@
             <v-flex xs12 sm5>
               <h2>{{ $t('message.ReceiptSection.registrations') }}</h2>
             </v-flex>
-            <v-flex xs6 sm2>
+            <v-flex xs4 sm2 class="text-xs-center">
               <span class="receipt-amount">23</span>
             </v-flex>
-            <v-flex xs6 sm1>
+            <v-flex xs2 sm1 class="text-xs-center">
               <span>{{ $t('message.ReceiptSection.people_unit') }}</span>
             </v-flex>
           </v-layout>
@@ -50,7 +50,7 @@
         <h2 class="address-title">{{ $t('message.ReceiptSection.address') }}</h2>
         <span class="address-content">3VFUDCBHDJVBJ2345675434535FJVSJDNXVN</span>
       </v-flex>
-      <v-flex xs12 sm4 class="note">
+      <v-flex sm12 md4 class="note">
         <h3>獎勵的Token</h3>
         <ol>
           <li>註冊時有推薦連結會送</li>
@@ -84,7 +84,7 @@ export default {
   margin-bottom: 35px;
 }
 .bonus-btn {
-  background: #69F193;
+  background: #69f193;
   color: #fff;
   font-weight: bold;
   border-radius: 4px;
@@ -102,9 +102,9 @@ export default {
   border-style: solid;
   border-width: 2px;
   border-radius: 4px;
-  border-color: #69F193;
+  border-color: #69f193;
   font-size: 21px;
-  color: #69F193;
+  color: #69f193;
   font-weight: 900;
   margin: 10px 0;
 }
@@ -113,8 +113,9 @@ export default {
   margin-top: 50px;
 }
 
-.address-title, .address-content {
-  color: #F1CF69;
+.address-title,
+.address-content {
+  color: #f1cf69;
 }
 
 .address-content {
