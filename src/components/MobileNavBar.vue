@@ -114,13 +114,13 @@ export default {
   text-align: center;
 }
 .contribute {
-  background: #69F193;
+  background: #69f193;
   color: #fff;
   font-weight: bold;
   border-radius: 4px;
   text-align: center;
   text-transform: capitalize;
-  padding: 5px 15px;
+  padding: 5% 15%;
   text-decoration: none;
 }
 </style>
