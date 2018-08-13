@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import PieChart from '@/components/PieChart';
+import PieChart from '@/components/common/PieChart';
 import _ from 'lodash';
 import background from '@/assets/background/use_of_fund.png';
 

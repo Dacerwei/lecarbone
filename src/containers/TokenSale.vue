@@ -53,7 +53,7 @@
         </v-flex>
         <v-flex xs12 sm5>
             <h1 class="timer-title">{{ $t('message.TokenSale.count_down_title') }}</h1>
-            <count-down-timer :end-date="'20180628 1200'"></count-down-timer>
+            <count-down-timer :end-date="'20190628 1200'"></count-down-timer>
         </v-flex>
       </v-layout>
     </div>
@@ -88,12 +88,12 @@
 </template>
 
 <script>
-import BuyTokens from '@/components/BuyTokens';
-import QuestionsSection from '@/components/QuestionsSection';
-import AffiliateSection from '@/components/AffiliateSection';
-import CountDownTimer from '@/components/CountDownTimer';
-import ReceiptSection from '@/components/ReceiptSection';
-import TransactionSection from '@/components/TransactionSection';
+import BuyTokens from '@/components/tokensale/BuyTokens';
+import QuestionsSection from '@/components/tokensale/QuestionsSection';
+import AffiliateSection from '@/components/tokensale/AffiliateSection';
+import CountDownTimer from '@/components/common/CountDownTimer';
+import ReceiptSection from '@/components/tokensale/ReceiptSection';
+import TransactionSection from '@/components/tokensale/TransactionSection';
 
 export default {
   name: 'TokenSale',

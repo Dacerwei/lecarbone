@@ -78,7 +78,9 @@ export default {
   props: {
     navigations: {
       type: Object,
-      default: null,
+      default() {
+        return {};
+      },
     },
   },
   data() {
