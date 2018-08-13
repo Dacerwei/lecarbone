@@ -14,17 +14,17 @@
   </div>
 </template>
 <script>
-import MainSection from '@/components/MainSection';
-import HowItWorksSection from '@/components/HowItWorksSection';
-import MediaSection from '@/components/MediaSection';
-import OurTeamSection from '@/components/OurTeamSection';
-import UseOfFoundSection from '@/components/UseOfFoundSection';
-import TokenDetailSection from '@/components/TokenDetailSection';
-import WhyLecarboneSection from '@/components/WhyLecarboneSection';
-import PartnerSection from '@/components/PartnerSection';
-import AdvisorSection from '@/components/AdvisorSection';
-import VideoSection from '@/components/VideoSection';
-import RoadMapSection from '@/components/RoadMapSection';
+import MainSection from '@/components/home/MainSection';
+import HowItWorksSection from '@/components/home/HowItWorksSection';
+import MediaSection from '@/components/home/MediaSection';
+import OurTeamSection from '@/components/home/OurTeamSection';
+import UseOfFoundSection from '@/components/home/UseOfFoundSection';
+import TokenDetailSection from '@/components/home/TokenDetailSection';
+import WhyLecarboneSection from '@/components/home/WhyLecarboneSection';
+import PartnerSection from '@/components/home/PartnerSection';
+import AdvisorSection from '@/components/home/AdvisorSection';
+import VideoSection from '@/components/common/VideoSection';
+import RoadMapSection from '@/components/home/RoadMapSection';
 
 export default {
   components: {

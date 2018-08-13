@@ -34,8 +34,8 @@
 </template>
 
 <script>
-import CountDownTimer from '@/components/CountDownTimer';
-import PrgressBar from '@/components/ProgressBar';
+import CountDownTimer from '@/components/common/CountDownTimer';
+import PrgressBar from '@/components/common/ProgressBar';
 import MainSectionBackground from '@/assets/background/main_section.png';
 import moment from 'moment';
 
@@ -43,7 +43,7 @@ export default {
   name: 'MainSection',
   data() {
     return {
-      endDate: '20180628 1200',
+      endDate: '20190628 1200',
       progress: 200,
       total: 1000,
       containerStyle: {

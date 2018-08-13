@@ -40,9 +40,9 @@
 </template>
 
 <script>
-import DesktopNavBar from '@/components/DesktopNavBar';
-import MobileNavBar from '@/components/MobileNavBar';
-import Footer from '@/components/Footer';
+import DesktopNavBar from '@/components/common/DesktopNavBar';
+import MobileNavBar from '@/components/common/MobileNavBar';
+import Footer from '@/components/common/Footer';
 import _ from 'lodash';
 
 const navigation = [
