@@ -24,7 +24,7 @@ module.exports = {
       description_3: 'The average individual will produces 3.6 mil lbs CO2(1632 MT) in his or her lifetime. Those carbon footprints may come from commuting, using electricity, buying food thats not grown from local farms, or even just simply eating meat. We encourage both individuals and corporate to take responsibility for the impact we make on Earth that causes global climate change and to offset your own carbon footprint. Together, we can make our planet a better place for future generations.',
     },
     MainSection: {
-      main_text: 'A cryptocurrency issued base on the vision of creating awareness for the need of carbon offsets and corporate social responsibilities(CSR)',
+      main_text: 'Incorporating blockchain technology with the vision of creating awareness for the need of carbon offsets and corporate social responsibilities(CSR)',
       timer_title: 'Main Sale Started!',
       timer_till: 'till',
       timer_months: 'MONTHS',
